@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  gamecenter_id: MyString
+  facebook_id: MyString
+  email: MyString
+
+two:
+  gamecenter_id: MyString
+  facebook_id: MyString
+  email: MyString
