@@ -1,6 +1,6 @@
 set :application, "lj"
-set :repository,  "."
-set :deploy_to, "/home/bitnami/stack/projects/lj"
+set :repository,  "https://github.com/rutipo/LoopJoy.git"
+set :deploy_to, "/home/thinds/apps/lj"
 
 set :scm, :git
 set :user, "thinds"
