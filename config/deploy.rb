@@ -1,5 +1,5 @@
 set :application, "lj"
-set :repository,  "https://github.com/rutipo/LoopJoy.git"
+set :repository,  "git@github.com:rutipo/LoopJoy.git"
 set :deploy_to, "/home/thinds/apps/lj"
 
 set :scm, :git
