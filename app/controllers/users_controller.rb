@@ -10,6 +10,20 @@ class UsersController < ApplicationController
     end
   end
 
+  def search
+    if User.count(:conditions => ["gamecenter_id = ?",params[:gamecenter_id]]) == 0
+      respond_to do |format|
+      @message = "NO"
+      format.html {render :layout => nil}
+      end
+    else
+      respond_to do |format|
+      @message = "YES"
+      format.html {render :layout => nil}
+      end
+    end
+  end
+
   # GET /users/1
   # GET /users/1.json
   def show

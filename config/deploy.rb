@@ -19,6 +19,22 @@ role :db,  location, :primary => true # This is where Rails migrations will run
 
 set :normalize_asset_timestamps, false #To stop ugly error messages in assets
 
+namespace :deploy do
+  task :start, :roles => :app do
+  	
+  	run "rake db:migrate"
+    run "touch #{File.join(current_path,'tmp','restart.txt')}"
+
+  task :stop, :roles => :app do
+    # Do nothing.
+  end
+
+  desc "Restart Application"
+  task :restart, :roles => :app do
+    run "touch #{current_release}/tmp/restart.txt"
+  end
+end
+
 # if you want to clean up old releases on each deploy uncomment this:
 # after "deploy:restart", "deploy:cleanup"
 

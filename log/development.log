@@ -9,3 +9,1023 @@ Migrating to CreateUsers (20120711025613)
   [1m[35m (0.1ms)[0m  select sqlite_version(*)
   [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
   [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.5ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120711025613)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Fri Jul 13 00:04:38 -0400 2012
+Served asset /rails.png - 200 OK (3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:04:40 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/users_controller.rb:14: syntax error, unexpected ')', expecting ']'
+...d = ?",params[:gamecenter_id]) == 0
+                              ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:16: syntax error, unexpected tASSOC, expecting kEND
+      @message => "NO"
+                 ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:21: syntax error, unexpected tASSOC, expecting kEND
+      @message => "YES"
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:05:24 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/users_controller.rb:14: syntax error, unexpected ')', expecting ']'
+...d = ?",params[:gamecenter_id]) == 0
+                              ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:16: syntax error, unexpected tASSOC, expecting kEND
+      @message => "NO"
+                 ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:21: syntax error, unexpected tASSOC, expecting kEND
+      @message => "YES"
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:05:26 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/users_controller.rb:14: syntax error, unexpected ')', expecting ']'
+...d = ?",params[:gamecenter_id]) == 0
+                              ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:16: syntax error, unexpected tASSOC, expecting kEND
+      @message => "NO"
+                 ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:21: syntax error, unexpected tASSOC, expecting kEND
+      @message => "YES"
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (42.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:05:27 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/users_controller.rb:14: syntax error, unexpected ')', expecting ']'
+...d = ?",params[:gamecenter_id]) == 0
+                              ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:16: syntax error, unexpected tASSOC, expecting kEND
+      @message => "NO"
+                 ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:21: syntax error, unexpected tASSOC, expecting kEND
+      @message => "YES"
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:05:27 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/users_controller.rb:14: syntax error, unexpected ')', expecting ']'
+...d = ?",params[:gamecenter_id]) == 0
+                              ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:16: syntax error, unexpected tASSOC, expecting kEND
+      @message => "NO"
+                 ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:21: syntax error, unexpected tASSOC, expecting kEND
+      @message => "YES"
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:05:27 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/users_controller.rb:14: syntax error, unexpected ')', expecting ']'
+...d = ?",params[:gamecenter_id]) == 0
+                              ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:16: syntax error, unexpected tASSOC, expecting kEND
+      @message => "NO"
+                 ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:21: syntax error, unexpected tASSOC, expecting kEND
+      @message => "YES"
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:05:27 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/users_controller.rb:14: syntax error, unexpected ')', expecting ']'
+...d = ?",params[:gamecenter_id]) == 0
+                              ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:16: syntax error, unexpected tASSOC, expecting kEND
+      @message => "NO"
+                 ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:21: syntax error, unexpected tASSOC, expecting kEND
+      @message => "YES"
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:05:28 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/users_controller.rb:14: syntax error, unexpected ')', expecting ']'
+...d = ?",params[:gamecenter_id]) == 0
+                              ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:16: syntax error, unexpected tASSOC, expecting kEND
+      @message => "NO"
+                 ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:21: syntax error, unexpected tASSOC, expecting kEND
+      @message => "YES"
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:05:28 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/users_controller.rb:14: syntax error, unexpected ')', expecting ']'
+...d = ?",params[:gamecenter_id]) == 0
+                              ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:16: syntax error, unexpected tASSOC, expecting kEND
+      @message => "NO"
+                 ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:21: syntax error, unexpected tASSOC, expecting kEND
+      @message => "YES"
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:05:28 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/users_controller.rb:14: syntax error, unexpected ')', expecting ']'
+...d = ?",params[:gamecenter_id]) == 0
+                              ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:16: syntax error, unexpected tASSOC, expecting kEND
+      @message => "NO"
+                 ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:21: syntax error, unexpected tASSOC, expecting kEND
+      @message => "YES"
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:05:28 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/users_controller.rb:14: syntax error, unexpected ')', expecting ']'
+...d = ?",params[:gamecenter_id]) == 0
+                              ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:16: syntax error, unexpected tASSOC, expecting kEND
+      @message => "NO"
+                 ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:21: syntax error, unexpected tASSOC, expecting kEND
+      @message => "YES"
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:05:28 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/users_controller.rb:14: syntax error, unexpected ')', expecting ']'
+...d = ?",params[:gamecenter_id]) == 0
+                              ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:16: syntax error, unexpected tASSOC, expecting kEND
+      @message => "NO"
+                 ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:21: syntax error, unexpected tASSOC, expecting kEND
+      @message => "YES"
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (8.0ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:05:28 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/users_controller.rb:14: syntax error, unexpected ')', expecting ']'
+...d = ?",params[:gamecenter_id]) == 0
+                              ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:16: syntax error, unexpected tASSOC, expecting kEND
+      @message => "NO"
+                 ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:21: syntax error, unexpected tASSOC, expecting kEND
+      @message => "YES"
+                 ^):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.2ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:05:52 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/users_controller.rb:16: syntax error, unexpected tASSOC, expecting kEND
+      @message => "NO"
+                 ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:21: syntax error, unexpected tASSOC, expecting kEND
+      @message => "YES"
+                 ^
+/Users/thinds/workspace/lj/app/controllers/users_controller.rb:95: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:06:11 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/users_controller.rb:95: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:06:33 -0400 2012
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Rendered users/index.html.erb within layouts/application (0.8ms)
+Compiled application.css  (2ms)  (pid 29631)
+Compiled scaffolds.css  (68ms)  (pid 29631)
+Compiled users.css  (2ms)  (pid 29631)
+Compiled application.js  (6ms)  (pid 29631)
+Compiled jquery.js  (7ms)  (pid 29631)
+Compiled jquery_ujs.js  (1ms)  (pid 29631)
+Compiled users.js  (190ms)  (pid 29631)
+Completed 200 OK in 399ms (Views: 397.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Jul 13 00:06:33 -0400 2012
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Jul 13 00:06:33 -0400 2012
+Served asset /scaffolds.css - 200 OK (4ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Fri Jul 13 00:06:33 -0400 2012
+Served asset /users.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Jul 13 00:06:33 -0400 2012
+Served asset /jquery.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Jul 13 00:06:33 -0400 2012
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Fri Jul 13 00:06:33 -0400 2012
+Served asset /users.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Jul 13 00:06:33 -0400 2012
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/users/search" for 127.0.0.1 at Fri Jul 13 00:06:38 -0400 2012
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"search"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "search"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=search):
+  app/controllers/users_controller.rb:29:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started GET "/user/search" for 127.0.0.1 at Fri Jul 13 00:08:19 -0400 2012
+
+ActionController::RoutingError (No route matches [GET] "/user/search"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/users/search" for 127.0.0.1 at Fri Jul 13 00:10:25 -0400 2012
+  Processing by UsersController#search as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = NULL)[0m
+Rendered users/search.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 9.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/1" for 127.0.0.1 at Fri Jul 13 00:10:35 -0400 2012
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=1):
+  app/controllers/users_controller.rb:29:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started GET "/users/2" for 127.0.0.1 at Fri Jul 13 00:10:39 -0400 2012
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find User with id=2):
+  app/controllers/users_controller.rb:29:in `show'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started GET "/users/" for 127.0.0.1 at Fri Jul 13 00:10:41 -0400 2012
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search" for 127.0.0.1 at Fri Jul 13 00:10:46 -0400 2012
+  Processing by UsersController#search as HTML
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = NULL)[0m
+Rendered users/search.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/search?id=1" for 127.0.0.1 at Fri Jul 13 00:10:56 -0400 2012
+  Processing by UsersController#search as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = NULL)
+Rendered users/search.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 9.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/search?gamecenter_id=1" for 127.0.0.1 at Fri Jul 13 00:12:01 -0400 2012
+  Processing by UsersController#search as HTML
+  Parameters: {"gamecenter_id"=>"1"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = '1')[0m
+Rendered users/search.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 53ms (Views: 52.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1" for 127.0.0.1 at Fri Jul 13 00:12:21 -0400 2012
+  Processing by UsersController#search as HTML
+  Parameters: {"gamecenter_id"=>"G:1"}
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1')
+Rendered users/search.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 00:12:40 -0400 2012
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Rendered users/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/new" for 127.0.0.1 at Fri Jul 13 00:12:43 -0400 2012
+  Processing by UsersController#new as HTML
+Rendered users/_form.html.erb (7.7ms)
+Rendered users/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 24ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/users" for 127.0.0.1 at Fri Jul 13 00:12:57 -0400 2012
+  Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"4Y5kX5IeV9b2rzDQ30TWWHc0PZSo4MKGuaOsRBtC6tY=", "utf8"=>"✓", "user"=>{"facebook_id"=>"none", "gamecenter_id"=>"mlk", "email"=>"homw@mail.com"}, "commit"=>"Create User"}
+  [1m[35mSQL (3.3ms)[0m  INSERT INTO "users" ("created_at", "email", "facebook_id", "gamecenter_id", "updated_at") VALUES (?, ?, ?, ?, ?)  [["created_at", Fri, 13 Jul 2012 04:12:57 UTC +00:00], ["email", "homw@mail.com"], ["facebook_id", "none"], ["gamecenter_id", "mlk"], ["updated_at", Fri, 13 Jul 2012 04:12:57 UTC +00:00]]
+Redirected to http://localhost:3000/users/1
+Completed 302 Found in 15ms
+
+
+Started GET "/users/1" for 127.0.0.1 at Fri Jul 13 00:12:57 -0400 2012
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered users/show.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users/search?gamecenter_id=mlk" for 127.0.0.1 at Fri Jul 13 00:13:48 -0400 2012
+  Processing by UsersController#search as HTML
+  Parameters: {"gamecenter_id"=>"mlk"}
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'mlk')
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/users/search?gamecenter_id=mlk" for 127.0.0.1 at Fri Jul 13 00:13:52 -0400 2012
+  Processing by UsersController#search as HTML
+  Parameters: {"gamecenter_id"=>"mlk"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'mlk')[0m
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/users/search?gamecenter_id=mlk" for 127.0.0.1 at Fri Jul 13 00:16:17 -0400 2012
+  Processing by UsersController#search as HTML
+  Parameters: {"gamecenter_id"=>"mlk"}
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'mlk')
+Rendered users/search.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 10ms (Views: 9.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 01:18:02 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 10.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 01:23:02 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 6.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 01:28:05 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 01:28:17 -0400 2012
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+Rendered users/index.html.erb within layouts/application (4.3ms)
+Completed 200 OK in 15ms (Views: 13.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Jul 13 01:28:17 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Jul 13 01:28:17 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Fri Jul 13 01:28:17 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Jul 13 01:28:17 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Jul 13 01:28:17 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Fri Jul 13 01:28:17 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Jul 13 01:28:17 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 01:29:28 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.2ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 01:29:44 -0400 2012
+  Processing by UsersController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" 
+Rendered users/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 16ms (Views: 14.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Jul 13 01:29:44 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Jul 13 01:29:44 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Fri Jul 13 01:29:44 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Jul 13 01:29:44 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Fri Jul 13 01:29:44 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Jul 13 01:29:44 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Jul 13 01:29:44 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/users" for 127.0.0.1 at Fri Jul 13 01:29:52 -0400 2012
+  Processing by UsersController#create as */*
+  Parameters: {"user"=>{"facebook_id"=>"none", "gamecenter_id"=>"G:1465012504", "email"=>"StlTenny@gmail.com"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "facebook_id", "gamecenter_id", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["created_at", Fri, 13 Jul 2012 05:29:52 UTC +00:00], ["email", "StlTenny@gmail.com"], ["facebook_id", "none"], ["gamecenter_id", "G:1465012504"], ["updated_at", Fri, 13 Jul 2012 05:29:52 UTC +00:00]]
+Redirected to http://localhost:3000/users/2
+Completed 302 Found in 12ms
+
+
+Started GET "/users/2" for 127.0.0.1 at Fri Jul 13 01:29:52 -0400 2012
+  Processing by UsersController#show as */*
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1  [["id", "2"]]
+Rendered users/show.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 16ms (Views: 13.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/users" for 127.0.0.1 at Fri Jul 13 01:30:03 -0400 2012
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Rendered users/index.html.erb within layouts/application (4.9ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Jul 13 01:30:03 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Jul 13 01:30:03 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Fri Jul 13 01:30:03 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Jul 13 01:30:03 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Fri Jul 13 01:30:03 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Jul 13 01:30:03 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Jul 13 01:30:03 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 01:30:31 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 49ms (Views: 47.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 01:33:42 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 01:35:24 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 01:36:28 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 01:37:02 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 01:41:01 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 01:42:15 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 01:43:26 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 01:43:59 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 01:44:54 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:04:55 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:06:22 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:09:34 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:10:03 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:10:56 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:11:34 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:11:54 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:13:26 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:13:39 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 4.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:13:57 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:14:20 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:14:42 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:14:58 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:15:11 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:15:30 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:16:47 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:17:07 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:17:35 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 7ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:18:05 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:18:48 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 5.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:19:00 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:20:16 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:20:35 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:20:52 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:24:01 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:24:21 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:38:14 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:38:19 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:40:00 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:40:41 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:41:27 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:42:00 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:42:15 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:51:31 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:53:37 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:56:14 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:57:08 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:57:24 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:57:46 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 6ms (Views: 4.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:58:09 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')[0m
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 13 02:58:30 -0400 2012
+  Processing by UsersController#search as */*
+  Parameters: {"gamecenter_id"=>"G:1465012504"}
+  [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
+Rendered users/search.html.erb (0.1ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
