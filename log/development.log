@@ -1029,3 +1029,81 @@ Started GET "/users/search?gamecenter_id=G:1465012504" for 127.0.0.1 at Fri Jul 
   [1m[35m (0.2ms)[0m  SELECT COUNT(*) FROM "users" WHERE (gamecenter_id = 'G:1465012504')
 Rendered users/search.html.erb (0.1ms)
 Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/rails.png" for 127.0.0.1 at Fri Jul 13 03:15:01 -0400 2012
+Served asset /rails.png - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Jul 13 03:15:03 -0400 2012
+  Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 9ms
+
+ActionView::MissingTemplate (Missing template home/index, application/index with {:formats=>[:html], :handlers=>[:coffee, :builder, :erb], :locale=>[:en, :en]}. Searched in:
+  * "/Users/thinds/workspace/lj/app/views"
+):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Jul 13 03:15:04 -0400 2012
+  Processing by HomeController#index as HTML
+Completed 500 Internal Server Error in 5ms
+
+ActionView::MissingTemplate (Missing template home/index, application/index with {:formats=>[:html], :handlers=>[:coffee, :builder, :erb], :locale=>[:en, :en]}. Searched in:
+  * "/Users/thinds/workspace/lj/app/views"
+):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Fri Jul 13 03:16:17 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.4ms)
+Compiled application.css  (3ms)  (pid 29631)
+Compiled home.css  (1ms)  (pid 29631)
+Compiled application.js  (6ms)  (pid 29631)
+Compiled home.js  (139ms)  (pid 29631)
+Completed 200 OK in 271ms (Views: 270.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Fri Jul 13 03:16:18 -0400 2012
+Served asset /home.css - 200 OK (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Fri Jul 13 03:16:18 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Fri Jul 13 03:16:18 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Fri Jul 13 03:16:18 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Fri Jul 13 03:16:18 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Fri Jul 13 03:16:18 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Fri Jul 13 03:16:18 -0400 2012
+Served asset /home.js - 200 OK (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Fri Jul 13 03:16:18 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Fri Jul 13 03:16:18 -0400 2012
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/assets/webcoming.png" for 127.0.0.1 at Fri Jul 13 03:16:18 -0400 2012
+Served asset /webcoming.png - 200 OK (3ms)

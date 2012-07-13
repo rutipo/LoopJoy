@@ -24,7 +24,7 @@ namespace :deploy do
   	
   	run "rake db:migrate"
     run "touch #{File.join(current_path,'tmp','restart.txt')}"
-
+  end
   task :stop, :roles => :app do
     # Do nothing.
   end
