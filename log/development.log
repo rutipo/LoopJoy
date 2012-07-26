@@ -1107,3 +1107,1275 @@ Served asset /application.js - 200 OK (0ms)
 
 Started GET "/assets/webcoming.png" for 127.0.0.1 at Fri Jul 13 03:16:18 -0400 2012
 Served asset /webcoming.png - 200 OK (3ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120711025613)
+Migrating to CreateOrders (20120723180025)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.3ms)[0m  [1mCREATE TABLE "orders" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "street_address" varchar(255), "state" varchar(255), "city" varchar(255), "country" varchar(255), "zipcode" integer, "customer_id" integer, "price" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120723180025')
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("orders")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+
+
+Started GET "/orders" for 127.0.0.1 at Mon Jul 23 16:09:07 -0400 2012
+  Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders" [0m
+Rendered orders/index.html.erb within layouts/application (2.6ms)
+Compiled application.css  (44ms)  (pid 8512)
+Compiled orders.css  (1ms)  (pid 8512)
+Compiled application.js  (6ms)  (pid 8512)
+Compiled orders.js  (179ms)  (pid 8512)
+Completed 200 OK in 334ms (Views: 332.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jul 23 16:09:08 -0400 2012
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Jul 23 16:09:08 -0400 2012
+Served asset /home.css - 200 OK (3ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Mon Jul 23 16:09:08 -0400 2012
+Served asset /orders.css - 200 OK (3ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jul 23 16:09:08 -0400 2012
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Mon Jul 23 16:09:08 -0400 2012
+Served asset /users.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jul 23 16:09:08 -0400 2012
+Served asset /jquery.js - 200 OK (9ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jul 23 16:09:08 -0400 2012
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Jul 23 16:09:08 -0400 2012
+Served asset /home.js - 200 OK (2ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Mon Jul 23 16:09:08 -0400 2012
+Served asset /orders.js - 200 OK (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jul 23 16:09:08 -0400 2012
+Served asset /users.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jul 23 16:09:08 -0400 2012
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at Mon Jul 23 16:09:09 -0400 2012
+  Processing by OrdersController#new as HTML
+Rendered orders/_form.html.erb (11.4ms)
+Rendered orders/new.html.erb within layouts/application (16.0ms)
+Completed 200 OK in 27ms (Views: 26.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Mon Jul 23 16:09:25 -0400 2012
+  Processing by OrdersController#create as HTML
+  Parameters: {"commit"=>"Create Order", "utf8"=>"✓", "authenticity_token"=>"xoX9k7eZZpCaKnAdm0IJWx6BUC6qqedNx05HFThQmkM=", "order"=>{"city"=>"Brooklyn", "country"=>"USA", "street_address"=>"668 East 43rd Street", "customer_id"=>"1", "state"=>"New York", "price"=>"12", "zipcode"=>"11203"}}
+  [1m[35mSQL (7.8ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", "Brooklyn"], ["country", "USA"], ["created_at", Mon, 23 Jul 2012 20:09:25 UTC +00:00], ["customer_id", 1], ["price", 12], ["state", "New York"], ["street_address", "668 East 43rd Street"], ["updated_at", Mon, 23 Jul 2012 20:09:25 UTC +00:00], ["zipcode", 11203]]
+Redirected to http://localhost:3000/orders/1
+Completed 302 Found in 21ms
+
+
+Started GET "/orders/1" for 127.0.0.1 at Mon Jul 23 16:09:25 -0400 2012
+  Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "1"]]
+Rendered orders/show.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 19ms (Views: 16.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jul 23 17:58:20 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 43ms (Views: 42.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:21 -0400 2012
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:21 -0400 2012
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:21 -0400 2012
+Served asset /orders.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:21 -0400 2012
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:21 -0400 2012
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:21 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:21 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:21 -0400 2012
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:21 -0400 2012
+Served asset /orders.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:21 -0400 2012
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:21 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/webcoming.png" for 127.0.0.1 at Mon Jul 23 17:58:21 -0400 2012
+Served asset /webcoming.png - 200 OK (1ms)
+
+
+Started GET "/users" for 127.0.0.1 at Mon Jul 23 17:58:26 -0400 2012
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" [0m
+Rendered users/index.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:26 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:26 -0400 2012
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:26 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:26 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:26 -0400 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:26 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:26 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:26 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:26 -0400 2012
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:26 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:26 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Mon Jul 23 17:58:29 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 10ms (Views: 9.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:29 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:29 -0400 2012
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:29 -0400 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:29 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:29 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:29 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:29 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:29 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:29 -0400 2012
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:29 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:29 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/webcoming.png" for 127.0.0.1 at Mon Jul 23 17:58:29 -0400 2012
+Served asset /webcoming.png - 304 Not Modified (0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at Mon Jul 23 17:58:32 -0400 2012
+  Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" 
+Rendered orders/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 19ms (Views: 17.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:32 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:32 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:32 -0400 2012
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:32 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:32 -0400 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Mon Jul 23 17:58:32 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:32 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:32 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:32 -0400 2012
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:32 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Mon Jul 23 17:58:32 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/" for 127.0.0.1 at Tue Jul 24 16:12:36 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 57ms (Views: 56.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Tue Jul 24 16:12:36 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Tue Jul 24 16:12:36 -0400 2012
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Tue Jul 24 16:12:36 -0400 2012
+Served asset /orders.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Tue Jul 24 16:12:36 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:36 -0400 2012
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:36 -0400 2012
+Served asset /users.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Tue Jul 24 16:12:36 -0400 2012
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:36 -0400 2012
+Served asset /jquery.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:36 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:36 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:36 -0400 2012
+Served asset /orders.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/webcoming.png" for 127.0.0.1 at Tue Jul 24 16:12:36 -0400 2012
+Served asset /webcoming.png - 304 Not Modified (2ms)
+
+
+Started GET "/orders" for 127.0.0.1 at Tue Jul 24 16:12:51 -0400 2012
+  Processing by OrdersController#index as HTML
+  [1m[36mOrder Load (0.7ms)[0m  [1mSELECT "orders".* FROM "orders" [0m
+Rendered orders/index.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Tue Jul 24 16:12:51 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:51 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Tue Jul 24 16:12:51 -0400 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Tue Jul 24 16:12:51 -0400 2012
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Tue Jul 24 16:12:51 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Tue Jul 24 16:12:51 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:51 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:51 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:51 -0400 2012
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:51 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:51 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at Tue Jul 24 16:12:55 -0400 2012
+  Processing by OrdersController#new as HTML
+Rendered orders/_form.html.erb (9.9ms)
+Rendered orders/new.html.erb within layouts/application (14.4ms)
+Completed 200 OK in 26ms (Views: 24.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Tue Jul 24 16:12:55 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Tue Jul 24 16:12:55 -0400 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Tue Jul 24 16:12:55 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Tue Jul 24 16:12:55 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Tue Jul 24 16:12:55 -0400 2012
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:55 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:55 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:55 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:55 -0400 2012
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:55 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jul 24 16:12:55 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 16:13:04 -0400 2012
+  Processing by OrdersController#create as HTML
+  Parameters: {"commit"=>"Create Order", "authenticity_token"=>"7zAlq0lQGtyyD+UVG/pOfViyLGYljWNjykDzpp1SxGQ=", "utf8"=>"✓", "order"=>{"price"=>"1", "street_address"=>"My", "state"=>"Friends", "country"=>"Better", "city"=>"Are", "customer_id"=>"1", "zipcode"=>"1"}}
+  [1m[35mSQL (9.3ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", "Are"], ["country", "Better"], ["created_at", Tue, 24 Jul 2012 20:13:04 UTC +00:00], ["customer_id", 1], ["price", 1], ["state", "Friends"], ["street_address", "My"], ["updated_at", Tue, 24 Jul 2012 20:13:04 UTC +00:00], ["zipcode", 1]]
+Redirected to http://localhost:3000/orders/2
+Completed 302 Found in 22ms
+
+
+Started GET "/orders/2" for 127.0.0.1 at Tue Jul 24 16:13:04 -0400 2012
+  Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Rendered orders/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 19ms (Views: 16.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Tue Jul 24 16:13:04 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Tue Jul 24 16:13:04 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Tue Jul 24 16:13:04 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Tue Jul 24 16:13:04 -0400 2012
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Tue Jul 24 16:13:04 -0400 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Tue Jul 24 16:13:04 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Tue Jul 24 16:13:04 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Tue Jul 24 16:13:04 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Tue Jul 24 16:13:04 -0400 2012
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Tue Jul 24 16:13:04 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Tue Jul 24 16:13:04 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 16:30:34 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 20:30:34 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 20:30:34 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/3
+Completed 302 Found in 10ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 16:30:34 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{\"commit\":\"Create Order\",\"order\":{\"price\":\"1\",\"street_address\":\"(null)\",\"state\":\"(null)\",\"country\":\"USA\",\"city\":\"(null)\",\"zipcode\":\"(null)\"}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 20:30:34 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 20:30:34 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/4
+Completed 302 Found in 11ms
+
+
+Started GET "/orders/3" for 127.0.0.1 at Tue Jul 24 16:30:34 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"3"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "3"]]
+Rendered orders/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 20ms (Views: 17.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/4" for 127.0.0.1 at Tue Jul 24 16:30:34 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Rendered orders/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 18ms (Views: 15.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 17:47:36 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (45.3ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 21:47:37 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 21:47:37 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/5
+Completed 302 Found in 59ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 17:47:37 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{\"commit\":\"Create Order\",\"order\":{\"price\":\"1\",\"street_address\":\"(null)\",\"state\":\"(null)\",\"country\":\"USA\",\"city\":\"(null)\",\"zipcode\":\"(null)\"}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 21:47:37 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 21:47:37 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/6
+Completed 302 Found in 11ms
+
+
+Started GET "/orders/5" for 127.0.0.1 at Tue Jul 24 17:47:37 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "5"]]
+Rendered orders/show.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 66ms (Views: 62.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/6" for 127.0.0.1 at Tue Jul 24 17:47:37 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"6"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "6"]]
+Rendered orders/show.html.erb within layouts/application (47.5ms)
+Completed 200 OK in 60ms (Views: 57.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 17:48:58 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 21:48:59 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 21:48:59 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/7
+Completed 302 Found in 10ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 17:48:59 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{\"commit\":\"Create Order\",\"order\":{\"price\":\"1\",\"street_address\":\"(null)\",\"state\":\"(null)\",\"country\":\"USA\",\"city\":\"(null)\",\"zipcode\":\"(null)\"}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 21:48:59 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 21:48:59 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/8
+Completed 302 Found in 11ms
+
+
+Started GET "/orders/7" for 127.0.0.1 at Tue Jul 24 17:48:59 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"7"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "7"]]
+Rendered orders/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 21ms (Views: 18.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/8" for 127.0.0.1 at Tue Jul 24 17:48:59 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"8"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "8"]]
+Rendered orders/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 17:49:32 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 21:49:32 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 21:49:32 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/9
+Completed 302 Found in 10ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 17:49:32 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{\"commit\":\"Create Order\",\"order\":{\"price\":\"1\",\"street_address\":\"(null)\",\"state\":\"(null)\",\"country\":\"USA\",\"city\":\"(null)\",\"zipcode\":\"(null)\"}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 21:49:32 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 21:49:32 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/10
+Completed 302 Found in 12ms
+
+
+Started GET "/orders/9" for 127.0.0.1 at Tue Jul 24 17:49:32 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"9"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "9"]]
+Rendered orders/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 23ms (Views: 19.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/orders/10" for 127.0.0.1 at Tue Jul 24 17:49:32 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"10"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "10"]]
+Rendered orders/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 22ms (Views: 20.1ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 17:55:37 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 21:55:37 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 21:55:37 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/11
+Completed 302 Found in 9ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 17:55:37 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{\"commit\":\"Create Order\",\"order\":{\"price\":\"1\",\"street_address\":\"(null)\",\"state\":\"(null)\",\"country\":\"USA\",\"city\":\"(null)\",\"zipcode\":\"(null)\"}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 21:55:37 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 21:55:37 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/12
+Completed 302 Found in 13ms
+
+
+Started GET "/orders/11" for 127.0.0.1 at Tue Jul 24 17:55:37 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "11"]]
+Rendered orders/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 22ms (Views: 19.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/12" for 127.0.0.1 at Tue Jul 24 17:55:37 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"12"}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "12"]]
+Rendered orders/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 20ms (Views: 17.3ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 17:58:12 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 21:58:12 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 21:58:12 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/13
+Completed 302 Found in 57ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 17:58:12 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{\"commit\":\"Create Order\",\"order\":{\"price\":\"1\",\"street_address\":\"(null)\",\"state\":\"(null)\",\"country\":\"USA\",\"city\":\"(null)\",\"zipcode\":\"(null)\"}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 21:58:12 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 21:58:12 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/14
+Completed 302 Found in 12ms
+
+
+Started GET "/orders/13" for 127.0.0.1 at Tue Jul 24 17:58:12 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"13"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "13"]]
+Rendered orders/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 22ms (Views: 18.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/14" for 127.0.0.1 at Tue Jul 24 17:58:12 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"14"}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "14"]]
+Rendered orders/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 19ms (Views: 16.8ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:00:23 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (48.4ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:00:23 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:00:23 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/15
+Completed 302 Found in 59ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:00:23 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{\"commit\":\"Create Order\",\"order\":{\"price\":\"1\",\"street_address\":\"(null)\",\"state\":\"(null)\",\"country\":\"USA\",\"city\":\"(null)\",\"zipcode\":\"(null)\"}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:00:23 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:00:23 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/16
+Completed 302 Found in 11ms
+
+
+Started GET "/orders/15" for 127.0.0.1 at Tue Jul 24 18:00:23 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"15"}
+  [1m[36mOrder Load (0.2ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "15"]]
+Rendered orders/show.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 48ms (Views: 44.2ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/orders/16" for 127.0.0.1 at Tue Jul 24 18:00:23 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"16"}
+  [1m[35mOrder Load (0.3ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "16"]]
+Rendered orders/show.html.erb within layouts/application (47.4ms)
+Completed 200 OK in 65ms (Views: 61.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:00:41 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:00:41 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:00:41 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/17
+Completed 302 Found in 10ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:00:41 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{\"commit\":\"Create Order\",\"order\":{\"price\":\"1\",\"street_address\":\"(null)\",\"state\":\"(null)\",\"country\":\"USA\",\"city\":\"it\",\"zipcode\":\"(null)\"}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:00:41 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:00:41 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/18
+Completed 302 Found in 12ms
+
+
+Started GET "/orders/17" for 127.0.0.1 at Tue Jul 24 18:00:41 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"17"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "17"]]
+Rendered orders/show.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 22ms (Views: 19.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/orders/18" for 127.0.0.1 at Tue Jul 24 18:00:41 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"18"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "18"]]
+Rendered orders/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 18ms (Views: 15.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:22:40 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:22:40 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:22:40 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/19
+Completed 302 Found in 14ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:22:40 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{\"commit\":\"Create Order\",\"order\":{\"price\":\"1\",\"street_address\":\"(null)\",\"state\":\"(null)\",\"country\":\"USA\",\"city\":\"(null)\",\"zipcode\":\"(null)\"}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:22:40 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:22:40 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/20
+Completed 302 Found in 12ms
+
+
+Started GET "/orders/19" for 127.0.0.1 at Tue Jul 24 18:22:40 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"19"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "19"]]
+Rendered orders/show.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 21ms (Views: 18.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/20" for 127.0.0.1 at Tue Jul 24 18:22:40 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"20"}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "20"]]
+Rendered orders/show.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 22ms (Views: 19.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:22:59 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:22:59 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:22:59 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/21
+Completed 302 Found in 9ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:22:59 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{\"commit\":\"Create Order\",\"order\":{\"price\":\"1\",\"street_address\":\"(null)\",\"state\":\"(null)\",\"country\":\"USA\",\"city\":\"(null)\",\"zipcode\":\"(null)\"}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:22:59 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:22:59 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/22
+Completed 302 Found in 12ms
+
+
+Started GET "/orders/21" for 127.0.0.1 at Tue Jul 24 18:22:59 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"21"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "21"]]
+Rendered orders/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 21ms (Views: 18.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/22" for 127.0.0.1 at Tue Jul 24 18:22:59 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"22"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "22"]]
+Rendered orders/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:23:40 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:23:40 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:23:40 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/23
+Completed 302 Found in 55ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:23:40 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{\"commit\":\"Create Order\",\"order\":{\"price\":\"1\",\"street_address\":\"(null)\",\"state\":\"(null)\",\"country\":\"USA\",\"city\":\"(null)\",\"zipcode\":\"(null)\"}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:23:40 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:23:40 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/24
+Completed 302 Found in 11ms
+
+
+Started GET "/orders/23" for 127.0.0.1 at Tue Jul 24 18:23:40 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"23"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "23"]]
+Rendered orders/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 21ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/24" for 127.0.0.1 at Tue Jul 24 18:23:40 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"24"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "24"]]
+Rendered orders/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 18ms (Views: 15.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:25:50 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:25:50 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:25:50 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/25
+Completed 302 Found in 9ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:25:50 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"help me"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:25:50 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:25:50 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/26
+Completed 302 Found in 11ms
+
+
+Started GET "/orders/25" for 127.0.0.1 at Tue Jul 24 18:25:50 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"25"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "25"]]
+Rendered orders/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 20ms (Views: 17.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/26" for 127.0.0.1 at Tue Jul 24 18:25:50 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"26"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "26"]]
+Rendered orders/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:26:20 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:26:20 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:26:20 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/27
+Completed 302 Found in 10ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:26:20 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"help \"me"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:26:20 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:26:20 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/28
+Completed 302 Found in 11ms
+
+
+Started GET "/orders/27" for 127.0.0.1 at Tue Jul 24 18:26:20 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"27"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "27"]]
+Rendered orders/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/28" for 127.0.0.1 at Tue Jul 24 18:26:20 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"28"}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "28"]]
+Rendered orders/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:34:21 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:34:21 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:34:21 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/29
+Completed 302 Found in 10ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:34:21 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{\"commit\":\"Create Order\",\"order\":{\"price\":\"1\",\"street_address\":\"(null)\",\"state\":\"(null)\",\"country\":\"USA\",\"city\":\"(null)\",\"zipcode\":\"(null)\"}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:34:21 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:34:21 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/30
+Completed 302 Found in 12ms
+
+
+Started GET "/orders/29" for 127.0.0.1 at Tue Jul 24 18:34:21 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"29"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "29"]]
+Rendered orders/show.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 21ms (Views: 18.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders/30" for 127.0.0.1 at Tue Jul 24 18:34:21 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"30"}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "30"]]
+Rendered orders/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:39:00 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:39:00 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:39:00 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/31
+Completed 302 Found in 10ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:39:00 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{\"commit\":\"Create Order\",\"order\":{\"price\":\"1\",\"street_address\":\"(null)\",\"state\":\"(null)\",\"country\":\"USA\",\"city\":\"(null)\",\"zipcode\":\"(null)\"}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:39:00 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:39:00 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/32
+Completed 302 Found in 11ms
+
+
+Started GET "/orders/31" for 127.0.0.1 at Tue Jul 24 18:39:00 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"31"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "31"]]
+Rendered orders/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 21ms (Views: 18.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/32" for 127.0.0.1 at Tue Jul 24 18:39:00 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"32"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "32"]]
+Rendered orders/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 19ms (Views: 16.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:45:37 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:45:37 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:45:37 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/33
+Completed 302 Found in 9ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:45:37 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{\"commit\":\"Create Order\",\"order\":{\"price\":\"1\",\"street_address\":\"(null)\",\"state\":\"(null)\",\"country\":\"USA\",\"city\":\"(null)\",\"zipcode\":\"(null)\"}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:45:37 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:45:37 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/34
+Completed 302 Found in 12ms
+
+
+Started GET "/orders/33" for 127.0.0.1 at Tue Jul 24 18:45:37 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"33"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "33"]]
+Rendered orders/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 66ms (Views: 19.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/34" for 127.0.0.1 at Tue Jul 24 18:45:37 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"34"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "34"]]
+Rendered orders/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 18ms (Views: 15.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:47:34 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:47:34 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:47:34 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/35
+Completed 302 Found in 9ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:47:34 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{'commit':\"Create Order\",\"order\":{\"price\":\"1\",\"street_address\":\"(null)\",\"state\":\"(null)\",\"country\":\"USA\",\"city\":\"(null)\",\"zipcode\":\"(null)\"}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:47:34 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:47:34 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/36
+Completed 302 Found in 11ms
+
+
+Started GET "/orders/35" for 127.0.0.1 at Tue Jul 24 18:47:34 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"35"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "35"]]
+Rendered orders/show.html.erb within layouts/application (50.8ms)
+Completed 200 OK in 65ms (Views: 62.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/36" for 127.0.0.1 at Tue Jul 24 18:47:34 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"36"}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "36"]]
+Rendered orders/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:48:49 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:48:49 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:48:49 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/37
+Completed 302 Found in 10ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:48:49 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {":'(null)','zipcode':'(null)'}}"=>nil, "{'commit':'Create Order','order':{'price':'1','street_address':'(null)','state':'(null)','country':'USA','city"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:48:49 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:48:49 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/38
+Completed 302 Found in 12ms
+
+
+Started GET "/orders/37" for 127.0.0.1 at Tue Jul 24 18:48:49 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"37"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "37"]]
+Rendered orders/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 22ms (Views: 19.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/38" for 127.0.0.1 at Tue Jul 24 18:48:49 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"38"}
+  [1m[35mOrder Load (0.4ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "38"]]
+Rendered orders/show.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:48:56 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:48:56 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:48:56 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/39
+Completed 302 Found in 9ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:48:56 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {":'(null)','zipcode':'(null)'}}"=>nil, "{'commit':'Create Order','order':{'price':'1','street_address':'help','state':'(null)','country':'USA','city"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:48:56 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:48:56 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/40
+Completed 302 Found in 11ms
+
+
+Started GET "/orders/39" for 127.0.0.1 at Tue Jul 24 18:48:56 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"39"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "39"]]
+Rendered orders/show.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 20ms (Views: 17.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/40" for 127.0.0.1 at Tue Jul 24 18:48:56 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"40"}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "40"]]
+Rendered orders/show.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 19ms (Views: 16.2ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:49:57 -0400 2012
+  Processing by OrdersController#create as */*
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:49:57 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:49:57 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/41
+Completed 302 Found in 9ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:49:57 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"{'commit':'Create Order','order':{'price':'1','street_address':'re','state':'(null)','country':'USA','city:'(null)','zipcode':'(null)'}}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:49:57 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:49:57 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/42
+Completed 302 Found in 12ms
+
+
+Started GET "/orders/41" for 127.0.0.1 at Tue Jul 24 18:49:57 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"41"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "41"]]
+Rendered orders/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 20ms (Views: 18.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/42" for 127.0.0.1 at Tue Jul 24 18:49:57 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"42"}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "42"]]
+Rendered orders/show.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 62ms (Views: 60.1ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:59:08 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"order"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:59:08 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:59:08 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/43
+Completed 302 Found in 9ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:59:08 -0400 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+MultiJson::DecodeError (757: unexpected token at '{'commit':'Create Order','order':{'price':'1','street_address':'(null)','state':'(null)','country':'USA','city:'(null)','zipcode':'(null)'}}'):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.8ms)
+
+
+Started GET "/orders/43" for 127.0.0.1 at Tue Jul 24 18:59:08 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"43"}
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "43"]]
+Rendered orders/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 18ms (Views: 16.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:59:58 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"order"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 22:59:58 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 22:59:58 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/44
+Completed 302 Found in 10ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 18:59:58 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"commit"=>"Create Order", "order"=>{"zipcode"=>"(null)", "state"=>"(null)", "city"=>"(null)", "price"=>"1", "country"=>"USA", "street_address"=>"(null)"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", "(null)"], ["country", "USA"], ["created_at", Tue, 24 Jul 2012 22:59:58 UTC +00:00], ["customer_id", nil], ["price", 1], ["state", "(null)"], ["street_address", "(null)"], ["updated_at", Tue, 24 Jul 2012 22:59:58 UTC +00:00], ["zipcode", 0]]
+Redirected to http://localhost:3000/orders/45
+Completed 302 Found in 12ms
+
+
+Started GET "/orders/44" for 127.0.0.1 at Tue Jul 24 18:59:58 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"44"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "44"]]
+Rendered orders/show.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/45" for 127.0.0.1 at Tue Jul 24 18:59:58 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"45"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "45"]]
+Rendered orders/show.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 18ms (Views: 15.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 19:00:18 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"order"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", nil], ["country", nil], ["created_at", Tue, 24 Jul 2012 23:00:18 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", nil], ["street_address", nil], ["updated_at", Tue, 24 Jul 2012 23:00:18 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/46
+Completed 302 Found in 10ms
+
+
+Started POST "/orders" for 127.0.0.1 at Tue Jul 24 19:00:18 -0400 2012
+  Processing by OrdersController#create as */*
+  Parameters: {"commit"=>"Create Order", "order"=>{"zipcode"=>"(null)", "state"=>"(null)", "city"=>"(null)", "price"=>"1", "country"=>"USA", "street_address"=>"help"}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["city", "(null)"], ["country", "USA"], ["created_at", Tue, 24 Jul 2012 23:00:18 UTC +00:00], ["customer_id", nil], ["price", 1], ["state", "(null)"], ["street_address", "help"], ["updated_at", Tue, 24 Jul 2012 23:00:18 UTC +00:00], ["zipcode", 0]]
+Redirected to http://localhost:3000/orders/47
+Completed 302 Found in 57ms
+
+
+Started GET "/orders/46" for 127.0.0.1 at Tue Jul 24 19:00:18 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"46"}
+  [1m[36mOrder Load (0.1ms)[0m  [1mSELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1[0m  [["id", "46"]]
+Rendered orders/show.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 22ms (Views: 19.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/orders/47" for 127.0.0.1 at Tue Jul 24 19:00:18 -0400 2012
+  Processing by OrdersController#show as */*
+  Parameters: {"id"=>"47"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "47"]]
+Rendered orders/show.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 19ms (Views: 16.4ms | ActiveRecord: 0.4ms)

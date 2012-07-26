@@ -1,4 +1,6 @@
 Lj::Application.routes.draw do
+  resources :orders
+
   resources :users do
      collection do
        get 'search'

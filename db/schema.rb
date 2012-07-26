@@ -10,7 +10,19 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120711025613) do
+ActiveRecord::Schema.define(:version => 20120723180025) do
+
+  create_table "orders", :force => true do |t|
+    t.string   "street_address"
+    t.string   "state"
+    t.string   "city"
+    t.string   "country"
+    t.integer  "zipcode"
+    t.integer  "customer_id"
+    t.integer  "price"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "gamecenter_id"
