@@ -1,0 +1,65 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  address_city: MyString
+  address_country: MyString
+  address_country_code: MyString
+  address_street: MyString
+  address_state: MyString
+  address_zip: 1
+  first_name: MyString
+  last_name: MyString
+  payer_email: MyString
+  payer_id: MyString
+  contact_phone: MyString
+  residence_country: MyString
+  item_name: MyString
+  item_number: 1
+  quantity: 1
+  custom: MyString
+  memo: MyString
+  txn_id: MyString
+  txn_type: MyString
+  payment_status: MyString
+  payment_type: MyString
+  payment_fee: 9.99
+  payment_gross: 9.99
+  payment_date: 2012-07-30 14:27:48
+  mc_currency: MyString
+  mc_fee: 9.99
+  mc_gross: 9.99
+  tax: 9.99
+  shipping: 9.99
+  verify_sign: MyString
+
+two:
+  address_city: MyString
+  address_country: MyString
+  address_country_code: MyString
+  address_street: MyString
+  address_state: MyString
+  address_zip: 1
+  first_name: MyString
+  last_name: MyString
+  payer_email: MyString
+  payer_id: MyString
+  contact_phone: MyString
+  residence_country: MyString
+  item_name: MyString
+  item_number: 1
+  quantity: 1
+  custom: MyString
+  memo: MyString
+  txn_id: MyString
+  txn_type: MyString
+  payment_status: MyString
+  payment_type: MyString
+  payment_fee: 9.99
+  payment_gross: 9.99
+  payment_date: 2012-07-30 14:27:48
+  mc_currency: MyString
+  mc_fee: 9.99
+  mc_gross: 9.99
+  tax: 9.99
+  shipping: 9.99
+  verify_sign: MyString
