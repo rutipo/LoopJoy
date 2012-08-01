@@ -1,4 +1,9 @@
 Lj::Application.routes.draw do
+
+
+  resources :paypal_transactions, :only => [:index, :show]
+  match 'ipn' => "paypal_transactions#ipn", :as => :ipn
+  
   resources :orders
 
   resources :users do
@@ -7,9 +12,11 @@ Lj::Application.routes.draw do
      end
   end
 
+  
+
   root :to => "home#index"
 
-  match 'ipn' => "paypal_ipn#ipn", :as => :ipn
+
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

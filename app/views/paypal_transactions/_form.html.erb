@@ -1,0 +1,137 @@
+<%= form_for(@paypal_transaction) do |f| %>
+  <% if @paypal_transaction.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@paypal_transaction.errors.count, "error") %> prohibited this paypal_transaction from being saved:</h2>
+
+      <ul>
+      <% @paypal_transaction.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :address_city %><br />
+    <%= f.text_field :address_city %>
+  </div>
+  <div class="field">
+    <%= f.label :address_country %><br />
+    <%= f.text_field :address_country %>
+  </div>
+  <div class="field">
+    <%= f.label :address_country_code %><br />
+    <%= f.text_field :address_country_code %>
+  </div>
+  <div class="field">
+    <%= f.label :address_street %><br />
+    <%= f.text_field :address_street %>
+  </div>
+  <div class="field">
+    <%= f.label :address_state %><br />
+    <%= f.text_field :address_state %>
+  </div>
+  <div class="field">
+    <%= f.label :address_zip %><br />
+    <%= f.number_field :address_zip %>
+  </div>
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.label :payer_email %><br />
+    <%= f.text_field :payer_email %>
+  </div>
+  <div class="field">
+    <%= f.label :payer_id %><br />
+    <%= f.text_field :payer_id %>
+  </div>
+  <div class="field">
+    <%= f.label :contact_phone %><br />
+    <%= f.text_field :contact_phone %>
+  </div>
+  <div class="field">
+    <%= f.label :residence_country %><br />
+    <%= f.text_field :residence_country %>
+  </div>
+  <div class="field">
+    <%= f.label :item_name %><br />
+    <%= f.text_field :item_name %>
+  </div>
+  <div class="field">
+    <%= f.label :item_number %><br />
+    <%= f.number_field :item_number %>
+  </div>
+  <div class="field">
+    <%= f.label :quantity %><br />
+    <%= f.number_field :quantity %>
+  </div>
+  <div class="field">
+    <%= f.label :custom %><br />
+    <%= f.text_field :custom %>
+  </div>
+  <div class="field">
+    <%= f.label :memo %><br />
+    <%= f.text_field :memo %>
+  </div>
+  <div class="field">
+    <%= f.label :txn_id %><br />
+    <%= f.text_field :txn_id %>
+  </div>
+  <div class="field">
+    <%= f.label :txn_type %><br />
+    <%= f.text_field :txn_type %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_status %><br />
+    <%= f.text_field :payment_status %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_type %><br />
+    <%= f.text_field :payment_type %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_fee %><br />
+    <%= f.text_field :payment_fee %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_gross %><br />
+    <%= f.text_field :payment_gross %>
+  </div>
+  <div class="field">
+    <%= f.label :payment_date %><br />
+    <%= f.datetime_select :payment_date %>
+  </div>
+  <div class="field">
+    <%= f.label :mc_currency %><br />
+    <%= f.text_field :mc_currency %>
+  </div>
+  <div class="field">
+    <%= f.label :mc_fee %><br />
+    <%= f.text_field :mc_fee %>
+  </div>
+  <div class="field">
+    <%= f.label :mc_gross %><br />
+    <%= f.text_field :mc_gross %>
+  </div>
+  <div class="field">
+    <%= f.label :tax %><br />
+    <%= f.text_field :tax %>
+  </div>
+  <div class="field">
+    <%= f.label :shipping %><br />
+    <%= f.text_field :shipping %>
+  </div>
+  <div class="field">
+    <%= f.label :verify_sign %><br />
+    <%= f.text_field :verify_sign %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

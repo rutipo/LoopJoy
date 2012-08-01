@@ -2,9 +2,6 @@ class OrdersController < ApplicationController
   # GET /orders
   # GET /orders.json
 
-  require 'net/http'
-require 'net/https'
-
   def index
     @orders = Order.all
 

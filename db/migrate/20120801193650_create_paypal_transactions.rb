@@ -24,7 +24,7 @@ class CreatePaypalTransactions < ActiveRecord::Migration
       t.string :payment_type
       t.decimal :payment_fee, :precision => 8, :scale => 2
       t.decimal :payment_gross, :precision => 8, :scale => 2
-      t.datetime :payment_date
+      t.datetime :payment_date, :precision => 8, :scale => 2
       t.string :mc_currency
       t.decimal :mc_fee, :precision => 8, :scale => 2
       t.decimal :mc_gross, :precision => 8, :scale => 2

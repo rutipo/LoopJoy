@@ -3770,3 +3770,1464 @@ StandardError (Invalid IPN: INVALID):
 Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
 Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
 Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 01 13:25:41 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 56ms (Views: 56.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Aug 01 13:25:41 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Wed Aug 01 13:25:41 -0400 2012
+Served asset /orders.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Wed Aug 01 13:25:41 -0400 2012
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/paypal_ipn.css?body=1" for 127.0.0.1 at Wed Aug 01 13:25:41 -0400 2012
+Served asset /paypal_ipn.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Wed Aug 01 13:25:41 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Wed Aug 01 13:25:41 -0400 2012
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Aug 01 13:25:41 -0400 2012
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Aug 01 13:25:41 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Wed Aug 01 13:25:41 -0400 2012
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Wed Aug 01 13:25:41 -0400 2012
+Served asset /orders.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/paypal_ipn.js?body=1" for 127.0.0.1 at Wed Aug 01 13:25:41 -0400 2012
+Served asset /paypal_ipn.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Wed Aug 01 13:25:41 -0400 2012
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Aug 01 13:25:41 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/webcoming.png" for 127.0.0.1 at Wed Aug 01 13:25:41 -0400 2012
+Served asset /webcoming.png - 304 Not Modified (2ms)
+
+
+Started GET "/transactions" for 127.0.0.1 at Wed Aug 01 13:25:49 -0400 2012
+
+ActionController::RoutingError (No route matches [GET] "/transactions"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/paypal_ipn" for 127.0.0.1 at Wed Aug 01 13:25:57 -0400 2012
+
+ActionController::RoutingError (No route matches [GET] "/paypal_ipn"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/ipn" for 127.0.0.1 at Wed Aug 01 13:33:58 -0400 2012
+  Processing by PaypalIpnController#ipn as HTML
+here
+{"action"=>"ipn", "controller"=>"paypal_ipn"}
+Completed 500 Internal Server Error in 3464ms
+
+StandardError (Invalid IPN: INVALID):
+  app/models/paypal_transaction.rb:26:in `valid?'
+  app/controllers/paypal_ipn_controller.rb:5:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 01 13:42:09 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 10.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Aug 01 13:42:09 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Wed Aug 01 13:42:09 -0400 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_ipn.css?body=1" for 127.0.0.1 at Wed Aug 01 13:42:09 -0400 2012
+Served asset /paypal_ipn.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Wed Aug 01 13:42:09 -0400 2012
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Wed Aug 01 13:42:09 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Wed Aug 01 13:42:09 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Aug 01 13:42:09 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Aug 01 13:42:09 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Wed Aug 01 13:42:09 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Wed Aug 01 13:42:09 -0400 2012
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_ipn.js?body=1" for 127.0.0.1 at Wed Aug 01 13:42:09 -0400 2012
+Served asset /paypal_ipn.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Wed Aug 01 13:42:09 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Aug 01 13:42:09 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/webcoming.png" for 127.0.0.1 at Wed Aug 01 13:42:10 -0400 2012
+Served asset /webcoming.png - 304 Not Modified (0ms)
+
+
+Started GET "/ipn" for 127.0.0.1 at Wed Aug 01 13:42:11 -0400 2012
+  Processing by PaypalIpnController#ipn as HTML
+Completed 500 Internal Server Error in 1ms
+
+SyntaxError (/Users/thinds/workspace/lj/app/models/paypal_transaction.rb:25: unknown regexp options - ra
+/Users/thinds/workspace/lj/app/models/paypal_transaction.rb:25: syntax error, unexpected tCONSTANT, expecting kEND
+		//raise StandardError.new("Fault paypal result: #{r...
+		                     ^
+/Users/thinds/workspace/lj/app/models/paypal_transaction.rb:26: unknown regexp options - ra
+/Users/thinds/workspace/lj/app/models/paypal_transaction.rb:26: syntax error, unexpected tCONSTANT, expecting kEND
+		//raise StandardError.new("Invalid IPN: #{response}...
+		                     ^):
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.1ms)
+
+
+Started GET "/ipn" for 127.0.0.1 at Wed Aug 01 13:42:34 -0400 2012
+  Processing by PaypalIpnController#ipn as HTML
+here
+{"action"=>"ipn", "controller"=>"paypal_ipn"}
+Is Valid
+Completed 500 Internal Server Error in 1442ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/paypal_ipn_controller.rb:7:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 01 13:51:37 -0400 2012
+  Processing by HomeController#index as */*
+  Parameters: {"home"=>{"action"=>"index", "controller"=>"home"}}
+Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at Wed Aug 01 13:52:03 -0400 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+MultiJson::DecodeError (757: unexpected token at '{"mc_currency"=>"USD", "address_street"=>"123, any street", "address_city"=>"San Jose", "address_country_code"=>"US", "address_name"=>"John Smith", "payment_type"=>"echeck", "txn_type"=>"web_accept", "address_zip"=>"95131", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "test_ipn"=>"1", "txn_id"=>"42811740", "residence_country"=>"US", "business"=>"seller@paypalsandbox.com", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "first_name"=>"John", "payer_status"=>"verified", "quantity"=>"1", "item_number"=>"AK-1234", "payer_email"=>"buyer@paypalsandbox.com", "action"=>"ipn", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "custom"=>"xyz123", "notify_version"=>"2.1", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "pending_reason"=>"echeck", "item_name"=>"something", "payment_status"=>"Completed", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "tax"=>"2.02", "shipping"=>"3.04", "charset"=>"windows-1252", "receiver_email"=>"seller@paypa):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 01 14:06:52 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 84ms (Views: 83.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Aug 01 14:06:53 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Wed Aug 01 14:06:53 -0400 2012
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/paypal_ipn.css?body=1" for 127.0.0.1 at Wed Aug 01 14:06:53 -0400 2012
+Served asset /paypal_ipn.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Wed Aug 01 14:06:53 -0400 2012
+Served asset /orders.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Wed Aug 01 14:06:53 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Wed Aug 01 14:06:53 -0400 2012
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Aug 01 14:06:53 -0400 2012
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Aug 01 14:06:53 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Wed Aug 01 14:06:53 -0400 2012
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Wed Aug 01 14:06:53 -0400 2012
+Served asset /orders.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/paypal_ipn.js?body=1" for 127.0.0.1 at Wed Aug 01 14:06:53 -0400 2012
+Served asset /paypal_ipn.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Wed Aug 01 14:06:53 -0400 2012
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Aug 01 14:06:53 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/webcoming.png" for 127.0.0.1 at Wed Aug 01 14:06:53 -0400 2012
+Served asset /webcoming.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 01 14:07:20 -0400 2012
+  Processing by HomeController#index as */*
+Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/ipn" for 127.0.0.1 at Wed Aug 01 14:10:49 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"paypal_ipn"=>{"controller"=>"paypal_ipn", "action"=>"ipn"}}
+here
+{"controller"=>"paypal_ipn", "action"=>"ipn", "paypal_ipn"=>{}}
+Is Valid
+Completed 500 Internal Server Error in 970ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/paypal_ipn_controller.rb:7:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:11:41 -0400 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+MultiJson::DecodeError (757: unexpected token at '{"mc_currency"=>"USD", "address_street"=>"123, any street", "address_city"=>"San Jose", "address_country_code"=>"US", "address_name"=>"John Smith", "payment_type"=>"echeck", "txn_type"=>"web_accept", "address_zip"=>"95131", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "test_ipn"=>"1", "txn_id"=>"42811740", "residence_country"=>"US", "business"=>"seller@paypalsandbox.com", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "first_name"=>"John", "payer_status"=>"verified", "quantity"=>"1", "item_number"=>"AK-1234", "payer_email"=>"buyer@paypalsandbox.com", "action"=>"ipn", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "custom"=>"xyz123", "notify_version"=>"2.1", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "pending_reason"=>"echeck", "item_name"=>"something", "payment_status"=>"Completed", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "tax"=>"2.02", "shipping"=>"3.04", "charset"=>"windows-1252", "receiver_email"=>"seller@paypa):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:13:18 -0400 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+MultiJson::DecodeError (757: unexpected token at '{"mc_currency"=>"USD", "address_street"=>"123, any street", "address_city"=>"San Jose", "address_country_code"=>"US", "address_name"=>"John Smith", "payment_type"=>"echeck", "txn_type"=>"web_accept", "address_zip"=>"95131", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "test_ipn"=>"1", "txn_id"=>"42811740", "residence_country"=>"US", "business"=>"seller@paypalsandbox.com", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "first_name"=>"John", "payer_status"=>"verified", "quantity"=>"1", "item_number"=>"AK-1234", "payer_email"=>"buyer@paypalsandbox.com", "action"=>"ipn", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "custom"=>"xyz123", "notify_version"=>"2.1", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "pending_reason"=>"echeck", "item_name"=>"something", "payment_status"=>"Completed", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "tax"=>"2.02", "shipping"=>"3.04", "charset"=>"windows-1252", "receiver_email"=>"seller@paypa):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:14:30 -0400 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+MultiJson::DecodeError (757: unexpected token at '{"mc_currency"=>"USD", "address_street"=>"123, any street"}'):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.3ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:17:07 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "invoice"=>"abc1234", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something", "paypal_ipn"=>{"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "action"=>"ipn", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something"}}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "action"=>"ipn", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "paypal_ipn"=>{"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "action"=>"ipn", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something"}, "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something"}
+Is Valid
+Completed 500 Internal Server Error in 1112ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.[]):
+  app/controllers/paypal_ipn_controller.rb:7:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (44.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.3ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:18:39 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "invoice"=>"abc1234", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something", "paypal_ipn"=>{"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "action"=>"ipn", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something"}}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "action"=>"ipn", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "paypal_ipn"=>{"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "action"=>"ipn", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something"}, "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something"}
+Is Valid
+Completed 500 Internal Server Error in 1455ms
+
+NoMethodError (undefined method `has_key?' for nil:NilClass):
+  app/controllers/paypal_ipn_controller.rb:7:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:20:11 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "invoice"=>"abc1234", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something", "paypal_ipn"=>{"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "action"=>"ipn", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something"}}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 6ms
+
+NameError (undefined local variable or method `ppt' for #<PaypalIpnController:0x108cdebb0>):
+  app/controllers/paypal_ipn_controller.rb:5:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.0ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:20:37 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "invoice"=>"abc1234", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something", "paypal_ipn"=>{"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "action"=>"ipn", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something"}}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "action"=>"ipn", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "paypal_ipn"=>{"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "action"=>"ipn", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something"}, "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something"}
+Is Valid
+Completed 500 Internal Server Error in 1435ms
+
+NoMethodError (undefined method `has_key?' for nil:NilClass):
+  app/controllers/paypal_ipn_controller.rb:7:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:21:45 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "invoice"=>"abc1234", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something", "paypal_ipn"=>{"address_name"=>"John Smith", "address_zip"=>"95131", "receiver_id"=>"TESTSELLERID1", "mc_gross"=>"12.34", "mc_currency"=>"USD", "payer_status"=>"verified", "payer_email"=>"buyer@paypalsandbox.com", "tax"=>"2.02", "txn_type"=>"web_accept", "test_ipn"=>"1", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "action"=>"ipn", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_country"=>"United States", "quantity"=>"1", "notify_version"=>"2.1", "receiver_email"=>"seller@paypalsandbox.com", "payment_type"=>"echeck", "pending_reason"=>"echeck", "residence_country"=>"US", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "txn_id"=>"42811740", "business"=>"seller@paypalsandbox.com", "item_number"=>"AK-1234", "last_name"=>"Smith", "payment_status"=>"Completed", "address_status"=>"confirmed", "address_street"=>"123, any street", "charset"=>"windows-1252", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "shipping"=>"3.04", "address_state"=>"CA", "address_city"=>"San Jose", "address_country_code"=>"US", "custom"=>"xyz123", "item_name"=>"something"}}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 22ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: address_name):
+  app/models/paypal_transaction.rb:8:in `initialize'
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.6ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:23:37 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_status"=>"confirmed", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_status"=>"confirmed", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 80ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: address_status):
+  app/models/paypal_transaction.rb:8:in `initialize'
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.0ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:24:17 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 24ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: paypal_ipn):
+  app/models/paypal_transaction.rb:8:in `initialize'
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.0ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:25:12 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "test_ipn"=>"1", "controller"=>"paypal_ipn", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 22ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: paypal_ipn):
+  app/models/paypal_transaction.rb:8:in `initialize'
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:27:28 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 23ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: paypal_ipn):
+  app/models/paypal_transaction.rb:8:in `initialize'
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.5ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.4ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:27:35 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 22ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: paypal_ipn):
+  app/models/paypal_transaction.rb:8:in `initialize'
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.2ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:28:13 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 22ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: paypal_ipn):
+  app/models/paypal_transaction.rb:8:in `initialize'
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.1ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:29:52 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}, "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04", "controller"=>"paypal_ipn"}
+Is Valid
+Completed 500 Internal Server Error in 1118ms
+
+NoMethodError (undefined method `has_key?' for nil:NilClass):
+  app/controllers/paypal_ipn_controller.rb:7:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:33:16 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 24ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: paypal_ipn):
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:33:38 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 23ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: paypal_ipn):
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.2ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:33:59 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 0ms
+
+NoMethodError (undefined method `support' for nil:NilClass):
+  app/controllers/paypal_ipn_controller.rb:5:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.5ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:34:44 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "receiver_email"=>"seller@paypalsandbox.com", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "receiver_id"=>"TESTSELLERID1", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 67ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: receiver_email):
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:35:29 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "notify_version"=>"2.1", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 26ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: notify_version):
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.4ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:35:43 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "charset"=>"windows-1252", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 23ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: charset):
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:35:54 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "business"=>"seller@paypalsandbox.com", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 25ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: business):
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.2ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:36:12 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "payer_status"=>"verified", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 25ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: payer_status):
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:36:36 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "action"=>"ipn", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "pending_reason"=>"echeck", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 65ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: action):
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.2ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:37:25 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "test_ipn"=>"1", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 24ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: test_ipn):
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:37:45 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "invoice"=>"abc1234", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 24ms
+
+ActiveRecord::UnknownAttributeError (unknown attribute: invoice):
+  app/controllers/paypal_ipn_controller.rb:4:in `new'
+  app/controllers/paypal_ipn_controller.rb:4:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (44.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (47.2ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:38:08 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}, "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}
+Is Valid
+#<PaypalTransaction id: nil, address_city: "San Jose", address_country: "United States", address_country_code: "US", address_street: "123, any street", address_state: "CA", address_zip: 95131, first_name: "John", last_name: "Smith", payer_email: "buyer@paypalsandbox.com", payer_id: "TESTBUYERID01", contact_phone: nil, residence_country: "US", item_name: "something", item_number: 0, quantity: 1, custom: "xyz123", memo: nil, txn_id: "42811740", txn_type: "web_accept", payment_status: "Completed", payment_type: "echeck", payment_fee: nil, payment_gross: nil, payment_date: "2012-08-01 10:40:01", mc_currency: "USD", mc_fee: #<BigDecimal:10c81a1c0,'0.44E0',4(8)>, mc_gross: #<BigDecimal:10c81a0a8,'0.1234E2',8(8)>, tax: #<BigDecimal:10c819f90,'0.202E1',8(8)>, shipping: #<BigDecimal:10c819e78,'0.304E1',8(8)>, verify_sign: "AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56...", created_at: nil, updated_at: nil>
+Rendered paypal_ipn/ipn.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1154ms (Views: 50.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:40:46 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}, "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}
+Completed 500 Internal Server Error in 1075ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_ipn_controller.rb:7:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:41:21 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}, "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}
+Completed 500 Internal Server Error in 2461ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_ipn_controller.rb:7:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.2ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:42:36 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}, "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}
+Completed 500 Internal Server Error in 1254ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_ipn_controller.rb:8:in `ipn'
+  app/controllers/paypal_ipn_controller.rb:7:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.1ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:43:00 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}, "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}
+Is Valid
+#<PaypalTransaction id: nil, address_city: "San Jose", address_country: "United States", address_country_code: "US", address_street: "123, any street", address_state: "CA", address_zip: 95131, first_name: "John", last_name: "Smith", payer_email: "buyer@paypalsandbox.com", payer_id: "TESTBUYERID01", contact_phone: nil, residence_country: "US", item_name: "something", item_number: 0, quantity: 1, custom: "xyz123", memo: nil, txn_id: "42811740", txn_type: "web_accept", payment_status: "Completed", payment_type: "echeck", payment_fee: nil, payment_gross: nil, payment_date: "2012-08-01 10:40:01", mc_currency: "USD", mc_fee: #<BigDecimal:10c853740,'0.44E0',4(8)>, mc_gross: #<BigDecimal:10c853380,'0.1234E2',8(8)>, tax: #<BigDecimal:10c8531f0,'0.202E1',8(8)>, shipping: #<BigDecimal:10c852f70,'0.304E1',8(8)>, verify_sign: "AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56...", created_at: nil, updated_at: nil>
+Rendered paypal_ipn/ipn.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 1155ms (Views: 16.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:45:17 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}, "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}
+Is Valid
+#<PaypalTransaction id: nil, address_city: "San Jose", address_country: "United States", address_country_code: "US", address_street: "123, any street", address_state: "CA", address_zip: 95131, first_name: "John", last_name: "Smith", payer_email: "buyer@paypalsandbox.com", payer_id: "TESTBUYERID01", contact_phone: nil, residence_country: "US", item_name: "something", item_number: 0, quantity: 1, custom: "xyz123", memo: nil, txn_id: "42811740", txn_type: "web_accept", payment_status: "Completed", payment_type: "echeck", payment_fee: nil, payment_gross: nil, payment_date: "2012-08-01 10:40:01", mc_currency: "USD", mc_fee: #<BigDecimal:10c3e6540,'0.44E0',4(8)>, mc_gross: #<BigDecimal:10c3e6428,'0.1234E2',8(8)>, tax: #<BigDecimal:10c3e6310,'0.202E1',8(8)>, shipping: #<BigDecimal:10c3e61f8,'0.304E1',8(8)>, verify_sign: "AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56...", created_at: nil, updated_at: nil>
+Completed 500 Internal Server Error in 1419ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_ipn_controller.rb:10:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.2ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:45:34 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}, "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}
+Is Valid
+#<PaypalTransaction id: nil, address_city: "San Jose", address_country: "United States", address_country_code: "US", address_street: "123, any street", address_state: "CA", address_zip: 95131, first_name: "John", last_name: "Smith", payer_email: "buyer@paypalsandbox.com", payer_id: "TESTBUYERID01", contact_phone: nil, residence_country: "US", item_name: "something", item_number: 0, quantity: 1, custom: "xyz123", memo: nil, txn_id: "42811740", txn_type: "web_accept", payment_status: "Completed", payment_type: "echeck", payment_fee: nil, payment_gross: nil, payment_date: "2012-08-01 10:40:01", mc_currency: "USD", mc_fee: #<BigDecimal:10cc09420,'0.44E0',4(8)>, mc_gross: #<BigDecimal:10cc09308,'0.1234E2',8(8)>, tax: #<BigDecimal:10cc09128,'0.202E1',8(8)>, shipping: #<BigDecimal:10cc08f48,'0.304E1',8(8)>, verify_sign: "AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56...", created_at: nil, updated_at: nil>
+Completed 500 Internal Server Error in 3647ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_ipn_controller.rb:10:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.2ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:49:46 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}, "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}
+Is Valid
+Completed 500 Internal Server Error in 1047ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_ipn_controller.rb:10:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.1ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:52:45 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}, "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "paypal_ipn"=>{"address_country_code"=>"US", "first_name"=>"John", "item_name"=>"something", "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04"}, "address_street"=>"123, any street", "txn_id"=>"42811740", "mc_fee"=>"0.44", "payment_status"=>"Completed", "address_state"=>"CA", "mc_currency"=>"USD", "payer_id"=>"TESTBUYERID01", "last_name"=>"Smith", "address_country"=>"United States", "payment_type"=>"echeck", "txn_type"=>"web_accept", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC", "address_zip"=>"95131", "residence_country"=>"US", "address_city"=>"San Jose", "custom"=>"xyz123", "mc_gross"=>"12.34", "quantity"=>"1", "item_number"=>"AK-1234", "tax"=>"2.02", "action"=>"ipn", "payer_email"=>"buyer@paypalsandbox.com", "shipping"=>"3.04", "controller"=>"paypal_ipn"}
+Is Valid
+Completed 500 Internal Server Error in 2358ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_ipn_controller.rb:10:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (43.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.9ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:53:17 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_street"=>"123, any street", "paypal_ipn"=>{"address_street"=>"123, any street", "action"=>"ipn", "controller"=>"paypal_ipn"}}
+WARNING: Can't verify CSRF token authenticity
+here
+{"paypal_ipn"=>{"address_street"=>"123, any street"}, "address_street"=>"123, any street", "action"=>"ipn", "controller"=>"paypal_ipn"}
+Is Valid
+Completed 500 Internal Server Error in 1093ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_ipn_controller.rb:10:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 14:53:55 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"paypal_ipn"=>{"action"=>"ipn", "controller"=>"paypal_ipn"}}
+WARNING: Can't verify CSRF token authenticity
+here
+{"paypal_ipn"=>{}, "action"=>"ipn", "controller"=>"paypal_ipn"}
+Is Valid
+Completed 500 Internal Server Error in 1036ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_ipn_controller.rb:10:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 01 14:54:35 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Wed Aug 01 14:54:35 -0400 2012
+Served asset /home.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Aug 01 14:54:35 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Wed Aug 01 14:54:35 -0400 2012
+Served asset /orders.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Wed Aug 01 14:54:35 -0400 2012
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/paypal_ipn.css?body=1" for 127.0.0.1 at Wed Aug 01 14:54:35 -0400 2012
+Served asset /paypal_ipn.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Wed Aug 01 14:54:35 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Aug 01 14:54:35 -0400 2012
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Aug 01 14:54:35 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Wed Aug 01 14:54:35 -0400 2012
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Wed Aug 01 14:54:35 -0400 2012
+Served asset /orders.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/paypal_ipn.js?body=1" for 127.0.0.1 at Wed Aug 01 14:54:35 -0400 2012
+Served asset /paypal_ipn.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Wed Aug 01 14:54:35 -0400 2012
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Aug 01 14:54:35 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/webcoming.png" for 127.0.0.1 at Wed Aug 01 14:54:35 -0400 2012
+Served asset /webcoming.png - 304 Not Modified (1ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 15:00:46 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "paypal_ipn"=>{"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "action"=>"ipn", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "controller"=>"paypal_ipn", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}, "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "action"=>"ipn", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "controller"=>"paypal_ipn", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "paypal_ipn"=>{"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}, "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}
+Is Valid
+Completed 500 Internal Server Error in 2416ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_ipn_controller.rb:10:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.4ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 15:01:14 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "paypal_ipn"=>{"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "action"=>"ipn", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "controller"=>"paypal_ipn", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}, "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "action"=>"ipn", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "controller"=>"paypal_ipn", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "paypal_ipn"=>{"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}, "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}
+Is Valid
+#<PaypalTransaction id: nil, address_city: "San Jose", address_country: "United States", address_country_code: "US", address_street: "123, any street", address_state: "CA", address_zip: 95131, first_name: "John", last_name: "Smith", payer_email: "buyer@paypalsandbox.com", payer_id: "TESTBUYERID01", contact_phone: nil, residence_country: "US", item_name: "something", item_number: 0, quantity: 1, custom: "xyz123", memo: nil, txn_id: "42811740", txn_type: "web_accept", payment_status: "Completed", payment_type: "echeck", payment_fee: nil, payment_gross: nil, payment_date: "2012-08-01 10:40:01", mc_currency: "USD", mc_fee: #<BigDecimal:10a8f12a8,'0.44E0',4(8)>, mc_gross: #<BigDecimal:10a8f1190,'0.1234E2',8(8)>, tax: #<BigDecimal:10a8f1028,'0.202E1',8(8)>, shipping: #<BigDecimal:10a8f0f10,'0.304E1',8(8)>, verify_sign: "AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56...", created_at: nil, updated_at: nil>
+Rendered paypal_ipn/ipn.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 1498ms (Views: 39.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 15:06:28 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "paypal_ipn"=>{"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "action"=>"ipn", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "controller"=>"paypal_ipn", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}, "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}
+WARNING: Can't verify CSRF token authenticity
+here
+nil
+Completed 500 Internal Server Error in 25ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.size):
+  app/models/paypal_transaction.rb:24:in `valid?'
+  app/controllers/paypal_ipn_controller.rb:6:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.1ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 15:07:20 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "paypal_ipn"=>{"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "action"=>"ipn", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "controller"=>"paypal_ipn", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}, "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "action"=>"ipn", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "controller"=>"paypal_ipn", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "paypal_ipn"=>{"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}, "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}
+Is Valid
+#<PaypalTransaction id: nil, address_city: "San Jose", address_country: "United States", address_country_code: "US", address_street: "123, any street", address_state: "CA", address_zip: 95131, first_name: "John", last_name: "Smith", payer_email: "buyer@paypalsandbox.com", payer_id: "TESTBUYERID01", contact_phone: nil, residence_country: "US", item_name: "something", item_number: 0, quantity: 1, custom: "xyz123", memo: nil, txn_id: "42811740", txn_type: "web_accept", payment_status: "Completed", payment_type: "echeck", payment_fee: nil, payment_gross: nil, payment_date: "2012-08-01 10:40:01", mc_currency: "USD", mc_fee: #<BigDecimal:10a862508,'0.44E0',4(8)>, mc_gross: #<BigDecimal:10a8623f0,'0.1234E2',8(8)>, tax: #<BigDecimal:10a8622d8,'0.202E1',8(8)>, shipping: #<BigDecimal:10a8621c0,'0.304E1',8(8)>, verify_sign: "AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56...", created_at: nil, updated_at: nil>
+Completed 500 Internal Server Error in 25ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_ipn_controller.rb:9:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.4ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 15:07:44 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "paypal_ipn"=>{"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "action"=>"ipn", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "controller"=>"paypal_ipn", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}, "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}
+WARNING: Can't verify CSRF token authenticity
+here
+{"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "action"=>"ipn", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "controller"=>"paypal_ipn", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "paypal_ipn"=>{"address_street"=>"123, any street", "mc_currency"=>"USD", "quantity"=>"1", "address_state"=>"CA", "tax"=>"2.02", "address_city"=>"San Jose", "address_zip"=>"95131", "payment_type"=>"echeck", "txn_type"=>"web_accept", "item_number"=>"AK-1234", "last_name"=>"Smith", "payer_email"=>"buyer@paypalsandbox.com", "item_name"=>"something", "mc_gross"=>"12.34", "txn_id"=>"42811740", "custom"=>"xyz123", "mc_fee"=>"0.44", "payer_id"=>"TESTBUYERID01", "address_country"=>"United States", "address_country_code"=>"US", "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}, "residence_country"=>"US", "payment_status"=>"Completed", "shipping"=>"3.04", "payment_date"=>"10:40:42 Aug 01, 2012 PDT", "first_name"=>"John", "verify_sign"=>"AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56nEDiC"}
+Is Valid
+#<PaypalTransaction id: nil, address_city: "San Jose", address_country: "United States", address_country_code: "US", address_street: "123, any street", address_state: "CA", address_zip: 95131, first_name: "John", last_name: "Smith", payer_email: "buyer@paypalsandbox.com", payer_id: "TESTBUYERID01", contact_phone: nil, residence_country: "US", item_name: "something", item_number: 0, quantity: 1, custom: "xyz123", memo: nil, txn_id: "42811740", txn_type: "web_accept", payment_status: "Completed", payment_type: "echeck", payment_fee: nil, payment_gross: nil, payment_date: "2012-08-01 10:40:01", mc_currency: "USD", mc_fee: #<BigDecimal:10b13f680,'0.44E0',4(8)>, mc_gross: #<BigDecimal:10b13f568,'0.1234E2',8(8)>, tax: #<BigDecimal:10b13f338,'0.202E1',8(8)>, shipping: #<BigDecimal:10b13f090,'0.304E1',8(8)>, verify_sign: "AnBtCnNMJwUN0qXhzblijsvbZKiZAgBVOp-nQsvTW7oPPeWgy56...", created_at: nil, updated_at: nil>
+Completed 500 Internal Server Error in 68ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_ipn_controller.rb:9:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.9ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 15:11:49 -0400 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+MultiJson::DecodeError (757: unexpected token at '{address_zip:"95131"}'):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.6ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 15:11:58 -0400 2012
+Error occurred while parsing request parameters.
+Contents:
+
+
+MultiJson::DecodeError (757: unexpected token at '{address_zip:"95131"}'):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.4ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 15:12:04 -0400 2012
+  Processing by PaypalIpnController#ipn as */*
+  Parameters: {"address_zip"=>"95131", "paypal_ipn"=>{"action"=>"ipn", "address_zip"=>"95131", "controller"=>"paypal_ipn"}}
+WARNING: Can't verify CSRF token authenticity
+here
+{"action"=>"ipn", "address_zip"=>"95131", "controller"=>"paypal_ipn", "paypal_ipn"=>{"address_zip"=>"95131"}}
+Is Valid
+#<PaypalTransaction id: nil, address_city: nil, address_country: nil, address_country_code: nil, address_street: nil, address_state: nil, address_zip: 95131, first_name: nil, last_name: nil, payer_email: nil, payer_id: nil, contact_phone: nil, residence_country: nil, item_name: nil, item_number: nil, quantity: nil, custom: nil, memo: nil, txn_id: nil, txn_type: nil, payment_status: nil, payment_type: nil, payment_fee: nil, payment_gross: nil, payment_date: nil, mc_currency: nil, mc_fee: nil, mc_gross: nil, tax: nil, shipping: nil, verify_sign: nil, created_at: nil, updated_at: nil>
+Completed 500 Internal Server Error in 24ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_ipn_controller.rb:9:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120711025613)
+Migrating to CreateOrders (20120723180025)
+Migrating to CreatePaypalTransactions (20120730182748)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("orders")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("paypal_transactions")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120711025613)
+Migrating to CreateOrders (20120723180025)
+Migrating to CreatePaypalTransactions (20120801193650)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "paypal_transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "address_city" varchar(255), "address_country" varchar(255), "address_country_code" varchar(255), "address_street" varchar(255), "address_state" varchar(255), "address_zip" integer, "first_name" varchar(255), "last_name" varchar(255), "payer_email" varchar(255), "payer_id" varchar(255), "contact_phone" varchar(255), "residence_country" varchar(255), "item_name" varchar(255), "item_number" integer, "quantity" integer, "custom" varchar(255), "memo" varchar(255), "txn_id" varchar(255), "txn_type" varchar(255), "payment_status" varchar(255), "payment_type" varchar(255), "payment_fee" decimal, "payment_gross" decimal, "payment_date" datetime, "mc_currency" varchar(255), "mc_fee" decimal, "mc_gross" decimal, "tax" decimal, "shipping" decimal, "verify_sign" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120801193650')
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("orders")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("paypal_transactions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 15:43:49 -0400 2012
+
+ActionController::RoutingError (No route matches [POST] "/ipn"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started POST "/paypal_transactions" for 127.0.0.1 at Wed Aug 01 15:44:21 -0400 2012
+  Processing by PaypalTransactionsController#create as */*
+  Parameters: {"address_zip"=>"95131", "paypal_transaction"=>{"address_zip"=>"95131"}}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 18ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_transactions_controller.rb:46:in `create'
+  app/controllers/paypal_transactions_controller.rb:45:in `create'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.1ms)
+
+
+Started POST "/paypal_transactions" for 127.0.0.1 at Wed Aug 01 15:45:36 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/paypal_transactions_controller.rb:94: syntax error, unexpected $end, expecting kEND):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started POST "/paypal_transactions" for 127.0.0.1 at Wed Aug 01 15:45:56 -0400 2012
+  Processing by PaypalTransactionsController#create as */*
+  Parameters: {"address_zip"=>"95131", "paypal_transaction"=>{"address_zip"=>"95131"}}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 18ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_transactions_controller.rb:57:in `create'
+  app/controllers/paypal_transactions_controller.rb:56:in `create'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started GET "/paypal_transactioons" for 127.0.0.1 at Wed Aug 01 15:46:20 -0400 2012
+
+ActionController::RoutingError (No route matches [GET] "/paypal_transactioons"):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/paypal_transactions" for 127.0.0.1 at Wed Aug 01 15:46:24 -0400 2012
+  Processing by PaypalTransactionsController#index as HTML
+  [1m[36mPaypalTransaction Load (0.1ms)[0m  [1mSELECT "paypal_transactions".* FROM "paypal_transactions" [0m
+Rendered paypal_transactions/index.html.erb within layouts/application (1.3ms)
+Compiled application.css  (4ms)  (pid 31776)
+Compiled paypal_transactions.css  (2ms)  (pid 31776)
+Compiled application.js  (6ms)  (pid 31776)
+Compiled paypal_transactions.js  (192ms)  (pid 31776)
+Completed 200 OK in 336ms (Views: 335.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Aug 01 15:46:24 -0400 2012
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Wed Aug 01 15:46:24 -0400 2012
+Served asset /home.css - 200 OK (3ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Wed Aug 01 15:46:24 -0400 2012
+Served asset /orders.css - 200 OK (2ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at Wed Aug 01 15:46:24 -0400 2012
+Served asset /paypal_transactions.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Wed Aug 01 15:46:24 -0400 2012
+Served asset /scaffolds.css - 200 OK (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Wed Aug 01 15:46:24 -0400 2012
+Served asset /users.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Aug 01 15:46:24 -0400 2012
+Served asset /jquery.js - 200 OK (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Aug 01 15:46:24 -0400 2012
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Wed Aug 01 15:46:24 -0400 2012
+Served asset /home.js - 200 OK (2ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Wed Aug 01 15:46:24 -0400 2012
+Served asset /orders.js - 200 OK (4ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at Wed Aug 01 15:46:24 -0400 2012
+Served asset /paypal_transactions.js - 200 OK (2ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Wed Aug 01 15:46:24 -0400 2012
+Served asset /users.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Aug 01 15:46:24 -0400 2012
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/paypal_transactions/new" for 127.0.0.1 at Wed Aug 01 15:46:26 -0400 2012
+  Processing by PaypalTransactionsController#new as HTML
+Rendered paypal_transactions/_form.html.erb (80.3ms)
+Rendered paypal_transactions/new.html.erb within layouts/application (85.0ms)
+Completed 200 OK in 96ms (Views: 95.4ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/paypal_transactions" for 127.0.0.1 at Wed Aug 01 15:46:48 -0400 2012
+  Processing by PaypalTransactionsController#create as HTML
+  Parameters: {"authenticity_token"=>"ditYwdmYHmS1tVoiVzaCJ4anAZPF40oIX3SB/jdv7RU=", "utf8"=>"✓", "paypal_transaction"=>{"address_street"=>"this", "mc_currency"=>"", "memo"=>"to ", "payment_date(1i)"=>"2012", "quantity"=>"5", "contact_phone"=>"hpoe", "address_state"=>"shit", "tax"=>"", "payment_date(5i)"=>"46", "payment_date(4i)"=>"19", "payment_date(3i)"=>"1", "payment_date(2i)"=>"8", "payment_gross"=>"", "address_zip"=>"1", "address_city"=>"Fuck", "payment_type"=>"", "txn_type"=>"", "item_number"=>"3", "last_name"=>"terrible", "mc_gross"=>"", "payment_fee"=>"", "item_name"=>"neve", "payer_email"=>"and", "mc_fee"=>"", "txn_id"=>"frution", "custom"=>"comes", "payer_id"=>"I ", "address_country"=>"you", "address_country_code"=>"casue t", "shipping"=>"", "payment_status"=>"", "residence_country"=>"this", "verify_sign"=>"", "first_name"=>"IS "}, "commit"=>"Create Paypal transaction"}
+Completed 500 Internal Server Error in 18ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_transactions_controller.rb:57:in `create'
+  app/controllers/paypal_transactions_controller.rb:56:in `create'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.2ms)
+
+
+Started POST "/paypal_transactions" for 127.0.0.1 at Wed Aug 01 15:47:38 -0400 2012
+  Processing by PaypalTransactionsController#create as HTML
+  Parameters: {"authenticity_token"=>"ditYwdmYHmS1tVoiVzaCJ4anAZPF40oIX3SB/jdv7RU=", "utf8"=>"✓", "paypal_transaction"=>{"address_street"=>"this", "mc_currency"=>"", "memo"=>"to ", "payment_date(1i)"=>"2012", "quantity"=>"5", "contact_phone"=>"hpoe", "address_state"=>"shit", "tax"=>"", "payment_date(5i)"=>"46", "payment_date(4i)"=>"19", "payment_date(3i)"=>"1", "payment_date(2i)"=>"8", "payment_gross"=>"", "address_zip"=>"1", "address_city"=>"Fuck", "payment_type"=>"", "txn_type"=>"", "item_number"=>"3", "last_name"=>"terrible", "mc_gross"=>"", "payment_fee"=>"", "item_name"=>"neve", "payer_email"=>"and", "mc_fee"=>"", "txn_id"=>"frution", "custom"=>"comes", "payer_id"=>"I ", "address_country"=>"you", "address_country_code"=>"casue t", "shipping"=>"", "payment_status"=>"", "residence_country"=>"this", "verify_sign"=>"", "first_name"=>"IS "}, "commit"=>"Create Paypal transaction"}
+Completed 500 Internal Server Error in 18ms
+
+ArgumentError (wrong number of arguments (1 for 0)):
+  app/controllers/paypal_transactions_controller.rb:57:in `create'
+  app/controllers/paypal_transactions_controller.rb:56:in `create'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started GET "/orders" for 127.0.0.1 at Wed Aug 01 15:48:11 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/orders_controller.rb:97: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (45.4ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (48.2ms)
+
+
+Started GET "/orders" for 127.0.0.1 at Wed Aug 01 15:49:00 -0400 2012
+  Processing by OrdersController#index as HTML
+  [1m[35mOrder Load (0.2ms)[0m  SELECT "orders".* FROM "orders" 
+Rendered orders/index.html.erb within layouts/application (43.4ms)
+Completed 200 OK in 58ms (Views: 55.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:00 -0400 2012
+Served asset /application.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:00 -0400 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:00 -0400 2012
+Served asset /paypal_transactions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:00 -0400 2012
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:00 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:00 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:00 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:00 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:00 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:00 -0400 2012
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:00 -0400 2012
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:00 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:00 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/orders/new" for 127.0.0.1 at Wed Aug 01 15:49:05 -0400 2012
+  Processing by OrdersController#new as HTML
+Rendered orders/_form.html.erb (9.5ms)
+Rendered orders/new.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 22ms (Views: 21.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:05 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:05 -0400 2012
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:05 -0400 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:05 -0400 2012
+Served asset /paypal_transactions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:05 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:05 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:05 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:05 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:05 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:05 -0400 2012
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:05 -0400 2012
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:05 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:05 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/orders" for 127.0.0.1 at Wed Aug 01 15:49:09 -0400 2012
+  Processing by OrdersController#create as HTML
+  Parameters: {"authenticity_token"=>"ditYwdmYHmS1tVoiVzaCJ4anAZPF40oIX3SB/jdv7RU=", "utf8"=>"✓", "order"=>{"country"=>"", "city"=>"", "state"=>"", "street_address"=>"Gyptian", "price"=>"", "customer_id"=>"", "zipcode"=>""}, "commit"=>"Create Order"}
+  [1m[36mSQL (8.0ms)[0m  [1mINSERT INTO "orders" ("city", "country", "created_at", "customer_id", "price", "state", "street_address", "updated_at", "zipcode") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["city", ""], ["country", ""], ["created_at", Wed, 01 Aug 2012 19:49:09 UTC +00:00], ["customer_id", nil], ["price", nil], ["state", ""], ["street_address", "Gyptian"], ["updated_at", Wed, 01 Aug 2012 19:49:09 UTC +00:00], ["zipcode", nil]]
+Redirected to http://localhost:3000/orders/48
+Completed 302 Found in 17ms
+
+
+Started GET "/orders/48" for 127.0.0.1 at Wed Aug 01 15:49:09 -0400 2012
+  Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"48"}
+  [1m[35mOrder Load (0.1ms)[0m  SELECT "orders".* FROM "orders" WHERE "orders"."id" = ? LIMIT 1  [["id", "48"]]
+Rendered orders/show.html.erb within layouts/application (52.9ms)
+Completed 200 OK in 66ms (Views: 64.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:09 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:09 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:09 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:09 -0400 2012
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:09 -0400 2012
+Served asset /paypal_transactions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Wed Aug 01 15:49:09 -0400 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:09 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:09 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:09 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:09 -0400 2012
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:09 -0400 2012
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:09 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Aug 01 15:49:09 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/paypal_transactions" for 127.0.0.1 at Wed Aug 01 15:50:06 -0400 2012
+  Processing by PaypalTransactionsController#create as */*
+  Parameters: {"address_zip"=>"95131", "paypal_transaction"=>{"address_zip"=>"95131"}}
+WARNING: Can't verify CSRF token authenticity
+Is Valid
+#<PaypalTransaction id: nil, address_city: nil, address_country: nil, address_country_code: nil, address_street: nil, address_state: nil, address_zip: 95131, first_name: nil, last_name: nil, payer_email: nil, payer_id: nil, contact_phone: nil, residence_country: nil, item_name: nil, item_number: nil, quantity: nil, custom: nil, memo: nil, txn_id: nil, txn_type: nil, payment_status: nil, payment_type: nil, payment_fee: nil, payment_gross: nil, payment_date: nil, mc_currency: nil, mc_fee: nil, mc_gross: nil, tax: nil, shipping: nil, verify_sign: nil, created_at: nil, updated_at: nil>
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "paypal_transactions" ("address_city", "address_country", "address_country_code", "address_state", "address_street", "address_zip", "contact_phone", "created_at", "custom", "first_name", "item_name", "item_number", "last_name", "mc_currency", "mc_fee", "mc_gross", "memo", "payer_email", "payer_id", "payment_date", "payment_fee", "payment_gross", "payment_status", "payment_type", "quantity", "residence_country", "shipping", "tax", "txn_id", "txn_type", "updated_at", "verify_sign") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address_city", nil], ["address_country", nil], ["address_country_code", nil], ["address_state", nil], ["address_street", nil], ["address_zip", 95131], ["contact_phone", nil], ["created_at", Wed, 01 Aug 2012 19:50:06 UTC +00:00], ["custom", nil], ["first_name", nil], ["item_name", nil], ["item_number", nil], ["last_name", nil], ["mc_currency", nil], ["mc_fee", nil], ["mc_gross", nil], ["memo", nil], ["payer_email", nil], ["payer_id", nil], ["payment_date", nil], ["payment_fee", nil], ["payment_gross", nil], ["payment_status", nil], ["payment_type", nil], ["quantity", nil], ["residence_country", nil], ["shipping", nil], ["tax", nil], ["txn_id", nil], ["txn_type", nil], ["updated_at", Wed, 01 Aug 2012 19:50:06 UTC +00:00], ["verify_sign", nil]]
+Completed 500 Internal Server Error in 37ms
+
+ActionView::MissingTemplate (Missing template paypal_transactions/create, application/create with {:formats=>[:html, :text, :js, :css, :ics, :csv, :xml, :rss, :atom, :yaml, :multipart_form, :url_encoded_form, :json], :handlers=>[:coffee, :builder, :erb], :locale=>[:en, :en]}. Searched in:
+  * "/Users/thinds/workspace/lj/app/views"
+):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.3ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreatePaypalTransactions (20120801193650)
+  [1m[36m (0.0ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "paypal_transactions"
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20120801193650'[0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("orders")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
