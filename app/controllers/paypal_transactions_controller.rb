@@ -20,8 +20,8 @@ class PaypalTransactionsController < ApplicationController
 
   def ipn
     @ppt = PaypalTransaction.new(params[:paypal_transaction])
-    if @ppt.paypal_validity(request.body.read)?
-      @ppt.save #ppt.save!
+    if @ppt.paypal_validity?(request.body.read)
+      @ppt.save
       logger.debug("Saved Sucessfully")
     else
       logger.debug("Is Not Valid")

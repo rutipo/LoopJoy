@@ -5231,3 +5231,326 @@ Migrating to CreatePaypalTransactions (20120801193650)
   [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
   [1m[35m (0.0ms)[0m  PRAGMA index_list("orders")
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 01 16:40:37 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 81ms (Views: 80.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at Wed Aug 01 16:40:38 -0400 2012
+Served asset /paypal_transactions.css - 200 OK (5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Aug 01 16:40:38 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Wed Aug 01 16:40:38 -0400 2012
+Served asset /home.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Wed Aug 01 16:40:38 -0400 2012
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Wed Aug 01 16:40:38 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Wed Aug 01 16:40:38 -0400 2012
+Served asset /orders.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at Wed Aug 01 16:40:38 -0400 2012
+Served asset /paypal_transactions.js - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Aug 01 16:40:38 -0400 2012
+Served asset /jquery.js - 304 Not Modified (10ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Aug 01 16:40:38 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Wed Aug 01 16:40:38 -0400 2012
+Served asset /home.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Wed Aug 01 16:40:38 -0400 2012
+Served asset /orders.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Wed Aug 01 16:40:38 -0400 2012
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Aug 01 16:40:38 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/webcoming.png" for 127.0.0.1 at Wed Aug 01 16:40:38 -0400 2012
+Served asset /webcoming.png - 304 Not Modified (1ms)
+
+
+Started GET "/" for 127.0.0.1 at Wed Aug 01 16:40:44 -0400 2012
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 11ms (Views: 11.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at Wed Aug 01 16:40:44 -0400 2012
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at Wed Aug 01 16:40:44 -0400 2012
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at Wed Aug 01 16:40:44 -0400 2012
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at Wed Aug 01 16:40:44 -0400 2012
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at Wed Aug 01 16:40:44 -0400 2012
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at Wed Aug 01 16:40:44 -0400 2012
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at Wed Aug 01 16:40:44 -0400 2012
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at Wed Aug 01 16:40:44 -0400 2012
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at Wed Aug 01 16:40:44 -0400 2012
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at Wed Aug 01 16:40:44 -0400 2012
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at Wed Aug 01 16:40:44 -0400 2012
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/webcoming.png" for 127.0.0.1 at Wed Aug 01 16:40:44 -0400 2012
+Served asset /webcoming.png - 304 Not Modified (0ms)
+
+
+Started GET "/ipn" for 127.0.0.1 at Wed Aug 01 16:40:48 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/paypal_transactions_controller.rb:24: syntax error, unexpected '\n'
+/Users/thinds/workspace/lj/app/controllers/paypal_transactions_controller.rb:30: syntax error, unexpected kEND, expecting $end):
+  
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.0ms)
+
+
+Started GET "/ipn" for 127.0.0.1 at Wed Aug 01 16:41:39 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/models/paypal_transaction.rb:6: syntax error, unexpected '?'):
+  app/controllers/paypal_transactions_controller.rb:1
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/ipn" for 127.0.0.1 at Wed Aug 01 16:41:55 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/models/paypal_transaction.rb:6: syntax error, unexpected '?'):
+  app/controllers/paypal_transactions_controller.rb:1
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.1ms)
+
+
+Started GET "/ipn" for 127.0.0.1 at Wed Aug 01 16:41:56 -0400 2012
+
+SyntaxError (/Users/thinds/workspace/lj/app/models/paypal_transaction.rb:6: syntax error, unexpected '?'):
+  app/controllers/paypal_transactions_controller.rb:1
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started GET "/ipn" for 127.0.0.1 at Wed Aug 01 16:42:06 -0400 2012
+  Processing by PaypalTransactionsController#ipn as HTML
+Completed 500 Internal Server Error in 0ms
+
+ActiveRecord::StatementInvalid (Could not find table 'paypal_transactions'):
+  app/controllers/paypal_transactions_controller.rb:22:in `new'
+  app/controllers/paypal_transactions_controller.rb:22:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120711025613)
+Migrating to CreateOrders (20120723180025)
+Migrating to CreatePaypalTransactions (20120801193650)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "paypal_transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "address_city" varchar(255), "address_country" varchar(255), "address_country_code" varchar(255), "address_street" varchar(255), "address_state" varchar(255), "address_zip" integer, "first_name" varchar(255), "last_name" varchar(255), "payer_email" varchar(255), "payer_id" varchar(255), "contact_phone" varchar(255), "residence_country" varchar(255), "item_name" varchar(255), "item_number" integer, "quantity" integer, "custom" varchar(255), "memo" varchar(255), "txn_id" varchar(255), "txn_type" varchar(255), "payment_status" varchar(255), "payment_type" varchar(255), "payment_fee" decimal(8,2), "payment_gross" decimal(8,2), "payment_date" datetime, "mc_currency" varchar(255), "mc_fee" decimal(8,2), "mc_gross" decimal(8,2), "tax" decimal(8,2), "shipping" decimal(8,2), "verify_sign" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20120801193650')
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("orders")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("paypal_transactions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started GET "/ipn" for 127.0.0.1 at Wed Aug 01 16:42:31 -0400 2012
+  Processing by PaypalTransactionsController#ipn as HTML
+Completed 500 Internal Server Error in 1ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.size):
+  app/models/paypal_transaction.rb:15:in `paypal_validity?'
+  app/controllers/paypal_transactions_controller.rb:23:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 16:43:33 -0400 2012
+  Processing by PaypalTransactionsController#ipn as */*
+  Parameters: {"address_zip"=>"95131", "paypal_transaction"=>{"address_zip"=>"95131"}}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 18ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.size):
+  app/models/paypal_transaction.rb:15:in `paypal_validity?'
+  app/controllers/paypal_transactions_controller.rb:23:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.4ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 16:44:04 -0400 2012
+  Processing by PaypalTransactionsController#ipn as */*
+  Parameters: {"address_zip"=>"95131", "paypal_transaction"=>{"address_zip"=>"95131"}}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 17ms
+
+NameError (undefined local variable or method `wrap_parameters' for #<PaypalTransactionsController:0x106f55b98>):
+  app/controllers/paypal_transactions_controller.rb:22:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (20.6ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 16:44:47 -0400 2012
+  Processing by PaypalTransactionsController#ipn as */*
+  Parameters: {"address_zip"=>"95131", "paypal_transaction"=>{"address_zip"=>"95131"}}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 54ms
+
+NoMethodError (undefined method `wrap_parameters' for #<PaypalTransactionsController:0x106ba54d0>):
+  app/controllers/paypal_transactions_controller.rb:22:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (55.2ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 16:49:05 -0400 2012
+  Processing by PaypalTransactionsController#ipn as */*
+  Parameters: {"address_zip"=>"95131", "paypal_transaction"=>{"address_zip"=>"95131"}}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 59ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.size):
+  app/models/paypal_transaction.rb:15:in `paypal_validity?'
+  app/controllers/paypal_transactions_controller.rb:23:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (5.2ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 16:49:29 -0400 2012
+  Processing by PaypalTransactionsController#ipn as */*
+  Parameters: {"address_zip"=>"95131", "paypal_transaction"=>{"address_zip"=>"95131"}}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 17ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.size):
+  app/models/paypal_transaction.rb:15:in `paypal_validity?'
+  app/controllers/paypal_transactions_controller.rb:23:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 16:50:06 -0400 2012
+  Processing by PaypalTransactionsController#ipn as */*
+  Parameters: {"paypal_transaction"=>{"address_zip"=>"95131"}, "address_zip"=>"95131"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 61ms
+
+NoMethodError (You have a nil object when you didn't expect it!
+You might have expected an instance of Array.
+The error occurred while evaluating nil.size):
+  app/models/paypal_transaction.rb:15:in `paypal_validity?'
+  app/controllers/paypal_transactions_controller.rb:23:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.8ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 16:52:03 -0400 2012
+  Processing by PaypalTransactionsController#ipn as */*
+  Parameters: {"paypal_transaction"=>{"address_zip"=>"95131"}, "address_zip"=>"95131"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 18ms
+
+NameError (undefined local variable or method `raw' for #<PaypalTransaction:0x1106be818>):
+  app/models/paypal_transaction.rb:15:in `paypal_validity?'
+  app/controllers/paypal_transactions_controller.rb:23:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.3ms)
+
+
+Started POST "/ipn" for 127.0.0.1 at Wed Aug 01 16:52:20 -0400 2012
+  Processing by PaypalTransactionsController#ipn as */*
+  Parameters: {"paypal_transaction"=>{"address_zip"=>"95131"}, "address_zip"=>"95131"}
+WARNING: Can't verify CSRF token authenticity
+Completed 500 Internal Server Error in 1126ms
+
+StandardError (Invalid IPN: INVALID):
+  app/models/paypal_transaction.rb:17:in `paypal_validity?'
+  app/controllers/paypal_transactions_controller.rb:23:in `ipn'
+
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Library/Ruby/Gems/1.8/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (46.5ms)
