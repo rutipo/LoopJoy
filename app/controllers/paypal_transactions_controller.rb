@@ -23,11 +23,16 @@ class PaypalTransactionsController < ApplicationController
     if @ppt.paypal_validity?(request.body.read)
       @ppt.save
       logger.debug("Saved Sucessfully")
+      TransactionMailer.purchase_notification(@ppt).deliver
+      #logic to send an email here
+      
     else
       logger.debug("Is Not Valid")
     end
   end
 end
+
+
 
 #Original scaffolding 
 

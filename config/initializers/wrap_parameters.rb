@@ -13,3 +13,6 @@ ActiveSupport.on_load(:active_record) do
   self.include_root_in_json = false
 end
 
+ActiveSupport.on_load(:paypal_transactions_controller) do
+  wrap_parameters :paypal_transaction
+end

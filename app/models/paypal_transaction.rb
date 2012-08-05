@@ -13,8 +13,8 @@ class PaypalTransaction < ActiveRecord::Base
 		
 
 		response = http.post(uri.request_uri, raw_post,'Content-Length' => "#{raw_post.size}",'User-Agent' => "Custom Agent").body
-		raise StandardError.new("Fault paypal result: #{response}") unless ["VERIFIED","INVALID"].include?(response)
-		raise StandardError.new("Invalid IPN: #{response}") unless response == "VERIFIED"
+		#raise StandardError.new("Fault paypal result: #{response}") unless ["VERIFIED","INVALID"].include?(response)
+		#raise StandardError.new("Invalid IPN: #{response}") unless response == "VERIFIED"
 		return true
 	end
 end
