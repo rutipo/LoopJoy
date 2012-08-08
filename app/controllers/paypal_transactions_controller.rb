@@ -24,8 +24,7 @@ class PaypalTransactionsController < ApplicationController
       @ppt.save
       logger.debug("Saved Sucessfully")
       TransactionMailer.purchase_notification(@ppt).deliver
-      #logic to send an email here
-      
+      #logic to send an email here 
     else
       logger.debug("Is Not Valid")
     end

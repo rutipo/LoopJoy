@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  type: 1
+  desc: MyString
+  options: MyString
+  display_text: MyString
+  price: 9.99
+  sku: MyString
+  picture: 
+  developer: 
+
+two:
+  name: MyString
+  type: 1
+  desc: MyString
+  options: MyString
+  display_text: MyString
+  price: 9.99
+  sku: MyString
+  picture: 
+  developer: 

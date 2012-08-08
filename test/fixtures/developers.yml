@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  email: MyString
+  apiKey: MyString
+  paypal_email: MyString
+  merchant_name: MyString
+
+two:
+  name: MyString
+  email: MyString
+  apiKey: MyString
+  paypal_email: MyString
+  merchant_name: MyString

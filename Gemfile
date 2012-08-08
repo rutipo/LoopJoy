@@ -31,3 +31,7 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug'
 
+#Paperclip for file uploads
+gem "paperclip", "~> 3.0"
+
+gem "simple_form"

@@ -1,0 +1,30 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @developer.name %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @developer.email %>
+</p>
+
+<p>
+  <b>Apikey:</b>
+  <%= @developer.apiKey %>
+</p>
+
+<p>
+  <b>Paypal email:</b>
+  <%= @developer.paypal_email %>
+</p>
+
+<p>
+  <b>Merchant name:</b>
+  <%= @developer.merchant_name %>
+</p>
+
+
+<%= link_to 'Edit', edit_developer_path(@developer) %> |
+<%= link_to 'Back', developers_path %>

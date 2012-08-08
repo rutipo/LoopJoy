@@ -1,6 +1,10 @@
 Lj::Application.routes.draw do
 
 
+  resources :items
+
+  resources :developers
+
   resources :paypal_transactions, :only => [:index, :show]
   match 'ipn' => "paypal_transactions#ipn", :as => :ipn
   
