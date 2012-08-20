@@ -5,7 +5,7 @@ class Item < ActiveRecord::Base
 
   def set_image_url
   	if(self.image_url.blank?)
-  	image_path = "http://localhost:3000#{self.image.url}"
+  	image_path = "http://50.16.220.58#{self.image.url}"
   	self.update_attributes(:image_url => image_path ||= "none")
   	end
   end

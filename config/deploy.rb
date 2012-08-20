@@ -5,7 +5,7 @@ set :deploy_to, "/home/thinds/apps/lj"
 set :scm, :git
 set :user, "thinds"
 
-set :location, "23.21.115.125"
+set :location, "50.16.220.58"
 
 ssh_options[:forward_agent] = true
 
