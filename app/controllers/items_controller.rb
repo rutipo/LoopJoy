@@ -12,7 +12,8 @@ class ItemsController < ApplicationController
   end
 
   def dev_init
-    @developer = Developer.find(params[:dev_id])
+    @developer = Developer.where(:apiKey => params[:api_key]).first
+    logger.debug(@developer.inspect)
     @items = @developer.items
 
     respond_to do |format|

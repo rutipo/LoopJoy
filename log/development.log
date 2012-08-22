@@ -19462,3 +19462,465 @@ WARNING: Can't verify CSRF token authenticity
   [1m[36mDeveloper Load (0.2ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."id" = ? LIMIT 1[0m  [["id", "3"]]
   [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items" WHERE "items"."developer_id" = 3
 Completed 200 OK in 77ms (Views: 41.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 06:07:33 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 69ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /developers.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /items.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /orders.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /paypal_transactions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /scaffolds.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /jquery.js - 304 Not Modified (6ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /users.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /developers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /items.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /orders.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:34 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/developers" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+  Processing by DevelopersController#index as HTML
+  [1m[36mDeveloper Load (0.1ms)[0m  [1mSELECT "developers".* FROM "developers" [0m
+Rendered developers/index.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /developers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /paypal_transactions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:36 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/developers/4" for 127.0.0.1 at 2012-08-22 06:07:48 -0400
+  Processing by DevelopersController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[35mDeveloper Load (0.2ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."id" = ? LIMIT 1  [["id", "4"]]
+Rendered developers/show.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /developers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /paypal_transactions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:49 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/developers/3" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+  Processing by DevelopersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mDeveloper Load (0.1ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Rendered developers/show.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 16ms (Views: 14.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /paypal_transactions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /developers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-22 06:07:52 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/developer/items" for 127.0.0.1 at 2012-08-22 06:08:03 -0400
+  Processing by ItemsController#dev_init as */*
+  Parameters: {"{\"api_key\":\"xNTbFpbbqekNAVYmQVj\",\"envType\":\"(null)\"}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mDeveloper Load (0.1ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."apiKey" IS NULL LIMIT 1
+Completed 500 Internal Server Error in 15ms
+
+NoMethodError (undefined method `items' for nil:NilClass):
+  app/controllers/items_controller.rb:16:in `dev_init'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started POST "/developer/items" for 127.0.0.1 at 2012-08-22 06:09:08 -0400
+  Processing by ItemsController#dev_init as */*
+  Parameters: {"{\"api_key\":\"xNTbFpbbqekNAVYmQVj\",\"envType\":\"(null)\"}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mDeveloper Load (0.1ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."apiKey" IS NULL[0m
+Completed 500 Internal Server Error in 8ms
+
+NoMethodError (undefined method `items' for []:ActiveRecord::Relation):
+  app/controllers/items_controller.rb:16:in `dev_init'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.3ms)
+
+
+Started POST "/developer/items" for 127.0.0.1 at 2012-08-22 06:09:38 -0400
+  Processing by ItemsController#dev_init as */*
+  Parameters: {"api_key"=>"xNTbFpbbqekNAVYmQVj", "envType"=>"(null)", "item"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mDeveloper Load (0.1ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."apiKey" = 'xNTbFpbbqekNAVYmQVj'
+Completed 500 Internal Server Error in 38ms
+
+NoMethodError (undefined method `items' for #<ActiveRecord::Relation:0x007fd6e39ff738>):
+  app/controllers/items_controller.rb:16:in `dev_init'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started POST "/developer/items" for 127.0.0.1 at 2012-08-22 06:13:56 -0400
+  Processing by ItemsController#dev_init as */*
+  Parameters: {"api_key"=>"xNTbFpbbqekNAVYmQVj", "envType"=>"(null)", "item"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mDeveloper Load (0.1ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."apiKey" = 'xNTbFpbbqekNAVYmQVj'[0m
+Completed 500 Internal Server Error in 40ms
+
+NoMethodError (undefined method `items' for #<ActiveRecord::Relation:0x007fd6e9b92338>):
+  app/controllers/items_controller.rb:16:in `dev_init'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started POST "/developer/items" for 127.0.0.1 at 2012-08-22 06:14:30 -0400
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/items_controller.rb:21: syntax error, unexpected keyword_end, expecting '}'
+/Users/thinds/workspace/lj/app/controllers/items_controller.rb:96: syntax error, unexpected keyword_end, expecting '}'):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started POST "/developer/items.json" for 127.0.0.1 at 2012-08-22 06:14:35 -0400
+
+SyntaxError (/Users/thinds/workspace/lj/app/controllers/items_controller.rb:21: syntax error, unexpected keyword_end, expecting '}'
+/Users/thinds/workspace/lj/app/controllers/items_controller.rb:96: syntax error, unexpected keyword_end, expecting '}'):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.4ms)
+
+
+Started POST "/developer/items.json" for 127.0.0.1 at 2012-08-22 06:14:58 -0400
+  Processing by ItemsController#dev_init as JSON
+  Parameters: {"api_key"=>"xNTbFpbbqekNAVYmQVj", "envType"=>"(null)", "item"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mDeveloper Load (0.1ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."apiKey" = 'xNTbFpbbqekNAVYmQVj'
+Completed 500 Internal Server Error in 38ms
+
+NoMethodError (undefined method `merchant_name' for #<ActiveRecord::Relation:0x007fd6e3945fb8>):
+  app/controllers/items_controller.rb:20:in `block (2 levels) in dev_init'
+  app/controllers/items_controller.rb:18:in `dev_init'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started POST "/developer/items.json" for 127.0.0.1 at 2012-08-22 06:16:02 -0400
+  Processing by ItemsController#dev_init as JSON
+  Parameters: {"api_key"=>"xNTbFpbbqekNAVYmQVj", "envType"=>"(null)", "item"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mDeveloper Load (0.1ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."apiKey" = 'xNTbFpbbqekNAVYmQVj'[0m
+[#<Developer id: 3, name: "Ruti Polachek", email: "rutipo@gmail.com", apiKey: "xNTbFpbbqekNAVYmQVj", paypal_email: "asdf@paypal.com", merchant_name: "Loopjoy", created_at: "2012-08-08 13:46:13", updated_at: "2012-08-08 13:46:13">]
+Completed 500 Internal Server Error in 47ms
+
+ActionView::MissingTemplate (Missing template items/dev_init, application/dev_init with {:handlers=>[:erb, :builder, :coffee], :formats=>[:json], :locale=>[:en, :en]}. Searched in:
+  * "/Users/thinds/workspace/lj/app/views"
+):
+  app/controllers/items_controller.rb:21:in `block (2 levels) in dev_init'
+  app/controllers/items_controller.rb:19:in `dev_init'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/missing_template.erb within rescues/layout (0.4ms)
+
+
+Started POST "/developer/items.json" for 127.0.0.1 at 2012-08-22 06:16:41 -0400
+  Processing by ItemsController#dev_init as JSON
+  Parameters: {"api_key"=>"xNTbFpbbqekNAVYmQVj", "envType"=>"(null)", "item"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mDeveloper Load (0.1ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."apiKey" = 'xNTbFpbbqekNAVYmQVj'
+[#<Developer id: 3, name: "Ruti Polachek", email: "rutipo@gmail.com", apiKey: "xNTbFpbbqekNAVYmQVj", paypal_email: "asdf@paypal.com", merchant_name: "Loopjoy", created_at: "2012-08-08 13:46:13", updated_at: "2012-08-08 13:46:13">]
+Completed 200 OK in 15ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/developer/items.json" for 127.0.0.1 at 2012-08-22 06:17:18 -0400
+  Processing by ItemsController#dev_init as JSON
+  Parameters: {"api_key"=>"xNTbFpbbqekNAVYmQVj", "envType"=>"(null)", "item"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mDeveloper Load (0.1ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."apiKey" = 'xNTbFpbbqekNAVYmQVj' LIMIT 1[0m
+#<Developer id: 3, name: "Ruti Polachek", email: "rutipo@gmail.com", apiKey: "xNTbFpbbqekNAVYmQVj", paypal_email: "asdf@paypal.com", merchant_name: "Loopjoy", created_at: "2012-08-08 13:46:13", updated_at: "2012-08-08 13:46:13">
+Completed 200 OK in 24ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/developer/items.json" for 127.0.0.1 at 2012-08-22 06:17:31 -0400
+  Processing by ItemsController#dev_init as JSON
+  Parameters: {"api_key"=>"xNTbFpbbqekNAVYmQVj", "envType"=>"(null)", "item"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mDeveloper Load (0.1ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."apiKey" = 'xNTbFpbbqekNAVYmQVj' LIMIT 1
+#<Developer id: 3, name: "Ruti Polachek", email: "rutipo@gmail.com", apiKey: "xNTbFpbbqekNAVYmQVj", paypal_email: "asdf@paypal.com", merchant_name: "Loopjoy", created_at: "2012-08-08 13:46:13", updated_at: "2012-08-08 13:46:13">
+Completed 200 OK in 46ms (Views: 0.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/developer/items.json" for 127.0.0.1 at 2012-08-22 06:18:03 -0400
+  Processing by ItemsController#dev_init as JSON
+  Parameters: {"api_key"=>"xNTbFpbbqekNAVYmQVj", "envType"=>"(null)", "item"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mDeveloper Load (0.1ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."apiKey" = 'xNTbFpbbqekNAVYmQVj' LIMIT 1[0m
+#<Developer id: 3, name: "Ruti Polachek", email: "rutipo@gmail.com", apiKey: "xNTbFpbbqekNAVYmQVj", paypal_email: "asdf@paypal.com", merchant_name: "Loopjoy", created_at: "2012-08-08 13:46:13", updated_at: "2012-08-08 13:46:13">
+Completed 200 OK in 38ms (Views: 0.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/developer/items.json" for 127.0.0.1 at 2012-08-22 06:18:23 -0400
+  Processing by ItemsController#dev_init as JSON
+  Parameters: {"api_key"=>"xNTbFpbbqekNAVYmQVj", "envType"=>"(null)", "item"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mDeveloper Load (0.1ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."apiKey" = 'xNTbFpbbqekNAVYmQVj' LIMIT 1
+#<Developer id: 3, name: "Ruti Polachek", email: "rutipo@gmail.com", apiKey: "xNTbFpbbqekNAVYmQVj", paypal_email: "asdf@paypal.com", merchant_name: "Loopjoy", created_at: "2012-08-08 13:46:13", updated_at: "2012-08-08 13:46:13">
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."developer_id" = 3[0m
+Completed 200 OK in 59ms (Views: 43.8ms | ActiveRecord: 1.2ms)
