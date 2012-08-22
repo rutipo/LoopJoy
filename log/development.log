@@ -18961,3 +18961,504 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-10 16:56:38 -0400
 Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2012-08-22 05:37:26 -0400
+  Processing by HomeController#index as */*
+  Parameters: {"{\"dev_id\":\"18\",\"envType\":\"(null)\"}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 83ms (Views: 82.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/developer/items" for 127.0.0.1 at 2012-08-22 05:37:51 -0400
+  Processing by ItemsController#dev_init as */*
+  Parameters: {"{\"dev_id\":\"18\",\"envType\":\"(null)\"}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Developer without an ID):
+  app/controllers/items_controller.rb:15:in `dev_init'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.4ms)
+
+
+Started POST "/developer/items" for 127.0.0.1 at 2012-08-22 05:38:52 -0400
+  Processing by ItemsController#dev_init as */*
+  Parameters: {"{\"dev_id\":\"18\",\"envType\":\"(null)\"}"=>nil}
+WARNING: Can't verify CSRF token authenticity
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Developer without an ID):
+  app/controllers/items_controller.rb:15:in `dev_init'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started POST "/developer/items" for 127.0.0.1 at 2012-08-22 05:39:51 -0400
+  Processing by ItemsController#dev_init as */*
+  Parameters: {"dev_id"=>"18", "envType"=>"(null)", "item"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mDeveloper Load (0.7ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."id" = ? LIMIT 1[0m  [["id", "18"]]
+Completed 404 Not Found in 30ms
+
+ActiveRecord::RecordNotFound (Couldn't find Developer with id=18):
+  app/controllers/items_controller.rb:15:in `dev_init'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.3ms)
+
+
+Started POST "/developer/items" for 127.0.0.1 at 2012-08-22 05:40:06 -0400
+  Processing by ItemsController#dev_init as */*
+  Parameters: {"dev_id"=>"18", "envType"=>"(null)", "item"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mDeveloper Load (0.2ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."id" = ? LIMIT 1  [["id", "18"]]
+Completed 404 Not Found in 6ms
+
+ActiveRecord::RecordNotFound (Couldn't find Developer with id=18):
+  app/controllers/items_controller.rb:15:in `dev_init'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /items.css - 200 OK (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /home.css - 200 OK (3ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /paypal_transactions.css - 200 OK (1ms)
+
+
+Started GET "/assets/developers.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /developers.css - 200 OK (2ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /orders.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /users.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /jquery.js - 200 OK (5ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /developers.js - 200 OK (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /home.js - 200 OK (2ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /items.js - 200 OK (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /orders.js - 200 OK (2ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /paypal_transactions.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /users.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:43 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+  Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items" [0m
+  [1m[35mDeveloper Load (0.1ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."id" = 3 LIMIT 1
+{:items=>"[{\"created_at\":\"2012-08-08T13:47:23Z\",\"desc\":\"Great LoopJoy Shirt\",\"developer_id\":3,\"display_text\":\"Buy this water bottle!\",\"id\":15,\"image_content_type\":\"image/png\",\"image_file_name\":\"ipad_water_bottle_white.png\",\"image_file_size\":18446,\"image_updated_at\":\"2012-08-08T13:47:22Z\",\"image_url\":\"http://localhost:3000/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642\",\"name\":\"LoopJoy Shirt\",\"options\":\"None\",\"price\":\"23.0\",\"sku\":\"1234ASDF\",\"updated_at\":\"2012-08-08T13:47:23Z\"},{\"created_at\":\"2012-08-10T20:56:14Z\",\"desc\":\"This is a great backpack\",\"developer_id\":4,\"display_text\":\"\",\"id\":16,\"image_content_type\":null,\"image_file_name\":null,\"image_file_size\":null,\"image_updated_at\":null,\"image_url\":\"http://localhost:3000/images/original/missing.png\",\"name\":\"Chiptole backpack\",\"options\":\"\",\"price\":\"42.0\",\"sku\":\"fomdaf\",\"updated_at\":\"2012-08-10T20:56:14Z\"}]"}
+  [1m[36mDeveloper Load (0.2ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."id" = 4 LIMIT 1[0m
+Rendered items/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 78ms (Views: 12.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /paypal_transactions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /developers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:47 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/developers" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+  Processing by DevelopersController#index as HTML
+  [1m[35mDeveloper Load (0.1ms)[0m  SELECT "developers".* FROM "developers" 
+Rendered developers/index.html.erb within layouts/application (35.9ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/developers.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /developers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /paypal_transactions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:54 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/developers/2" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+  Processing by DevelopersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mDeveloper Load (0.1ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."id" = ? LIMIT 1[0m  [["id", "2"]]
+Rendered developers/show.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 18ms (Views: 16.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /developers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /paypal_transactions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-22 05:40:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/developers/3" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+  Processing by DevelopersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mDeveloper Load (0.1ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."id" = ? LIMIT 1  [["id", "3"]]
+Rendered developers/show.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /paypal_transactions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.css?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /developers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-22 05:41:00 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/developer/items.json" for 127.0.0.1 at 2012-08-22 05:41:17 -0400
+  Processing by ItemsController#dev_init as JSON
+  Parameters: {"dev_id"=>"3", "envType"=>"(null)", "item"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mDeveloper Load (0.1ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."id" = ? LIMIT 1[0m  [["id", "3"]]
+Completed 500 Internal Server Error in 12ms
+
+NoMethodError (undefined method `items' for #<Developer:0x007fdd8b2cbb70>):
+  app/controllers/items_controller.rb:16:in `dev_init'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.4ms)
+
+
+Started POST "/developer/items.json" for 127.0.0.1 at 2012-08-22 05:42:15 -0400
+  Processing by ItemsController#dev_init as JSON
+  Parameters: {"dev_id"=>"3", "envType"=>"(null)", "item"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mDeveloper Load (0.2ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."id" = ? LIMIT 1[0m  [["id", "3"]]
+  [1m[35mItem Load (0.6ms)[0m  SELECT "items".* FROM "items" WHERE "items"."developer_id" = 3
+Completed 200 OK in 77ms (Views: 41.7ms | ActiveRecord: 1.4ms)

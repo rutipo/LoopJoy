@@ -1,4 +1,5 @@
 class Developer < ActiveRecord::Base
+	has_many :items
 	before_save :set_api_key
 
 	def set_api_key

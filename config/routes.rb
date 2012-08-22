@@ -16,7 +16,7 @@ Lj::Application.routes.draw do
      end
   end
 
-  
+  match 'developer/items' => 'items#dev_init', :as => :developer_init, :via => :post
 
   root :to => "home#index"
 

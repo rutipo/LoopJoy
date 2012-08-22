@@ -4,15 +4,23 @@ class ItemsController < ApplicationController
   def index
     @items = Item.all
     @developer = @items.first.developer
-    logger.debug("before")
     logger.debug(:items => @items.to_json)
-    logger.debug("after")
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render :json => {:merchantName => @developer.name, :items => @items}}
+      format.json { render :json => {:merchantName => @developer.merchant_name, :items => @items}}
     end
   end
 
+  def dev_init
+    @developer = Developer.find(params[:dev_id])
+    @items = @developer.items
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render :json => {:merchantName => @developer.merchant_name, :items => @items}}
+  end
+
+  end
   # GET /items/1
   # GET /items/1.json
   def show
