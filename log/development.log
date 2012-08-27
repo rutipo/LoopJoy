@@ -19924,3 +19924,13 @@ WARNING: Can't verify CSRF token authenticity
 #<Developer id: 3, name: "Ruti Polachek", email: "rutipo@gmail.com", apiKey: "xNTbFpbbqekNAVYmQVj", paypal_email: "asdf@paypal.com", merchant_name: "Loopjoy", created_at: "2012-08-08 13:46:13", updated_at: "2012-08-08 13:46:13">
   [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."developer_id" = 3[0m
 Completed 200 OK in 59ms (Views: 43.8ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/developer/items.json" for 127.0.0.1 at 2012-08-22 06:25:14 -0400
+  Processing by ItemsController#dev_init as JSON
+  Parameters: {"api_key"=>"xNTbFpbbqekNAVYmQVj", "envType"=>"(null)", "item"=>{}}
+WARNING: Can't verify CSRF token authenticity
+  [1m[35mDeveloper Load (0.3ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."apiKey" = 'xNTbFpbbqekNAVYmQVj' LIMIT 1
+#<Developer id: 3, name: "Ruti Polachek", email: "rutipo@gmail.com", apiKey: "xNTbFpbbqekNAVYmQVj", paypal_email: "asdf@paypal.com", merchant_name: "Loopjoy", created_at: "2012-08-08 13:46:13", updated_at: "2012-08-08 13:46:13">
+  [1m[36mItem Load (1.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."developer_id" = 3[0m
+Completed 200 OK in 54ms (Views: 13.9ms | ActiveRecord: 1.9ms)
