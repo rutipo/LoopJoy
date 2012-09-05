@@ -1,9 +1,8 @@
-set :stages, %w(production development)
+set :stages, %w(development production)
 set :default_stage, "development"
 require 'capistrano/ext/multistage'
 
 set :user, "thinds"
-set :location, "loopjoy.com"
 set :application, "lj"
 set :deploy_to, "/home/thinds/apps/lj"
 
@@ -14,10 +13,6 @@ ssh_options[:forward_agent] = true
 
 set :branch,"master"
 set :deploy_via, :remote_cache
-
-role :web, location
-role :app, location
-role :db,  location, :primary => true
 
 #To stop ugly error messages in assets
 set :normalize_asset_timestamps, false 
