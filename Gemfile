@@ -35,3 +35,5 @@ gem 'jquery-rails'
 gem "paperclip", "~> 3.0"
 
 gem "simple_form"
+#Lets add thin here as well
+gem "thin"

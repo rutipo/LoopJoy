@@ -19934,3 +19934,895 @@ WARNING: Can't verify CSRF token authenticity
 #<Developer id: 3, name: "Ruti Polachek", email: "rutipo@gmail.com", apiKey: "xNTbFpbbqekNAVYmQVj", paypal_email: "asdf@paypal.com", merchant_name: "Loopjoy", created_at: "2012-08-08 13:46:13", updated_at: "2012-08-08 13:46:13">
   [1m[36mItem Load (1.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."developer_id" = 3[0m
 Completed 200 OK in 54ms (Views: 13.9ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2012-08-28 17:06:16 -0400
+  Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" [0m
+  [1m[35mDeveloper Load (0.5ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."id" = 3 LIMIT 1
+Completed 500 Internal Server Error in 57ms
+
+NoMethodError (undefined method `macro' for nil:NilClass):
+  app/models/item.rb:14:in `as_json'
+  app/controllers/items_controller.rb:7:in `index'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.6ms)
+
+
+Started GET "/items/23.json" for 127.0.0.1 at 2012-08-28 17:06:21 -0400
+  Processing by ItemsController#show as JSON
+  Parameters: {"id"=>"23"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "23"]]
+Completed 404 Not Found in 3ms
+
+ActiveRecord::RecordNotFound (Couldn't find Item with id=23):
+  app/controllers/items_controller.rb:28:in `show'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started GET "/items/2.json" for 127.0.0.1 at 2012-08-28 17:06:25 -0400
+  Processing by ItemsController#show as JSON
+  Parameters: {"id"=>"2"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "2"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Item with id=2):
+  app/controllers/items_controller.rb:28:in `show'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (26.4ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2012-08-28 17:06:27 -0400
+  Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" [0m
+  [1m[35mDeveloper Load (0.1ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."id" = 3 LIMIT 1
+Completed 500 Internal Server Error in 23ms
+
+NoMethodError (undefined method `macro' for nil:NilClass):
+  app/models/item.rb:14:in `as_json'
+  app/controllers/items_controller.rb:7:in `index'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2012-08-28 17:07:30 -0400
+  Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" [0m
+  [1m[35mDeveloper Load (0.1ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."id" = 3 LIMIT 1
+Completed 500 Internal Server Error in 22ms
+
+NoMethodError (undefined method `macro' for nil:NilClass):
+  app/models/item.rb:14:in `as_json'
+  app/controllers/items_controller.rb:7:in `index'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 50ms (Views: 49.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/developers.css?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /developers.css - 200 OK (2ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /home.css - 200 OK (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /users.css - 200 OK (4ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /items.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /orders.css - 200 OK (1ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /paypal_transactions.css - 200 OK (1ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /developers.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /orders.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /items.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /jquery.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /users.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:37 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2012-08-28 17:10:39 -0400
+  Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" [0m
+  [1m[35mDeveloper Load (0.1ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."id" = 3 LIMIT 1
+{:items=>"[{\"created_at\":\"2012-08-08T13:47:23Z\",\"desc\":\"Great LoopJoy Shirt\",\"developer_id\":3,\"display_text\":\"Buy this water bottle!\",\"id\":15,\"image_content_type\":\"image/png\",\"image_file_name\":\"ipad_water_bottle_white.png\",\"image_file_size\":18446,\"image_updated_at\":\"2012-08-08T13:47:22Z\",\"image_url\":\"http://localhost:3000/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642\",\"name\":\"LoopJoy Shirt\",\"options\":\"None\",\"price\":\"23.0\",\"sku\":\"1234ASDF\",\"updated_at\":\"2012-08-08T13:47:23Z\",\"image_urls\":\"/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642\"},{\"created_at\":\"2012-08-10T20:56:14Z\",\"desc\":\"This is a great backpack\",\"developer_id\":4,\"display_text\":\"\",\"id\":16,\"image_content_type\":null,\"image_file_name\":null,\"image_file_size\":null,\"image_updated_at\":null,\"image_url\":\"http://localhost:3000/images/original/missing.png\",\"name\":\"Chiptole backpack\",\"options\":\"\",\"price\":\"42.0\",\"sku\":\"fomdaf\",\"updated_at\":\"2012-08-10T20:56:14Z\",\"image_urls\":\"/images/original/missing.png\"}]"}
+  [1m[36mDeveloper Load (0.2ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."id" = 4 LIMIT 1[0m
+Rendered items/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 65ms (Views: 12.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:40 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:40 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:40 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:40 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:40 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:40 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:40 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:40 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-28 17:10:40 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/items/1.json" for 127.0.0.1 at 2012-08-28 17:10:56 -0400
+  Processing by ItemsController#show as JSON
+  Parameters: {"id"=>"1"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "1"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Item with id=1):
+  app/controllers/items_controller.rb:28:in `show'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started GET "/items/15" for 127.0.0.1 at 2012-08-28 17:11:00 -0400
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "15"]]
+before
+{"created_at":"2012-08-08T13:47:23Z","desc":"Great LoopJoy Shirt","developer_id":3,"display_text":"Buy this water bottle!","id":15,"image_content_type":"image/png","image_file_name":"ipad_water_bottle_white.png","image_file_size":18446,"image_updated_at":"2012-08-08T13:47:22Z","image_url":"http://localhost:3000/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642","name":"LoopJoy Shirt","options":"None","price":"23.0","sku":"1234ASDF","updated_at":"2012-08-08T13:47:23Z","image_urls":"/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642"}
+after
+  [1m[35mDeveloper Load (0.2ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."id" = 3 LIMIT 1
+Rendered items/show.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 58ms (Views: 42.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:00 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:00 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:00 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:00 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:00 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:00 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:00 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:00 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:00 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/items/15.json" for 127.0.0.1 at 2012-08-28 17:11:03 -0400
+  Processing by ItemsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "15"]]
+before
+{"created_at":"2012-08-08T13:47:23Z","desc":"Great LoopJoy Shirt","developer_id":3,"display_text":"Buy this water bottle!","id":15,"image_content_type":"image/png","image_file_name":"ipad_water_bottle_white.png","image_file_size":18446,"image_updated_at":"2012-08-08T13:47:22Z","image_url":"http://localhost:3000/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642","name":"LoopJoy Shirt","options":"None","price":"23.0","sku":"1234ASDF","updated_at":"2012-08-08T13:47:23Z","image_urls":"/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642"}
+after
+Completed 200 OK in 16ms (Views: 1.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items/15" for 127.0.0.1 at 2012-08-28 17:11:42 -0400
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "15"]]
+before
+"/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642"
+after
+  [1m[36mDeveloper Load (0.1ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."id" = 3 LIMIT 1[0m
+Rendered items/show.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 32ms (Views: 16.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /items.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /home.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.css?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /developers.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /paypal_transactions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /orders.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /users.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-08-28 17:11:43 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/items/15.json" for 127.0.0.1 at 2012-08-28 17:11:46 -0400
+  Processing by ItemsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "15"]]
+before
+"/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642"
+after
+Completed 200 OK in 15ms (Views: 1.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items/15.json" for 127.0.0.1 at 2012-08-28 17:11:54 -0400
+  Processing by ItemsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "15"]]
+before
+{"created_at":"2012-08-08T13:47:23Z","desc":"Great LoopJoy Shirt","developer_id":3,"display_text":"Buy this water bottle!","id":15,"image_content_type":"image/png","image_file_name":"ipad_water_bottle_white.png","image_file_size":18446,"image_updated_at":"2012-08-08T13:47:22Z","image_url":"http://localhost:3000/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642","name":"LoopJoy Shirt","options":"None","price":"23.0","sku":"1234ASDF","updated_at":"2012-08-08T13:47:23Z","image_urls":"/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642"}
+after
+Completed 200 OK in 16ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/systen" for 127.0.0.1 at 2012-08-28 17:12:27 -0400
+
+ActionController::RoutingError (No route matches [GET] "/systen"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/system" for 127.0.0.1 at 2012-08-28 17:12:29 -0400
+
+ActionController::RoutingError (No route matches [GET] "/system"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/system/items" for 127.0.0.1 at 2012-08-28 17:12:35 -0400
+
+ActionController::RoutingError (No route matches [GET] "/system/items"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/system/items/images/" for 127.0.0.1 at 2012-08-28 17:12:50 -0400
+
+ActionController::RoutingError (No route matches [GET] "/system/items/images"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/system/items/images/" for 127.0.0.1 at 2012-08-28 17:13:55 -0400
+
+ActionController::RoutingError (No route matches [GET] "/system/items/images"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/items/15.json" for 127.0.0.1 at 2012-08-28 17:13:59 -0400
+  Processing by ItemsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "15"]]
+before
+{"created_at":"2012-08-08T13:47:23Z","desc":"Great LoopJoy Shirt","developer_id":3,"display_text":"Buy this water bottle!","id":15,"image_content_type":"image/png","image_file_name":"ipad_water_bottle_white.png","image_file_size":18446,"image_updated_at":"2012-08-08T13:47:22Z","image_url":"http://localhost:3000/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642","name":"LoopJoy Shirt","options":"None","price":"23.0","sku":"1234ASDF","updated_at":"2012-08-08T13:47:23Z","image_urls":{"path":"/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642"}}
+after
+Completed 200 OK in 40ms (Views: 1.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items/15.json" for 127.0.0.1 at 2012-08-28 17:14:15 -0400
+  Processing by ItemsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "15"]]
+before
+{"created_at":"2012-08-08T13:47:23Z","desc":"Great LoopJoy Shirt","developer_id":3,"display_text":"Buy this water bottle!","id":15,"image_content_type":"image/png","image_file_name":"ipad_water_bottle_white.png","image_file_size":18446,"image_updated_at":"2012-08-08T13:47:22Z","image_url":"http://localhost:3000/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642","name":"LoopJoy Shirt","options":"None","price":"23.0","sku":"1234ASDF","updated_at":"2012-08-08T13:47:23Z","image_urls":"/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642"}
+after
+Completed 200 OK in 16ms (Views: 1.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/items/15.json" for 127.0.0.1 at 2012-08-28 17:17:49 -0400
+  Processing by ItemsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "15"]]
+before
+Completed 500 Internal Server Error in 14ms
+
+NameError (undefined local variable or method `name_of_host' for #<Item:0x007fcb9d26db10>):
+  app/models/item.rb:8:in `as_json'
+  app/controllers/items_controller.rb:30:in `show'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.2ms)
+
+
+Started GET "/items/15.json" for 127.0.0.1 at 2012-08-28 17:18:02 -0400
+  Processing by ItemsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "15"]]
+before
+Completed 500 Internal Server Error in 37ms
+
+NameError (undefined local variable or method `current_host' for #<Item:0x007fcb9c34c0f0>):
+  app/models/item.rb:8:in `as_json'
+  app/controllers/items_controller.rb:30:in `show'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started GET "/items/15.json" for 127.0.0.1 at 2012-08-28 17:18:03 -0400
+  Processing by ItemsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "15"]]
+before
+Completed 500 Internal Server Error in 13ms
+
+NameError (undefined local variable or method `current_host' for #<Item:0x007fcb9b5aa690>):
+  app/models/item.rb:8:in `as_json'
+  app/controllers/items_controller.rb:30:in `show'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.8ms)
+
+
+Started GET "/items/15.json" for 127.0.0.1 at 2012-08-28 17:19:55 -0400
+  Processing by ItemsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "15"]]
+before
+Completed 500 Internal Server Error in 14ms
+
+NameError (undefined local variable or method `current_host' for #<Item:0x007fcb9d459cd0>):
+  app/models/item.rb:8:in `as_json'
+  app/controllers/items_controller.rb:30:in `show'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.2ms)
+
+
+Started GET "/items/15.json" for 127.0.0.1 at 2012-08-28 17:19:56 -0400
+  Processing by ItemsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "15"]]
+before
+Completed 500 Internal Server Error in 14ms
+
+NameError (undefined local variable or method `current_host' for #<Item:0x007fcb9d4b00d0>):
+  app/models/item.rb:8:in `as_json'
+  app/controllers/items_controller.rb:30:in `show'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-08-28 17:19:56 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/items/15.json" for 127.0.0.1 at 2012-08-28 17:20:00 -0400
+  Processing by ItemsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[36mItem Load (0.1ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "15"]]
+before
+Completed 500 Internal Server Error in 14ms
+
+NameError (undefined local variable or method `current_host' for #<Item:0x007fcb9b23b860>):
+  app/models/item.rb:8:in `as_json'
+  app/controllers/items_controller.rb:30:in `show'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.7ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.2ms)
+
+
+Started GET "/items/15.json" for 127.0.0.1 at 2012-08-28 17:22:49 -0400
+  Processing by ItemsController#show as JSON
+  Parameters: {"id"=>"15"}
+  [1m[35mItem Load (0.1ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "15"]]
+before
+{"created_at":"2012-08-08T13:47:23Z","desc":"Great LoopJoy Shirt","developer_id":3,"display_text":"Buy this water bottle!","id":15,"image_content_type":"image/png","image_file_name":"ipad_water_bottle_white.png","image_file_size":18446,"image_updated_at":"2012-08-08T13:47:22Z","image_url":"http://localhost:3000/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642","name":"LoopJoy Shirt","options":"None","price":"23.0","sku":"1234ASDF","updated_at":"2012-08-08T13:47:23Z","image_urls":"http://loopjoy.com/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642"}
+after
+Completed 200 OK in 15ms (Views: 1.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2012-09-05 16:31:50 -0400
+  Processing by HomeController#index as HTML
+Rendered home/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 70ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/developers.css?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /developers.css - 200 OK (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /home.css - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /users.css - 200 OK (1ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /items.css - 200 OK (4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /orders.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /jquery_ujs.js - 200 OK (4ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /paypal_transactions.css - 200 OK (2ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /developers.js - 200 OK (1ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /home.js - 200 OK (3ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /items.js - 200 OK (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /orders.js - 200 OK (2ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /paypal_transactions.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /users.js - 200 OK (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:51 -0400
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/developer" for 127.0.0.1 at 2012-09-05 16:31:56 -0400
+
+ActionController::RoutingError (No route matches [GET] "/developer"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/developers" for 127.0.0.1 at 2012-09-05 16:31:57 -0400
+  Processing by DevelopersController#index as HTML
+  [1m[36mDeveloper Load (0.4ms)[0m  [1mSELECT "developers".* FROM "developers" [0m
+Rendered developers/index.html.erb within layouts/application (31.7ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:57 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:57 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:57 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:57 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:57 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:57 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:57 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-05 16:31:57 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/developers/items" for 127.0.0.1 at 2012-09-05 16:31:59 -0400
+  Processing by DevelopersController#show as HTML
+  Parameters: {"id"=>"items"}
+  [1m[35mDeveloper Load (0.2ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."id" = ? LIMIT 1  [["id", "items"]]
+Completed 404 Not Found in 2ms
+
+ActiveRecord::RecordNotFound (Couldn't find Developer with id=items):
+  app/controllers/developers_controller.rb:17:in `show'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (4.5ms)
+
+
+Started GET "/items" for 127.0.0.1 at 2012-09-05 16:32:04 -0400
+  Processing by ItemsController#index as HTML
+  [1m[36mItem Load (0.7ms)[0m  [1mSELECT "items".* FROM "items" [0m
+  [1m[35mDeveloper Load (0.1ms)[0m  SELECT "developers".* FROM "developers" WHERE "developers"."id" = 3 LIMIT 1
+{:items=>"[{\"created_at\":\"2012-08-08T13:47:23Z\",\"desc\":\"Great LoopJoy Shirt\",\"developer_id\":3,\"display_text\":\"Buy this water bottle!\",\"id\":15,\"image_content_type\":\"image/png\",\"image_file_name\":\"ipad_water_bottle_white.png\",\"image_file_size\":18446,\"image_updated_at\":\"2012-08-08T13:47:22Z\",\"image_url\":\"http://localhost:3000/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642\",\"name\":\"LoopJoy Shirt\",\"options\":\"None\",\"price\":\"23.0\",\"sku\":\"1234ASDF\",\"updated_at\":\"2012-08-08T13:47:23Z\",\"image_urls\":\"http://loopjoy.com/system/items/images/000/000/015/original/ipad_water_bottle_white.png?1344433642\"},{\"created_at\":\"2012-08-10T20:56:14Z\",\"desc\":\"This is a great backpack\",\"developer_id\":4,\"display_text\":\"\",\"id\":16,\"image_content_type\":null,\"image_file_name\":null,\"image_file_size\":null,\"image_updated_at\":null,\"image_url\":\"http://localhost:3000/images/original/missing.png\",\"name\":\"Chiptole backpack\",\"options\":\"\",\"price\":\"42.0\",\"sku\":\"fomdaf\",\"updated_at\":\"2012-08-10T20:56:14Z\",\"image_urls\":\"http://loopjoy.com/images/original/missing.png\"}]"}
+  [1m[36mDeveloper Load (0.2ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."id" = 4 LIMIT 1[0m
+Rendered items/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 51ms (Views: 11.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:04 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:04 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:04 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:04 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:04 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:04 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:04 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:04 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:04 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/items/new" for 127.0.0.1 at 2012-09-05 16:32:07 -0400
+  Processing by ItemsController#new as HTML
+  [1m[35mDeveloper Load (0.1ms)[0m  SELECT "developers".* FROM "developers" 
+Rendered items/_form.html.erb (131.1ms)
+Rendered items/new.html.erb within layouts/application (136.0ms)
+Completed 200 OK in 144ms (Views: 142.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:08 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:08 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:08 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:08 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:08 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:08 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:08 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:08 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:08 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/items" for 127.0.0.1 at 2012-09-05 16:32:24 -0400
+  Processing by ItemsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"gc4bSIPsNFy2ld2v+XI9cfdPmGLxzgZP1VgGbtI6gOg=", "item"=>{"name"=>"This", "type"=>"0", "desc"=>"is", "options"=>"a", "price"=>"", "sku"=>"of", "display_text"=>"the emergency", "image"=>#<ActionDispatch::Http::UploadedFile:0x007fbbdc4f5b88 @original_filename="Backpack_Plague1.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"item[image]\"; filename=\"Backpack_Plague1.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/var/folders/gd/gzrwqb417vj9wl82mlv8bfn40000gn/T/RackMultipart20120905-3133-po7x0a>>, "developer_id"=>"2"}, "commit"=>"Create Item"}
+WARNING: Can't mass-assign protected attributes: type
+[32mCommand[0m :: identify -format %wx%h '/var/folders/gd/gzrwqb417vj9wl82mlv8bfn40000gn/T/Backpack_Plague120120905-3133-ftyy4i.png[0]'
+[32mCommand[0m :: identify -format %m '/var/folders/gd/gzrwqb417vj9wl82mlv8bfn40000gn/T/Backpack_Plague120120905-3133-ftyy4i.png[0]'
+[32mCommand[0m :: identify -format %m '/var/folders/gd/gzrwqb417vj9wl82mlv8bfn40000gn/T/Backpack_Plague120120905-3133-ftyy4i.png[0]'
+[32mCommand[0m :: convert '/var/folders/gd/gzrwqb417vj9wl82mlv8bfn40000gn/T/Backpack_Plague120120905-3133-ftyy4i.png[0]' -resize "300x300>" '/var/folders/gd/gzrwqb417vj9wl82mlv8bfn40000gn/T/Backpack_Plague120120905-3133-ftyy4i20120905-3133-uht079'
+[32mCommand[0m :: file -b --mime '/var/folders/gd/gzrwqb417vj9wl82mlv8bfn40000gn/T/Backpack_Plague120120905-3133-ftyy4i20120905-3133-uht079'
+[32mCommand[0m :: identify -format %wx%h '/var/folders/gd/gzrwqb417vj9wl82mlv8bfn40000gn/T/Backpack_Plague120120905-3133-ftyy4i.png[0]'
+[32mCommand[0m :: identify -format %m '/var/folders/gd/gzrwqb417vj9wl82mlv8bfn40000gn/T/Backpack_Plague120120905-3133-ftyy4i.png[0]'
+[32mCommand[0m :: identify -format %m '/var/folders/gd/gzrwqb417vj9wl82mlv8bfn40000gn/T/Backpack_Plague120120905-3133-ftyy4i.png[0]'
+[32mCommand[0m :: convert '/var/folders/gd/gzrwqb417vj9wl82mlv8bfn40000gn/T/Backpack_Plague120120905-3133-ftyy4i.png[0]' -resize "100x100>" '/var/folders/gd/gzrwqb417vj9wl82mlv8bfn40000gn/T/Backpack_Plague120120905-3133-ftyy4i20120905-3133-8j48zo'
+[32mCommand[0m :: file -b --mime '/var/folders/gd/gzrwqb417vj9wl82mlv8bfn40000gn/T/Backpack_Plague120120905-3133-ftyy4i20120905-3133-8j48zo'
+Binary data inserted for `string` type on column `image_content_type`
+  [1m[36mSQL (10.2ms)[0m  [1mINSERT INTO "items" ("created_at", "desc", "developer_id", "display_text", "image_content_type", "image_file_name", "image_file_size", "image_updated_at", "image_url", "name", "options", "price", "sku", "type", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Wed, 05 Sep 2012 20:32:24 UTC +00:00], ["desc", "is"], ["developer_id", 2], ["display_text", "the emergency"], ["image_content_type", "image/png"], ["image_file_name", "Backpack_Plague1.png"], ["image_file_size", 164333], ["image_updated_at", Wed, 05 Sep 2012 20:32:24 UTC +00:00], ["image_url", nil], ["name", "This"], ["options", "a"], ["price", nil], ["sku", "of"], ["type", nil], ["updated_at", Wed, 05 Sep 2012 20:32:24 UTC +00:00]]
+[paperclip] Saving attachments.
+Redirected to http://localhost:3000/items/17
+Completed 302 Found in 384ms
+
+
+Started GET "/items/17" for 127.0.0.1 at 2012-09-05 16:32:25 -0400
+  Processing by ItemsController#show as HTML
+  Parameters: {"id"=>"17"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "17"]]
+before
+{"created_at":"2012-09-05T20:32:24Z","desc":"is","developer_id":2,"display_text":"the emergency","id":17,"image_content_type":"image/png","image_file_name":"Backpack_Plague1.png","image_file_size":164333,"image_updated_at":"2012-09-05T20:32:24Z","image_url":null,"name":"This","options":"a","price":null,"sku":"of","updated_at":"2012-09-05T20:32:24Z","image_urls":"http://loopjoy.com/system/items/images/000/000/017/original/Backpack_Plague1.png?1346877144"}
+after
+  [1m[36mDeveloper Load (0.2ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."id" = 2 LIMIT 1[0m
+Rendered items/show.html.erb within layouts/application (40.2ms)
+Completed 200 OK in 64ms (Views: 47.4ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:25 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:25 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:25 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:25 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:25 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:25 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:25 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:25 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:25 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/developers" for 127.0.0.1 at 2012-09-05 16:32:32 -0400
+  Processing by DevelopersController#index as HTML
+  [1m[35mDeveloper Load (0.1ms)[0m  SELECT "developers".* FROM "developers" 
+Rendered developers/index.html.erb within layouts/application (36.0ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:32 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:32 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:32 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:32 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:32 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:32 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:32 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:32 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-05 16:32:32 -0400
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started POST "/developer/items.json" for 127.0.0.1 at 2012-09-05 16:32:53 -0400
+  Processing by ItemsController#dev_init as JSON
+  Parameters: {"api_key"=>"EtINgZfMiISJAwPjwKc"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mDeveloper Load (0.1ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."apiKey" = 'EtINgZfMiISJAwPjwKc' LIMIT 1[0m
+#<Developer id: 2, name: "Tennyson Hinds", email: "StlTenny@gmail.com", apiKey: "EtINgZfMiISJAwPjwKc", paypal_email: "StlTenny@gmail.com", merchant_name: "LiveTab", created_at: "2012-08-08 13:45:41", updated_at: "2012-08-08 13:45:41">
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."developer_id" = 2
+Completed 200 OK in 66ms (Views: 14.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/developer/items.json" for 127.0.0.1 at 2012-09-05 16:33:17 -0400
+  Processing by ItemsController#dev_init as JSON
+  Parameters: {"api_key"=>"EtINgZfMiISJAwPjwKc"}
+WARNING: Can't verify CSRF token authenticity
+  [1m[36mDeveloper Load (0.1ms)[0m  [1mSELECT "developers".* FROM "developers" WHERE "developers"."apiKey" = 'EtINgZfMiISJAwPjwKc' LIMIT 1[0m
+#<Developer id: 2, name: "Tennyson Hinds", email: "StlTenny@gmail.com", apiKey: "EtINgZfMiISJAwPjwKc", paypal_email: "StlTenny@gmail.com", merchant_name: "LiveTab", created_at: "2012-08-08 13:45:41", updated_at: "2012-08-08 13:45:41">
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."developer_id" = 2
+Completed 200 OK in 52ms (Views: 14.1ms | ActiveRecord: 0.8ms)
