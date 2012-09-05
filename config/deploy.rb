@@ -3,7 +3,7 @@ set :default_stage, "development"
 require 'capistrano/ext/multistage'
 
 set :user, "thinds"
-set :location, "dev.loopjoy.com"
+set :location, "loopjoy.com"
 set :application, "lj"
 set :deploy_to, "/home/thinds/apps/lj"
 
@@ -27,7 +27,7 @@ namespace :deploy do
   task :start, :roles => :app do
   	
   	run "rake db:migrate"
-    run "service thin start"
+    run "sudo service thin start"
   end
 
   task :stop, :roles => :app do
