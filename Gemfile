@@ -37,10 +37,11 @@ gem "paperclip", "~> 3.0"
 
 gem "simple_form"
 #Lets add thin here as well
-#gem "thin"
+gem "thin"
 
 #And of course ActiveMerchant for paypal
 gem 'activemerchant'
 
 #Lets try detecting the address
 gem 'geocoder'
+
