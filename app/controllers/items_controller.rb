@@ -26,6 +26,7 @@ class ItemsController < ApplicationController
   # GET /items/1.json
   def show
     @item = Item.find(params[:id])
+    @developer = @item.developer
     logger.debug("before")
     logger.debug(@item.to_json)
     logger.debug("after")

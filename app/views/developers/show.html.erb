@@ -1,30 +1,29 @@
-<p id="notice"><%= notice %></p>
+<%- model_class = Developer -%>
+<div class="page-header">
+  <h1><%=t '.title', :default => model_class.model_name.human %></h1>
+</div>
 
-<p>
-  <b>Name:</b>
-  <%= @developer.name %>
-</p>
+<dl class="dl-horizontal">
+  <dt><strong><%= model_class.human_attribute_name(:name) %>:</strong></dt>
+  <dd><%= @developer.name %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:email) %>:</strong></dt>
+  <dd><%= @developer.email %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:apiKey) %>:</strong></dt>
+  <dd><%= @developer.apiKey %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:paypal_email) %>:</strong></dt>
+  <dd><%= @developer.paypal_email %></dd>
+  <dt><strong><%= model_class.human_attribute_name(:merchant_name) %>:</strong></dt>
+  <dd><%= @developer.merchant_name %></dd>
+</dl>
 
-<p>
-  <b>Email:</b>
-  <%= @developer.email %>
-</p>
-
-<p>
-  <b>Apikey:</b>
-  <%= @developer.apiKey %>
-</p>
-
-<p>
-  <b>Paypal email:</b>
-  <%= @developer.paypal_email %>
-</p>
-
-<p>
-  <b>Merchant name:</b>
-  <%= @developer.merchant_name %>
-</p>
-
-
-<%= link_to 'Edit', edit_developer_path(@developer) %> |
-<%= link_to 'Back', developers_path %>
+<div class="form-actions">
+  <%= link_to t('.back', :default => t("helpers.links.back")),
+              developers_path, :class => 'btn'  %>
+  <%= link_to t('.edit', :default => t("helpers.links.edit")),
+              edit_developer_path(@developer), :class => 'btn' %>
+  <%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+              developer_path(@developer),
+              :method => 'delete',
+              :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+              :class => 'btn btn-danger' %>
+</div>

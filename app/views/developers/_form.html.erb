@@ -1,37 +1,12 @@
-<%= form_for(@developer) do |f| %>
-  <% if @developer.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@developer.errors.count, "error") %> prohibited this developer from being saved:</h2>
-
-      <ul>
-      <% @developer.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="field">
-    <%= f.label :apiKey %><br />
-    <%= f.text_field :apiKey %>
-  </div>
-  <div class="field">
-    <%= f.label :paypal_email %><br />
-    <%= f.text_field :paypal_email %>
-  </div>
-  <div class="field">
-    <%= f.label :merchant_name %><br />
-    <%= f.text_field :merchant_name %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+<%= simple_form_for @developer, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :name %>
+  <%= f.input :email %>
+  <%= f.input :apiKey %>
+  <%= f.input :paypal_email %>
+  <%= f.input :merchant_name %>
+  <div class="form-actions">
+    <%= f.button :submit, :class => 'btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                developers_path, :class => 'btn' %>
   </div>
 <% end %>

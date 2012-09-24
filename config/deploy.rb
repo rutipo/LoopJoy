@@ -22,7 +22,7 @@ namespace :deploy do
   task :start, :roles => :app do
   	
   	run "rake db:migrate"
-    run "sudo service thin start"
+    run "service thin start"
   end
 
   task :stop, :roles => :app do

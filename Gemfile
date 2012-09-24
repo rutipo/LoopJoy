@@ -15,6 +15,7 @@ group :assets do
   gem 'sass-rails',   '~> 3.1.4'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
+  gem 'twitter-bootstrap-rails'
 end
 
 gem 'jquery-rails'
@@ -36,4 +37,10 @@ gem "paperclip", "~> 3.0"
 
 gem "simple_form"
 #Lets add thin here as well
-gem "thin"
+#gem "thin"
+
+#And of course ActiveMerchant for paypal
+gem 'activemerchant'
+
+#Lets try detecting the address
+gem 'geocoder'
