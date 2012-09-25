@@ -21,6 +21,21 @@ module PaypalExpressHelper
     }
   end
 
+  def get_purchase_params(item, request, params)
+    location = request.location.country_code
+    subtotal, shipping, total = get_totals(item,location)
+    return to_cents(total), {
+      :ip => request.remote_ip,
+      :token => params[:token],
+      :payer_id => params[:payer_id],
+      :subtotal => to_cents(subtotal),
+      :shipping => to_cents(shipping),
+      :handling => 0,
+      :tax =>      0,
+      :items =>    [{:name => item.name, :number => item.id, :quantity => '1', :amount => to_cents(item.price)}]
+    }
+  end
+
     def get_order_info(gateway_response, item, request)
       subtotal, shipping, total = get_totals(item, request)
       {

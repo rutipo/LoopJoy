@@ -30905,3 +30905,72 @@ Started GET "/paypal/checkout?item_id=55&UUID=ad5343a81d669e36e94f1840ee3e7a8f&e
   [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "55"]]
 "RD"
 Completed 200 OK in 1057ms (Views: 4.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/paypal/purchase?token=EC-5BU00720SN1967151&payer_id=8T95BKE4BFFB6" for 127.0.0.1 at 2012-09-25 13:47:10 -0400
+  Processing by PaypalExpressController#purchase as HTML
+  Parameters: {"token"=>"EC-5BU00720SN1967151", "payer_id"=>"8T95BKE4BFFB6"}
+Completed 500 Internal Server Error in 77ms
+
+NoMethodError (undefined method `get_purchase_params' for #<PaypalExpressController:0x007fd2c5fbb590>):
+  app/controllers/paypal_express_controller.rb:37:in `purchase'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.2ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.3ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (7.8ms)
+
+
+Started GET "/paypal/purchase?token=EC-90U45869FA177232G&payer_id=8T95BKE4BFFB6" for 127.0.0.1 at 2012-09-25 13:52:20 -0400
+  Processing by PaypalExpressController#purchase as HTML
+  Parameters: {"token"=>"EC-90U45869FA177232G", "payer_id"=>"8T95BKE4BFFB6"}
+Completed 500 Internal Server Error in 9ms
+
+NoMethodError (undefined method `price' for nil:NilClass):
+  app/helpers/paypal_express_helper.rb:63:in `get_totals'
+  app/helpers/paypal_express_helper.rb:26:in `get_purchase_params'
+  app/controllers/paypal_express_controller.rb:37:in `purchase'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.6ms)
+
+
+Started GET "/paypal/purchase?token=EC-04M21172274885942&payer_id=8T95BKE4BFFB6" for 127.0.0.1 at 2012-09-25 13:59:11 -0400
+  Processing by PaypalExpressController#purchase as HTML
+  Parameters: {"token"=>"EC-04M21172274885942", "payer_id"=>"8T95BKE4BFFB6"}
+Completed 404 Not Found in 24ms
+
+ActiveRecord::RecordNotFound (Couldn't find Item without an ID):
+  app/controllers/paypal_express_controller.rb:30:in `purchase'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.5ms)
+
+
+Started GET "/paypal/purchase?token=EC-04M21172274885942&payer_id=8T95BKE4BFFB6&item_id=4" for 127.0.0.1 at 2012-09-25 13:59:22 -0400
+  Processing by PaypalExpressController#purchase as HTML
+  Parameters: {"token"=>"EC-04M21172274885942", "payer_id"=>"8T95BKE4BFFB6", "item_id"=>"4"}
+  [1m[36mItem Load (0.5ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "4"]]
+Completed 404 Not Found in 12ms
+
+ActiveRecord::RecordNotFound (Couldn't find Item with id=4):
+  app/controllers/paypal_express_controller.rb:30:in `purchase'
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.1ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.9ms)
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (3.7ms)
+
+
+Started GET "/paypal/purchase?token=EC-04M21172274885942&payer_id=8T95BKE4BFFB6&item_id=54" for 127.0.0.1 at 2012-09-25 13:59:26 -0400
+  Processing by PaypalExpressController#purchase as HTML
+  Parameters: {"token"=>"EC-04M21172274885942", "payer_id"=>"8T95BKE4BFFB6", "item_id"=>"54"}
+  [1m[35mItem Load (0.2ms)[0m  SELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1  [["id", "54"]]
+Completed 200 OK in 5958ms (Views: 1.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/paypal/purchase?token=EC-04M21172274885942&payer_id=8T95BKE4BFFB6&item_id=54" for 127.0.0.1 at 2012-09-25 14:06:04 -0400
+  Processing by PaypalExpressController#purchase as HTML
+  Parameters: {"token"=>"EC-04M21172274885942", "payer_id"=>"8T95BKE4BFFB6", "item_id"=>"54"}
+  [1m[36mItem Load (0.2ms)[0m  [1mSELECT "items".* FROM "items" WHERE "items"."id" = ? LIMIT 1[0m  [["id", "54"]]
+Completed 200 OK in 1043ms (Views: 1.0ms | ActiveRecord: 0.9ms)

@@ -19,7 +19,7 @@ Lj::Application.routes.draw do
   match 'developer/items' => 'items#dev_init', :as => :developer_init, :via => :post
   match 'paypal/checkout' => 'paypal_express#checkout', :as => :paypal_checkout, :via => :get
   match 'paypal/review' => 'paypal_express#review', :as => :paypal_checkout, :via => :get
-  match 'paypal/purchase' => 'paypal_express#purchase', :as => :paypal_checkout, :via => :post
+  match 'paypal/purchase' => 'paypal_express#purchase', :as => :paypal_checkout, :via => :get
 
   root :to => "home#index"
 

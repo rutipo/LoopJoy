@@ -17,22 +17,7 @@ class PaypalExpressController < ApplicationController
 
 
   def review
-
-
     @item = Item.find(params[:item_id])
-    # if params[:token].nil?
-    #   #render json error message
-    #   #redirect_to home_url, :notice => 'Woops! Something went wrong!' 
-    #   return
-    # end
-
-    # unless gateway_response.success?
-    #   #render json error message
-    #   #redirect_to home_url, :notice => "Sorry! Something went wrong with the Paypal purchase. Here's what Paypal said: #{gateway_response.message}" 
-    #   return
-    # end
-
-
     gateway_response = @gateway.details_for(params[:token])
 
     @order_info = get_order_info gateway_response, @item, request
@@ -42,7 +27,7 @@ class PaypalExpressController < ApplicationController
 
   def purchase
 
-
+    @item = Item.find(params[:item_id])
     if params[:token].nil? or params[:payer_id].nil?
       #redirect_to home_url, :notice => "Sorry! Something went wrong with the Paypal purchase. Please try again later." 
       #render json error message
@@ -53,10 +38,12 @@ class PaypalExpressController < ApplicationController
     purchase = @gateway.purchase total_as_cents, purchase_params
 
     if purchase.success?
-      # you might want to destroy your cart here if you have a shopping cart 
+      render :json => {:success => "YES"}
+      #you might want to destroy your cart here if you have a shopping cart 
       #notice = "Thanks! Your purchase is now complete!"
       #render successful purchse
     else
+      render :json => {:success => "NO"}
       #render unsuccessful purchase
       notice = "Woops. Something went wrong while we were trying to complete the purchase with Paypal. Btw, here's what Paypal said: #{purchase.message}"
     end
