@@ -19,9 +19,9 @@ class ItemsController < ApplicationController
     respond_to do |format|
       format.html # index.html.erb
       format.json { render :json => {:merchantName => @developer.merchant_name, :developerID => @developer.id, :items => @items}}
+    end
   end
-
-  end
+  
   # GET /items/1
   # GET /items/1.json
   def show

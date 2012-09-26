@@ -38,14 +38,13 @@ class PaypalExpressController < ApplicationController
     purchase = @gateway.purchase total_as_cents, purchase_params
 
     if purchase.success?
-      render :json => {:success => "YES"}
+      render :json => {:success => "YES", :message => "Thank You. \n Your order has been confirmed. \n You will receive an email shortly."}
       #you might want to destroy your cart here if you have a shopping cart 
       #notice = "Thanks! Your purchase is now complete!"
       #render successful purchse
     else
-      render :json => {:success => "NO"}
+      render :json => {:success => "NO", :message => "There was a problem with your order. \n Please try again later."}
       #render unsuccessful purchase
-      notice = "Woops. Something went wrong while we were trying to complete the purchase with Paypal. Btw, here's what Paypal said: #{purchase.message}"
     end
 
   end
@@ -53,15 +52,15 @@ class PaypalExpressController < ApplicationController
 
   private
     def assigns_gateway
-      # @gateway ||= PaypalExpressGateway.new(
-      #   :login => "ruti_api1.loopjoy.com",
-      #   :password => "79H2HV73GBATM825",
-      #   :signature => "AcJ-x2rzE.wiDyTVecBkpKGcrZ2hAL73WtadveBxvFjZUSOzTvLUWs0B"
-      # )
       @gateway ||= PaypalExpressGateway.new(
-        :login => "tennys_1348429189_biz_api1.loopjoy.com",
-        :password => "1348429211",
-        :signature => "Afv-hdm-OvWEHpiQbbPBRPrylIfPAA5Mi2SORDMzpdD5NZPxZcIbBdL6"
+        :login => "ruti_api1.loopjoy.com",
+        :password => "79H2HV73GBATM825",
+        :signature => "AcJ-x2rzE.wiDyTVecBkpKGcrZ2hAL73WtadveBxvFjZUSOzTvLUWs0B"
       )
+      # @gateway ||= PaypalExpressGateway.new(
+      #   :login => "tennys_1348429189_biz_api1.loopjoy.com",
+      #   :password => "1348429211",
+      #   :signature => "Afv-hdm-OvWEHpiQbbPBRPrylIfPAA5Mi2SORDMzpdD5NZPxZcIbBdL6"
+      # )
     end
 end

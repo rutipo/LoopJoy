@@ -36,7 +36,7 @@ module PaypalExpressHelper
     }
   end
 
-    def get_order_info(gateway_response, item, request)
+  def get_order_info(gateway_response, item, request)
       subtotal, shipping, total = get_totals(item, request)
       {
         shipping_address: gateway_response.address,
