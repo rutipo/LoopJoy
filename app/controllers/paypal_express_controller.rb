@@ -22,7 +22,7 @@ class PaypalExpressController < ApplicationController
 
     @order_info = get_order_info gateway_response, @item, request
 
-    @transaction = Transaction.new(:name => params[:shipping_address][:name], :email => params[:email], :subtotal => params[:subtotal], :shipping => params[:shipping], :total => params[:total], :token => params[:gateway_details][:token])
+    @transaction = Transaction.new(:name => @order_info[:name], :email => @order_info[:email], :subtotal => @order_info[:subtotal], :shipping => @order_info[:shipping], :total => @order_info[:total], :token => @order_info[:gateway_details][:token]))
     @transaction.save
     logger.debug(@order_info.inspect)
     render :json => @order_info
@@ -45,7 +45,7 @@ class PaypalExpressController < ApplicationController
     @transaction.pp_transaction_id = params[:transaction_id]
     @transaction.save
 
-    TransactionMailer.purchase_notification(@transaction).deliver
+    TransactionMailer.purchase_confirmation(@transaction).deliver
 
     if purchase.success?
       render :json => {:success => "YES", :message => "Thank You. \n Your confirmation number is #{@transaction.lj_transaction_id}. \n You will receive an email shortly."}
@@ -62,15 +62,15 @@ class PaypalExpressController < ApplicationController
 
   private
     def assigns_gateway
+       @gateway ||= PaypalExpressGateway.new(
+         :login => "ruti_api1.loopjoy.com",
+         :password => "79H2HV73GBATM825",
+         :signature => "AcJ-x2rzE.wiDyTVecBkpKGcrZ2hAL73WtadveBxvFjZUSOzTvLUWs0B"
+       )
       # @gateway ||= PaypalExpressGateway.new(
-      #   :login => "ruti_api1.loopjoy.com",
-      #   :password => "79H2HV73GBATM825",
-      #   :signature => "AcJ-x2rzE.wiDyTVecBkpKGcrZ2hAL73WtadveBxvFjZUSOzTvLUWs0B"
+      #   :login => "tennys_1348429189_biz_api1.loopjoy.com",
+      #   :password => "1348429211",
+      #   :signature => "Afv-hdm-OvWEHpiQbbPBRPrylIfPAA5Mi2SORDMzpdD5NZPxZcIbBdL6"
       # )
-      @gateway ||= PaypalExpressGateway.new(
-        :login => "tennys_1348429189_biz_api1.loopjoy.com",
-        :password => "1348429211",
-        :signature => "Afv-hdm-OvWEHpiQbbPBRPrylIfPAA5Mi2SORDMzpdD5NZPxZcIbBdL6"
-      )
     end
 end

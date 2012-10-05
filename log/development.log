@@ -34520,3 +34520,1125 @@ Migrating to CreateTransactions (20121005203924)
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("orders")[0m
   [1m[35m (0.0ms)[0m  PRAGMA index_list("paypal_transactions")
   [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started GET "/TermsOfSale" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+  Processing by TermsOfSaleController#index as HTML
+Rendered terms_of_sale/index.html.erb within layouts/application (3.0ms)
+Compiled application.css  (5ms)  (pid 6910)
+Compiled bootstrap-responsive.css  (0ms)  (pid 6910)
+Compiled bootstrap-responsive.min.css  (0ms)  (pid 6910)
+Compiled bootstrap.css  (0ms)  (pid 6910)
+Compiled bootstrap.min.css  (0ms)  (pid 6910)
+Compiled terms_of_sale.css  (4ms)  (pid 6910)
+Compiled application.js  (7ms)  (pid 6910)
+Compiled terms_of_sale.js  (55ms)  (pid 6910)
+Completed 200 OK in 329ms (Views: 328.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-responsive.css?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /bootstrap-responsive.css - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap-responsive.min.css?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /bootstrap-responsive.min.css - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /bootstrap.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap.min.css?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /bootstrap.min.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /bootstrap_and_overrides.css - 200 OK (1ms)
+
+
+Started GET "/assets/developers.css?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /developers.css - 200 OK (1ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /home.css - 200 OK (3ms)
+
+
+Started GET "/assets/orders.css?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /orders.css - 200 OK (2ms)
+
+
+Started GET "/assets/items.css?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /items.css - 200 OK (3ms)
+
+
+Started GET "/assets/terms_of_sale.css?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /terms_of_sale.css - 200 OK (1ms)
+
+
+Started GET "/assets/paypal_transactions.css?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /paypal_transactions.css - 200 OK (1ms)
+
+
+Started GET "/assets/paypal_express.css?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /paypal_express.css - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /scaffolds.css - 200 OK (3ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /users.css - 200 OK (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /jquery_ujs.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:17 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 200 OK (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 200 OK (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 200 OK (2ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 200 OK (2ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /home.js - 200 OK (2ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /items.js - 200 OK (3ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /bootstrap.js - 200 OK (1ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /twitter/bootstrap.js - 200 OK (6ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /developers.js - 200 OK (1ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /orders.js - 200 OK (1ms)
+
+
+Started GET "/assets/paypal_express.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /paypal_express.js - 200 OK (1ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /paypal_transactions.js - 200 OK (1ms)
+
+
+Started GET "/assets/terms_of_sale.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /terms_of_sale.js - 200 OK (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /users.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/css/bootstrap-responsive.css" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /css/bootstrap-responsive.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-responsive.css"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/jquery.js" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /js/jquery.js - 404 Not Found (32ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/jquery.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-transition.js" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /js/bootstrap-transition.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-transition.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/css/bootstrap.css" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /css/bootstrap.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap.css"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-alert.js" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /js/bootstrap-alert.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-alert.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-modal.js" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /js/bootstrap-modal.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-modal.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-dropdown.js" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /js/bootstrap-dropdown.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-dropdown.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-scrollspy.js" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /js/bootstrap-scrollspy.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-scrollspy.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/js/bootstrap-tab.js" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /js/bootstrap-tab.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-tab.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-tooltip.js" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /js/bootstrap-tooltip.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-tooltip.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-popover.js" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /js/bootstrap-popover.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-popover.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-button.js" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /js/bootstrap-button.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-button.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/img/bluelogosmall.png" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /img/bluelogosmall.png - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/img/bluelogosmall.png"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-collapse.js" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /js/bootstrap-collapse.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-collapse.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/js/bootstrap-carousel.js" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /js/bootstrap-carousel.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-carousel.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap.js" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /js/bootstrap.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-typeahead.js" for 127.0.0.1 at 2012-10-05 18:44:18 -0400
+Served asset /js/bootstrap-typeahead.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-typeahead.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/TermsOfSale" for 127.0.0.1 at 2012-10-05 18:45:05 -0400
+  Processing by TermsOfSaleController#index as HTML
+Rendered terms_of_sale/index.html.erb within layouts/application (0.0ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-05 18:45:05 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:05 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap.css" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /css/bootstrap.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap.css"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/css/bootstrap-responsive.css" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /css/bootstrap-responsive.css - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-responsive.css"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/jquery.js" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /js/jquery.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/jquery.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap-transition.js" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /js/bootstrap-transition.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-transition.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-modal.js" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /js/bootstrap-modal.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-modal.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap-dropdown.js" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /js/bootstrap-dropdown.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-dropdown.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap-tab.js" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /js/bootstrap-tab.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-tab.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-scrollspy.js" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /js/bootstrap-scrollspy.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-scrollspy.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap-tooltip.js" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /js/bootstrap-tooltip.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-tooltip.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap-popover.js" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /js/bootstrap-popover.js - 404 Not Found (33ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-popover.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap-carousel.js" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /js/bootstrap-carousel.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-carousel.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-collapse.js" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /js/bootstrap-collapse.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-collapse.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap.js" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /js/bootstrap.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/paypal_express.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /paypal_express.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/terms_of_sale.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /terms_of_sale.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap-button.js" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /js/bootstrap-button.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-button.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/js/bootstrap-alert.js" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /js/bootstrap-alert.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-alert.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-typeahead.js" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /js/bootstrap-typeahead.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-typeahead.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/img/bluelogosmall.png" for 127.0.0.1 at 2012-10-05 18:45:06 -0400
+Served asset /img/bluelogosmall.png - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/img/bluelogosmall.png"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/TermsOfSale" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+  Processing by TermsOfSaleController#index as HTML
+Rendered terms_of_sale/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 12ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap.css" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /css/bootstrap.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap.css"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/css/bootstrap-responsive.css" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /css/bootstrap-responsive.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-responsive.css"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/jquery.js" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /js/jquery.js - 404 Not Found (32ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/jquery.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap-modal.js" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /js/bootstrap-modal.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-modal.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/js/bootstrap-dropdown.js" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /js/bootstrap-dropdown.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-dropdown.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/js/bootstrap-scrollspy.js" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /js/bootstrap-scrollspy.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-scrollspy.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-tab.js" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /js/bootstrap-tab.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-tab.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap-tooltip.js" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /js/bootstrap-tooltip.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-tooltip.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_express.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /paypal_express.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/terms_of_sale.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /terms_of_sale.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/js/bootstrap-transition.js" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /js/bootstrap-transition.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-transition.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-alert.js" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /js/bootstrap-alert.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-alert.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/js/bootstrap-popover.js" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /js/bootstrap-popover.js - 404 Not Found (5ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-popover.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.8ms)
+
+
+Started GET "/assets/js/bootstrap.js" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /js/bootstrap.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/js/bootstrap-typeahead.js" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /js/bootstrap-typeahead.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-typeahead.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-button.js" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /js/bootstrap-button.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-button.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/bluelogosmall.png" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /bluelogosmall.png - 200 OK (2ms)
+
+
+Started GET "/assets/js/bootstrap-collapse.js" for 127.0.0.1 at 2012-10-05 18:47:45 -0400
+Served asset /js/bootstrap-collapse.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-collapse.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-carousel.js" for 127.0.0.1 at 2012-10-05 18:47:46 -0400
+Served asset /js/bootstrap-carousel.js - 404 Not Found (34ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-carousel.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/TermsOfSale" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+  Processing by TermsOfSaleController#index as HTML
+Rendered terms_of_sale/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 12ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap.css?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /bootstrap.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/css/bootstrap-responsive.css" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /css/bootstrap-responsive.css - 404 Not Found (4ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap-responsive.css"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/jquery.js" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /js/jquery.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/jquery.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap-modal.js" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /js/bootstrap-modal.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-modal.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap-dropdown.js" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /js/bootstrap-dropdown.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-dropdown.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap-scrollspy.js" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /js/bootstrap-scrollspy.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-scrollspy.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap-collapse.js" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /js/bootstrap-collapse.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-collapse.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /twitter/bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/js/bootstrap-typeahead.js" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /js/bootstrap-typeahead.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-typeahead.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/developers.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /developers.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /items.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /bootstrap.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/orders.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /orders.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_express.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /paypal_express.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/paypal_transactions.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /paypal_transactions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/terms_of_sale.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /terms_of_sale.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/css/bootstrap.css" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /css/bootstrap.css - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/css/bootstrap.css"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/js/bootstrap-transition.js" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /js/bootstrap-transition.js - 404 Not Found (34ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-transition.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-alert.js" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /js/bootstrap-alert.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-alert.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/js/bootstrap-tab.js" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /js/bootstrap-tab.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-tab.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/assets/js/bootstrap-tooltip.js" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /js/bootstrap-tooltip.js - 404 Not Found (3ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-tooltip.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-button.js" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /js/bootstrap-button.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-button.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-carousel.js" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /js/bootstrap-carousel.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-carousel.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap.js" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /js/bootstrap.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/assets/js/bootstrap-popover.js" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /js/bootstrap-popover.js - 404 Not Found (2ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/js/bootstrap-popover.js"):
+  
+
+Rendered /Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/actionpack-3.1.1/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.4ms)
+
+
+Started GET "/assets/bluelogosmall.png" for 127.0.0.1 at 2012-10-05 18:47:57 -0400
+Served asset /bluelogosmall.png - 304 Not Modified (0ms)
