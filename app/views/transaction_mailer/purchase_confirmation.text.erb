@@ -1,3 +1,15 @@
-<%= @paypal_transaction.first_name %>,
+Hi <%= @transaction.name.split(" ")[0] %>,
 
-Thanks for your purchase from Loopjoy, you will be updated with a tracking number as soon as it ships!
+Thank you for your End App purchase powered by LoopJoy.
+
+Confirmation #: <%= @transaction.lj_transaction_id %>
+
+Questions about your order?
+
+Contact us at hello@loopjoy.com
+
+Please include your name and confirmation number and a representative will get back to you.
+
+Thank you for your business!
+
+- The LoopJoy Team.

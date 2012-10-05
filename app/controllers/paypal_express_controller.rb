@@ -21,6 +21,8 @@ class PaypalExpressController < ApplicationController
     gateway_response = @gateway.details_for(params[:token])
 
     @order_info = get_order_info gateway_response, @item, request
+
+    @transaction = Transaction.new(:name => @order_info.shipping_address.name, :email => @order_info.email, :address => @order_info.shipping_address, :subtotal => @order_info.subtotal, :shipping => @order_info.shipping, :total => @order_info.total, :token => @order_info.gateway_details.token)
     logger.debug(@order_info.inspect)
     render :json => @order_info
   end
@@ -36,6 +38,13 @@ class PaypalExpressController < ApplicationController
 
     total_as_cents, purchase_params = get_purchase_params @item, request, params
     purchase = @gateway.purchase total_as_cents, purchase_params
+
+    @transaction = Transaction.where(:token => params[:token])
+    @transaction.lj_transaction_id = rand(36**8).to_s(36)
+    @transaction.pp_transaction_id = params[:transaction_id]
+    @transaction.save
+
+    TransactionMailer.purchase_notification(@transaction).deliver
 
     if purchase.success?
       render :json => {:success => "YES", :message => "Thank You. \n Your order has been confirmed. \n You will receive an email shortly."}

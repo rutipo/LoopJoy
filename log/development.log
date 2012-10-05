@@ -34486,3 +34486,37 @@ Served asset /users.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-09-26 02:41:32 -0400
 Served asset /application.js - 304 Not Modified (1ms)
+  [1m[36m (0.4ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateUsers (20120711025613)
+Migrating to CreateOrders (20120723180025)
+Migrating to CreatePaypalTransactions (20120801193650)
+Migrating to CreateDevelopers (20120808100506)
+Migrating to CreateItems (20120808100819)
+Migrating to AddImageUrlToItems (20120808130819)
+Migrating to CreateTransactions (20121005203924)
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "transactions" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "address" varchar(255), "token" varchar(255), "subtotal" decimal(8,2), "shipping" decimal(8,2), "total" decimal(8,2), "pp_transaction_id" varchar(255), "lj_transaction_id" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35m (0.5ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20121005203924')
+  [1m[36m (0.4ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("developers")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("items")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_info('index_items_on_developer_id')[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("orders")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("paypal_transactions")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("transactions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Migrating to CreateTransactions (20121005203924)
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (0.4ms)[0m  DROP TABLE "transactions"
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20121005203924'[0m
+  [1m[35m (0.4ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("developers")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("items")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_info('index_items_on_developer_id')
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("orders")[0m
+  [1m[35m (0.0ms)[0m  PRAGMA index_list("paypal_transactions")
+  [1m[36m (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
