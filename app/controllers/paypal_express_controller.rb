@@ -61,15 +61,15 @@ class PaypalExpressController < ApplicationController
 
   private
     def assigns_gateway
-      @gateway ||= PaypalExpressGateway.new(
-        :login => "ruti_api1.loopjoy.com",
-        :password => "79H2HV73GBATM825",
-        :signature => "AcJ-x2rzE.wiDyTVecBkpKGcrZ2hAL73WtadveBxvFjZUSOzTvLUWs0B"
-      )
       # @gateway ||= PaypalExpressGateway.new(
-      #   :login => "tennys_1348429189_biz_api1.loopjoy.com",
-      #   :password => "1348429211",
-      #   :signature => "Afv-hdm-OvWEHpiQbbPBRPrylIfPAA5Mi2SORDMzpdD5NZPxZcIbBdL6"
+      #   :login => "ruti_api1.loopjoy.com",
+      #   :password => "79H2HV73GBATM825",
+      #   :signature => "AcJ-x2rzE.wiDyTVecBkpKGcrZ2hAL73WtadveBxvFjZUSOzTvLUWs0B"
       # )
+      @gateway ||= PaypalExpressGateway.new(
+        :login => "tennys_1348429189_biz_api1.loopjoy.com",
+        :password => "1348429211",
+        :signature => "Afv-hdm-OvWEHpiQbbPBRPrylIfPAA5Mi2SORDMzpdD5NZPxZcIbBdL6"
+      )
     end
 end

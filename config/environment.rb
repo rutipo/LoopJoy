@@ -4,4 +4,4 @@ require File.expand_path('../application', __FILE__)
 # Initialize the rails application
 Lj::Application.initialize!
 
-config.gem "activemerchant"
+
