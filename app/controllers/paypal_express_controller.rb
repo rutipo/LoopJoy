@@ -23,6 +23,7 @@ class PaypalExpressController < ApplicationController
     @order_info = get_order_info gateway_response, @item, request
 
     @transaction = Transaction.new(:name => params[:shipping_address][:name], :email => params[:email], :subtotal => params[:subtotal], :shipping => params[:shipping], :total => params[:total], :token => params[:gateway_details][:token])
+    @transaction.save
     logger.debug(@order_info.inspect)
     render :json => @order_info
   end
@@ -39,7 +40,7 @@ class PaypalExpressController < ApplicationController
     total_as_cents, purchase_params = get_purchase_params @item, request, params
     purchase = @gateway.purchase total_as_cents, purchase_params
 
-    @transaction = Transaction.where(:token => params[:token])
+    @transaction = Transaction.where(:token => params[:token]).first
     @transaction.lj_transaction_id = rand(36**8).to_s(36)
     @transaction.pp_transaction_id = params[:transaction_id]
     @transaction.save
