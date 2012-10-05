@@ -22,7 +22,7 @@ class PaypalExpressController < ApplicationController
 
     @order_info = get_order_info gateway_response, @item, request
 
-    @transaction = Transaction.new(:name => @order_info.shipping_address.name, :email => @order_info.email, :address => @order_info.shipping_address, :subtotal => @order_info.subtotal, :shipping => @order_info.shipping, :total => @order_info.total, :token => @order_info.gateway_details.token)
+    @transaction = Transaction.new(:name => params[:shipping_address][:name], :email => params[:email], :subtotal => params[:subtotal], :shipping => params[:shipping], :total => params[:total], :token => params[:gateway_details][:token])
     logger.debug(@order_info.inspect)
     render :json => @order_info
   end
