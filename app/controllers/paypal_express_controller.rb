@@ -48,7 +48,7 @@ class PaypalExpressController < ApplicationController
     TransactionMailer.purchase_notification(@transaction).deliver
 
     if purchase.success?
-      render :json => {:success => "YES", :message => "Thank You. \n Your order has been confirmed. \n You will receive an email shortly."}
+      render :json => {:success => "YES", :message => "Thank You. \n Your confirmation number is #{@transaction.lj_transaction_id}. \n You will receive an email shortly."}
       #you might want to destroy your cart here if you have a shopping cart 
       #notice = "Thanks! Your purchase is now complete!"
       #render successful purchse
