@@ -1,4 +1,29 @@
 Lj::Application.configure do
+
+  #Firstly, Lets set our host to be correct
+  ####################################################################
+  config.env_vars.host = "loopjoy.com"
+  ####################################################################
+
+  #Now we can set environment variables for everything else
+  config.env_vars.paypal_return_url = "http://#{config.env_vars.host}/paypal/success"
+  config.env_vars.paypal_cancel_return_url = "http://#{config.env_vars.host}/paypal/cancel"
+
+  #Used for action mailer hosts
+  config.action_mailer.default_url_options = {host: config.env_vars.host}
+
+  #after our app is initialized lets set these variables
+  config.after_initialize do
+    ActiveMerchant::Billing::Base.mode = :production
+    paypal_options = {
+      login: "ruti_api1.loopjoy.com",
+      password: "79H2HV73GBATM825",
+      signature: "AcJ-x2rzE.wiDyTVecBkpKGcrZ2hAL73WtadveBxvFjZUSOzTvLUWs0B"
+    }
+    ::EXPRESS_GATEWAY = ActiveMerchant::Billing::PaypalExpressGateway.new(paypal_options)
+  end
+
+  #=============================================================================
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
@@ -20,7 +45,7 @@ Lj::Application.configure do
   # Generate digests for assets URLs
   config.assets.digest = true
 
-  # Defaults to Rails.root.join("public/assets")
+  # Defaults to nil and saved in location specified by config.assets.prefix
   # config.assets.manifest = YOUR_PATH
 
   # Specifies the header that your server uses for sending files
@@ -33,8 +58,11 @@ Lj::Application.configure do
   # See everything in the log (default is :info)
   # config.log_level = :debug
 
+  # Prepend all log lines with the following tags
+  # config.log_tags = [ :subdomain, :uuid ]
+
   # Use a different logger for distributed setups
-  # config.logger = SyslogLogger.new
+  # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
 
   # Use a different cache store in production
   # config.cache_store = :mem_cache_store
@@ -57,4 +85,8 @@ Lj::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  # Log the query plan for queries taking more than this (works
+  # with SQLite, MySQL, and PostgreSQL)
+  # config.active_record.auto_explain_threshold_in_seconds = 0.5
 end

@@ -2,13 +2,52 @@
 <html>
 <head>
   <title>Lj</title>
-  <%= stylesheet_link_tag    "bootstrap" %>
-  <%= javascript_include_tag "application" %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 </head>
 <body>
+	<div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container-fluid">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#" style="z-index:2000"><%=image_tag "bluelogosmall.png" %></a>
+          <div class="nav-collapse collapse">
+            <p class="navbar-text pull-right">
+             <% if user_signed_in? %>
+                Welcome Back, <%= current_user.name.split(" ")[0] %>! 
+                <!--<%= link_to('logout', destroy_user_session_path, :method => :delete) %> -->
+              <% else %>
+                <%= link_to('Login', new_user_session_path)  %>  
+              <% end %>
+            </p>
+            <ul class="nav">
+              <li><a href="currentofferings.html">Dashboard</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <%= yield %>
+	<hr> 
+        <footer>
+          <span class="right" style="display:inline">&copy; Loopjoy 2012</span>
+          <ul style="display:inline">
+            <li style="display:inline"><a href="/">Home</a> &nbsp; &nbsp;</li>
+            <li style="display:inline"><a href="/">About</a> &nbsp; &nbsp;</li>
+            <li style="display:inline"><a href="/">Contact</a> &nbsp; &nbsp;</li>
+            <li style="display:inline"><a href="/">Help</a></li>
+          </ul>
+        </footer>
 
-<%= yield %>
-
+    </div><!--/.fluid-container-->
+    <%= javascript_include_tag "application" %>
 </body>
 </html>

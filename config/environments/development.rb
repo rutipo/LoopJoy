@@ -1,8 +1,33 @@
 Lj::Application.configure do
+
+  #Firstly, Lets set our host to be correct
+  ####################################################################
+  config.env_vars.host = "dev.loopjoy.com"
+  ####################################################################
+
+  #Now we can set environment variables for everything else
+  config.env_vars.paypal_return_url = "http://#{config.env_vars.host}/paypal/success"
+  config.env_vars.paypal_cancel_return_url = "http://#{config.env_vars.host}/paypal/cancel"
+
+  #Used for action mailer hosts
+  config.action_mailer.default_url_options = {host: config.env_vars.host}
+
+  #after our app is initialized lets set these variables
+  config.after_initialize do
+    ActiveMerchant::Billing::Base.mode = :test
+    paypal_options = {
+      login: "tennys_1348429189_biz_api1.loopjoy.com",
+      password: "1348429211",
+      signature: "Afv-hdm-OvWEHpiQbbPBRPrylIfPAA5Mi2SORDMzpdD5NZPxZcIbBdL6"
+    }
+    ::EXPRESS_GATEWAY = ActiveMerchant::Billing::PaypalExpressGateway.new(paypal_options)
+  end
+
+  #========================================================
   # Settings specified here will take precedence over those in config/application.rb
 
   # In the development environment your application's code is reloaded on
-  # every request.  This slows down response time but is perfect for development
+  # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
 
@@ -22,14 +47,17 @@ Lj::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
 
+  # Raise exception on mass assignment protection for Active Record models
+  config.active_record.mass_assignment_sanitizer = :strict
+
+  # Log the query plan for queries taking more than this (works
+  # with SQLite, MySQL, and PostgreSQL)
+  config.active_record.auto_explain_threshold_in_seconds = 0.5
+
   # Do not compress assets
   config.assets.compress = false
 
   # Expands the lines which load the assets
   config.assets.debug = true
-
-#   config.after_initialize do
-#   ActiveMerchant::Billing::Base.mode = :test
-# end
 
 end

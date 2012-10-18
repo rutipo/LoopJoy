@@ -8,8 +8,7 @@ one:
   display_text: MyString
   price: 9.99
   sku: MyString
-  picture: 
-  developer: 
+  user: 
 
 two:
   name: MyString
@@ -19,5 +18,4 @@ two:
   display_text: MyString
   price: 9.99
   sku: MyString
-  picture: 
-  developer: 
+  user: 

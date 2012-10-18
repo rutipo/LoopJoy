@@ -1,76 +1,70 @@
 class PaypalExpressController < ApplicationController
-  before_filter :assigns_gateway
-
-  include ActiveMerchant::Billing
-  include PaypalExpressHelper
-
 
   def checkout
+  	item = Item.find(params[:item_id])
 
-  	@item = Item.find(params[:item_id])
+    total_as_cents, setup_purchase_params = get_setup_purchase_params item, request
+    response = EXPRESS_GATEWAY.setup_purchase(total_as_cents, setup_purchase_params)
 
-    total_as_cents, setup_purchase_params = get_setup_purchase_params @item, request
-    setup_response = @gateway.setup_purchase(total_as_cents, setup_purchase_params)
-
-    render :json => {:setup_response => setup_response, :purchase_params => setup_purchase_params, :redirect_url => @gateway.redirect_url_for(setup_response.token), :token => setup_response.token}
+    render :json => {
+      purchase_params: setup_purchase_params, 
+      redirect_url: EXPRESS_GATEWAY.redirect_url_for(response.token)
+      token: response.token
+    }
   end
 
-
   def review
-    @item = Item.find(params[:item_id])
-    gateway_response = @gateway.details_for(params[:token])
+    item = Item.find(params[:item_id])
+    
+    response = EXPRESS_GATEWAY.details_for(params[:token])
+	order_info = get_order_info gateway_response, item, request
 
-    @order_info = get_order_info gateway_response, @item, request
+    transaction = Transaction.new(
+  	  name: order_info[:name], 
+      email: order_info[:email], 
+      subtotal: @order_info[:subtotal], 
+   	  shipping: @order_info[:shipping], 
+      total: @order_info[:total], 
+      token: @order_info[:gateway_details][:token]
+      )
+    transaction.save
 
-    @transaction = Transaction.new(:name => @order_info[:name], :email => @order_info[:email], :subtotal => @order_info[:subtotal], :shipping => @order_info[:shipping], :total => @order_info[:total], :token => @order_info[:gateway_details][:token])
-    @transaction.save
-    logger.debug(@order_info.inspect)
     render :json => @order_info
   end
 
   def purchase
+    item = Item.find(params[:item_id])
 
-    @item = Item.find(params[:item_id])
     if params[:token].nil? or params[:payer_id].nil?
-      #redirect_to home_url, :notice => "Sorry! Something went wrong with the Paypal purchase. Please try again later." 
-      #render json error message
+	  render json: {
+	  	success: "NO", 
+	  	message: "There was a problem with your order. \n Please try again later."
+	  }
       return
     end
 
-    total_as_cents, purchase_params = get_purchase_params @item, request, params
-    purchase = @gateway.purchase total_as_cents, purchase_params
+    total_as_cents, purchase_params = get_purchase_params item, request, params
+    purchase = EXPRESS_GATEWAY.purchase(total_as_cents, purchase_params)
 
-    @transaction = Transaction.where(:token => params[:token]).first
-    @transaction.lj_transaction_id = rand(36**8).to_s(36)
-    @transaction.pp_transaction_id = params[:transaction_id]
-    @transaction.save
+    transaction = Transaction.where(token: params[:token]).first
+    transaction.lj_transaction_id = rand(36**8).to_s(36)
+    transaction.pp_transaction_id = params[:transaction_id]
+    transaction.save
 
     TransactionMailer.purchase_confirmation(@transaction).deliver
 
     if purchase.success?
-      render :json => {:success => "YES", :message => "Thank You. \n Your confirmation number is #{@transaction.lj_transaction_id}. \n You will receive an email shortly."}
-      #you might want to destroy your cart here if you have a shopping cart 
-      #notice = "Thanks! Your purchase is now complete!"
-      #render successful purchse
+      render :json => {
+      	success: "YES", 
+      	message: "Thank You. \n Your confirmation number is #{transaction.lj_transaction_id}. 
+      			 \n You will receive an email shortly."
+      	}
     else
-      render :json => {:success => "NO", :message => "There was a problem with your order. \n Please try again later."}
-      #render unsuccessful purchase
+      render :json => {
+      	success: "NO"
+      	message: "There was a problem with your order. \n Please try again later."
+      }
     end
-
   end
 
-
-  private
-    def assigns_gateway
-       @gateway ||= PaypalExpressGateway.new(
-         :login => "ruti_api1.loopjoy.com",
-         :password => "79H2HV73GBATM825",
-         :signature => "AcJ-x2rzE.wiDyTVecBkpKGcrZ2hAL73WtadveBxvFjZUSOzTvLUWs0B"
-       )
-      # @gateway ||= PaypalExpressGateway.new(
-      #   :login => "tennys_1348429189_biz_api1.loopjoy.com",
-      #   :password => "1348429211",
-      #   :signature => "Afv-hdm-OvWEHpiQbbPBRPrylIfPAA5Mi2SORDMzpdD5NZPxZcIbBdL6"
-      # )
-    end
 end
