@@ -19,7 +19,7 @@
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
              <% if user_signed_in? %>
-                Welcome Back, <%= current_user.name.split(" ")[0] %>! 
+                Welcome Back, ! 
                 <!--<%= link_to('logout', destroy_user_session_path, :method => :delete) %> -->
               <% else %>
                 <%= link_to('Login', new_user_session_path)  %>  
@@ -35,6 +35,7 @@
       </div>
     </div>
     <div class="container-fluid">
+      <%= render "layouts/messages" %>
       <%= yield %>
 	<hr> 
         <footer>
