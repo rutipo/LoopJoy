@@ -1,6 +1,17 @@
-o: ActiveSupport::Cache::Entry	:@created_atf1344427285.108562:@value{I"
-class:EFI"BundledAsset;FI"id;F"%c2a60db20dbfca2fae74a2eaa2425cb4I"logical_path;FI"jquery.js;FI"pathname;FI"i/Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery.js;FI"content_type;FI"application/javascript;FI"
-mtime;FI"2012-08-08T07:45:46-04:00;FI"	body;FI"¬É/*!
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1350322517.183145:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%2cc539b73c540cace3c477bebd5aaf5fI"logical_path;
+FI"jquery.js;
+FI"pathname;
+FI"i/Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery.js;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-08-08T07:45:46-04:00;
+FI"	body;
+FI"¬É/*!
  * jQuery JavaScript Library v1.7.1
  * http://jquery.com/
  *
@@ -9267,5 +9278,15 @@ if ( typeof define === "function" && define.amd && define.amd.jQuery ) {
 
 
 })( window );
-;FI"asset_paths;F[I"i/Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery.js;FI"dependency_paths;F[{I"	path;FI"i/Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery.js;FI"
-mtime;FIu:	Time€  à¶:@_zoneI"EDT;T:offsetiþÀÇI"hexdigest;F"%d13e81dda8debf24ba7d4b73d2c7b325I"_version;F"%0868aba5d4b750d3a9421721ea3d9b9c:@expires_in0:@compressedF
+;
+FI"asset_paths;
+F[I"i/Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery.js;
+FI"dependency_paths;
+F[{I"	path;
+FI"i/Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery.js;
+FI"
+mtime;
+FIu:	Time€  à¶:@_zoneI"EDT;
+T:offsetiþÀÇI"hexdigest;
+F"%d13e81dda8debf24ba7d4b73d2c7b325I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

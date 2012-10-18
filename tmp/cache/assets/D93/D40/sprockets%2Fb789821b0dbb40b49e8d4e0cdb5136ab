@@ -1,6 +1,17 @@
-o: ActiveSupport::Cache::Entry	:@created_atf1344427285.112285:@value{I"
-class:EFI"BundledAsset;FI"id;F"%2935d1bdffa2c6e1b98e7af26f9d0060I"logical_path;FI"jquery_ujs.js;FI"pathname;FI"m/Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery_ujs.js;FI"content_type;FI"application/javascript;FI"
-mtime;FI"2012-08-08T07:45:46-04:00;FI"	body;FI"ç;(function($, undefined) {
+o: ActiveSupport::Cache::Entry	:@compressedF:@expires_in0:@created_atf1350322517.189339:@value{I"
+class:EFI"BundledAsset;
+FI"id;
+F"%09af45097f973ff0f88129cd13092c18I"logical_path;
+FI"jquery_ujs.js;
+FI"pathname;
+FI"m/Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery_ujs.js;
+FI"content_type;
+FI"application/javascript;
+FI"
+mtime;
+FI"2012-08-08T07:45:46-04:00;
+FI"	body;
+FI"ç;(function($, undefined) {
 
 /**
  * Unobtrusive scripting adapter for jQuery
@@ -373,5 +384,15 @@ mtime;FI"2012-08-08T07:45:46-04:00;FI"	body;FI"ç;(function($, undefined)
   });
 
 })( jQuery );
-;FI"asset_paths;F[I"m/Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery_ujs.js;FI"dependency_paths;F[{I"	path;FI"m/Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery_ujs.js;FI"
-mtime;FIu:	Time€  à¶:@_zoneI"EDT;T:offsetiþÀÇI"hexdigest;F"%28dc1785f8d56ea0de4c0728f358d811I"_version;F"%0868aba5d4b750d3a9421721ea3d9b9c:@expires_in0:@compressedF
+;
+FI"asset_paths;
+F[I"m/Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery_ujs.js;
+FI"dependency_paths;
+F[{I"	path;
+FI"m/Users/thinds/.rvm/gems/ruby-1.9.3-p194/gems/jquery-rails-1.0.19/vendor/assets/javascripts/jquery_ujs.js;
+FI"
+mtime;
+FIu:	Time€  à¶:@_zoneI"EDT;
+T:offsetiþÀÇI"hexdigest;
+F"%28dc1785f8d56ea0de4c0728f358d811I"_version;
+F"%0868aba5d4b750d3a9421721ea3d9b9c

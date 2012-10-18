@@ -2,7 +2,7 @@ class TransactionMailer < ActionMailer::Base
   default :from => "purchases@loopjoy.com"
 
   def purchase_confirmation(transaction)
-  	@ttransaction = transaction
+  	@transaction = transaction
   	mail(:to => "#{transaction.name} <#{transaction.email}>", :subject => "Your Order Confirmation from LoopJoy")
   end
 

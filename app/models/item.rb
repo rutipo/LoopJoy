@@ -5,6 +5,7 @@ class Item < ActiveRecord::Base
   def as_json(options={})
   	h = super(options)
   	h[:image_url] = "http://loopjoy.com" + image.url
+  	h[:item] = item.to_i
   	h
   end
 
