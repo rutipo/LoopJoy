@@ -16,6 +16,7 @@ development:
   adapter: postgresql
   encoding: unicode
   database: lj_development
+  host: localhost
   pool: 5
   username: lj
   password:
@@ -50,6 +51,7 @@ production:
   adapter: postgresql
   encoding: unicode
   database: lj_production
+  host: localhost
   pool: 5
   username: lj
   password:
