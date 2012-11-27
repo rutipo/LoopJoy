@@ -51,7 +51,7 @@ production:
   adapter: postgresql
   encoding: unicode
   database: lj_production
-  host: localhost
+  host: 54.243.226.132
   pool: 5
   username: lj
   password: 

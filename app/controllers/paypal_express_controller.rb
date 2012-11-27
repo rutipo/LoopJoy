@@ -2,9 +2,13 @@ class PaypalExpressController < ApplicationController
 
   def checkout
   	item = Item.find(params[:item_id])
+    gateway = params[:env_type] == "LJ_ENV_BETA" ? EXPRESS_GATEWAY_BETA : EXPRESS_GATEWAY_LIVE
 
     total_as_cents, setup_purchase_params = get_setup_purchase_params item, request
-    response = EXPRESS_GATEWAY.setup_purchase(total_as_cents, setup_purchase_params)
+    response = gateway.setup_purchase(total_as_cents, setup_purchase_params)
+
+    $redis.hmset(response.token,"env_type",params[:env_type],"item_id",params[:item_id])
+    $redis.expire(response.token, 300)
 
     render :json => {
       purchase_params: setup_purchase_params, 
@@ -14,10 +18,14 @@ class PaypalExpressController < ApplicationController
   end
 
   def review
-    item = Item.find(params[:item_id])
+    token = params[:token]
+    $redis.expire(response.token, 300)
+    item = Item.find($redis.hget(token,"item_id"))
     
-    response = EXPRESS_GATEWAY.details_for(params[:token])
-	  order_info = get_order_info gateway_response, item, request
+    gateway = $redis.hget(token,"env_type") == "LJ_ENV_BETA" ? EXPRESS_GATEWAY_BETA : EXPRESS_GATEWAY_LIVE
+    response = gateway.details_for(token)
+
+	  order_info = get_order_info(gateway_response, item, request)
 
     transaction = Transaction.new(
   	  name: order_info[:name], 
@@ -33,9 +41,15 @@ class PaypalExpressController < ApplicationController
   end
 
   def purchase
-    item = Item.find(params[:item_id])
+    token = params[:token]
 
-    if params[:token].nil? or params[:payer_id].nil?
+    $redis.expire(token, 300)
+    env_type = $redis.hget(token,"env_type")
+    item = Item.find($redis.hget(token,"item_id"))
+
+    gateway = env_type == "LJ_ENV_BETA" ? EXPRESS_GATEWAY_BETA : EXPRESS_GATEWAY_LIVE
+
+    if token.nil? or params[:payer_id].nil?
 	  render json: {
 	  	success: "NO", 
 	  	message: "There was a problem with your order. \n Please try again later."
@@ -43,16 +57,21 @@ class PaypalExpressController < ApplicationController
       return
     end
 
-    total_as_cents, purchase_params = get_purchase_params item, request, params
-    purchase = EXPRESS_GATEWAY.purchase(total_as_cents, purchase_params)
+    total_as_cents, purchase_params = get_purchase_params(item, request, params)
+    purchase = gateway.purchase(total_as_cents, purchase_params)
 
-    transaction = Transaction.where(token: params[:token]).first
-    transaction.lj_transaction_id = rand(36**8).to_s(36)
-    transaction.pp_transaction_id = params[:transaction_id]
-    transaction.save
 
+    #only store it in the database if it isn't a live purchase
+    if env_type != "LJ_ENV_BETA"
+      transaction = Transaction.where(token: params[:token]).first
+      transaction.lj_transaction_id = rand(36**8).to_s(36)
+      transaction.pp_transaction_id = params[:transaction_id]
+      transaction.save
+    end
+
+    #send the email regardless
     TransactionMailer.purchase_confirmation(@transaction).deliver
-
+    
     if purchase.success?
       render :json => {
       	success: "YES", 
