@@ -7,4 +7,3 @@ class InitializationController < ApplicationController
 	end
 
 end
-

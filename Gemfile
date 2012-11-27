@@ -34,6 +34,9 @@ gem 'capistrano'
 #Running a Postgres Database
 gem 'pg'
 
+#And using redis for KVS
+gem 'redis'
+
 #Behind a Thin Server
 gem 'thin'
 

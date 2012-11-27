@@ -5,6 +5,10 @@ Lj::Application.configure do
   config.env_vars.host = "loopjoy.com"
   ####################################################################
 
+
+  #And lets go ahead and set up the redis production environment as well
+  $redis = Redis.new(host: 'localhost', port: 6379)
+  
   #Now we can set environment variables for everything else
   config.env_vars.paypal_return_url = "http://#{config.env_vars.host}/paypal/success"
   config.env_vars.paypal_cancel_return_url = "http://#{config.env_vars.host}/paypal/cancel"

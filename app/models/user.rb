@@ -19,8 +19,8 @@ class User < ActiveRecord::Base
 		self.role = "user"
 	end
 
-	def apiKey=(apiKey)
-		unless self.apiKey?
+	def api_key=(api_key)
+		unless self.api_key?
 			o =  [('a'..'z'),('A'..'Z')].map{|i| i.to_a}.flatten;  
 			string  =  (0..18).map{ o[rand(o.length)]  }.join;
 			super string

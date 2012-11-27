@@ -8,7 +8,7 @@ class PaypalExpressController < ApplicationController
 
     render :json => {
       purchase_params: setup_purchase_params, 
-      redirect_url: EXPRESS_GATEWAY.redirect_url_for(response.token)
+      redirect_url: EXPRESS_GATEWAY.redirect_url_for(response.token),
       token: response.token
     }
   end
@@ -17,7 +17,7 @@ class PaypalExpressController < ApplicationController
     item = Item.find(params[:item_id])
     
     response = EXPRESS_GATEWAY.details_for(params[:token])
-	order_info = get_order_info gateway_response, item, request
+	  order_info = get_order_info gateway_response, item, request
 
     transaction = Transaction.new(
   	  name: order_info[:name], 
@@ -61,7 +61,7 @@ class PaypalExpressController < ApplicationController
       	}
     else
       render :json => {
-      	success: "NO"
+      	success: "NO",
       	message: "There was a problem with your order. \n Please try again later."
       }
     end
