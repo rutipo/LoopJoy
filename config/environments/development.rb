@@ -26,11 +26,11 @@ Lj::Application.configure do
     }
     ::EXPRESS_GATEWAY_LIVE = ActiveMerchant::Billing::PaypalExpressGateway.new(paypal_options)
 
-    ActiveMerchant::Billing::Base.mode = :test
     paypal_options = {
       login: "tennys_1348429189_biz_api1.loopjoy.com",
       password: "1348429211",
-      signature: "Afv-hdm-OvWEHpiQbbPBRPrylIfPAA5Mi2SORDMzpdD5NZPxZcIbBdL6"
+      signature: "Afv-hdm-OvWEHpiQbbPBRPrylIfPAA5Mi2SORDMzpdD5NZPxZcIbBdL6",
+      test: true
     }
     ::EXPRESS_GATEWAY_SANDBOX = ActiveMerchant::Billing::PaypalExpressGateway.new(paypal_options)
   end

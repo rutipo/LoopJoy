@@ -13,7 +13,7 @@ class PaypalExpressController < ApplicationController
 
     render :json => {
       purchase_params: setup_purchase_params, 
-      redirect_url: EXPRESS_GATEWAY.redirect_url_for(response.token),
+      redirect_url: gateway.redirect_url_for(response.token),
       token: response.token
     }
   end
