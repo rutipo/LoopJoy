@@ -24,7 +24,7 @@ Lj::Application.configure do
       password: "79H2HV73GBATM825",
       signature: "AcJ-x2rzE.wiDyTVecBkpKGcrZ2hAL73WtadveBxvFjZUSOzTvLUWs0B"
     }
-    ::EXPRESS_GATEWAY_BETA = ActiveMerchant::Billing::PaypalExpressGateway.new(paypal_options)
+    ::EXPRESS_GATEWAY_LIVE = ActiveMerchant::Billing::PaypalExpressGateway.new(paypal_options)
 
     ActiveMerchant::Billing::Base.mode = :test
     paypal_options = {
@@ -32,7 +32,7 @@ Lj::Application.configure do
       password: "1348429211",
       signature: "Afv-hdm-OvWEHpiQbbPBRPrylIfPAA5Mi2SORDMzpdD5NZPxZcIbBdL6"
     }
-    ::EXPRESS_GATEWAY_LIVE = ActiveMerchant::Billing::PaypalExpressGateway.new(paypal_options)
+    ::EXPRESS_GATEWAY_SANDBOX = ActiveMerchant::Billing::PaypalExpressGateway.new(paypal_options)
   end
 
   #========================================================
