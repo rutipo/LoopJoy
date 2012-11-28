@@ -1,5 +1,5 @@
-class PaypalExpress
-  
+module PaypalExpress
+
   def get_setup_purchase_params(item, request)
     location = request.location.country_code
     subtotal, shipping, total = get_totals(item, location)
@@ -8,8 +8,8 @@ class PaypalExpress
 
     return to_cents(total),{
       ip: request.remote_ip,
-      return_url: url_for("#{Application.config.env_vars.paypal_return_url}"),
-      cancel_return_url: url_for("#{Application.config.env_vars.paypal_cancel_return_url}"),
+      return_url: url_for("http://dev.loopjoy.com/paypal/success"),
+      cancel_return_url: url_for("http://dev.loopjoy.com/paypal/success/cancel"),
       subtotal: to_cents(subtotal),
       shipping: to_cents(shipping),
       handling:  0,
