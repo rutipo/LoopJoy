@@ -1,4 +1,5 @@
 class PaypalExpressController < ApplicationController
+  include PaypalExpress
 
   def checkout
   	item = Item.find(params[:item_id])
