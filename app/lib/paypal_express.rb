@@ -1,4 +1,4 @@
-class PaypalExpress < ActiveRecord::Base
+class PaypalExpress
   
   def get_setup_purchase_params(item, request)
     location = request.location.country_code
