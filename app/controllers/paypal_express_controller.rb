@@ -31,14 +31,14 @@ class PaypalExpressController < ApplicationController
     transaction = Transaction.new(
   	  name: order_info[:name], 
       email: order_info[:email], 
-      subtotal: @order_info[:subtotal], 
-   	  shipping: @order_info[:shipping], 
-      total: @order_info[:total], 
-      token: @order_info[:gateway_details][:token]
+      subtotal: order_info[:subtotal], 
+   	  shipping: order_info[:shipping], 
+      total: order_info[:total], 
+      token: order_info[:gateway_details][:token]
       )
     transaction.save
 
-    render :json => @order_info
+    render :json => order_info
   end
 
   def purchase
