@@ -1,7 +1,12 @@
 module PaypalExpress
 
   def get_setup_purchase_params(item, request)
-    location = request.location.country_code
+    if request.location == nil
+      location = "NA"
+    else
+      location = request.location.country_code
+    end
+
     subtotal, shipping, total = get_totals(item, location)
    
     #return final price and hash of params used for checkout
