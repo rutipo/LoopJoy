@@ -3,7 +3,7 @@ class PaypalExpressController < ApplicationController
 
   def checkout
   	item = Item.find(params[:item_id])
-    gateway = params[:env_type] == "LJ_ENV_BETA" ? EXPRESS_GATEWAY_SANDBOX : EXPRESS_GATEWAY_LIVE
+    gateway = params[:env_type] == "LJ_ENV_SANDBOX" ? EXPRESS_GATEWAY_SANDBOX : EXPRESS_GATEWAY_LIVE
 
     total_as_cents, setup_purchase_params = get_setup_purchase_params item, request
     response = gateway.setup_purchase(total_as_cents, setup_purchase_params)
@@ -23,7 +23,7 @@ class PaypalExpressController < ApplicationController
     $redis.expire(response.token, 300)
     item = Item.find($redis.hget(token,"item_id"))
     
-    gateway = $redis.hget(token,"env_type") == "LJ_ENV_BETA" ? EXPRESS_GATEWAY_SANDBOX: EXPRESS_GATEWAY_LIVE
+    gateway = $redis.hget(token,"env_type") == "LJ_ENV_SANDBOX" ? EXPRESS_GATEWAY_SANDBOX: EXPRESS_GATEWAY_LIVE
     response = gateway.details_for(token)
 
 	  order_info = get_order_info(gateway_response, item, request)
@@ -48,7 +48,7 @@ class PaypalExpressController < ApplicationController
     env_type = $redis.hget(token,"env_type")
     item = Item.find($redis.hget(token,"item_id"))
 
-    gateway = env_type == "LJ_ENV_BETA" ? EXPRESS_GATEWAY_SANDBOX : EXPRESS_GATEWAY_LIVE
+    gateway = env_type == "LJ_ENV_SANDBOX" ? EXPRESS_GATEWAY_SANDBOX : EXPRESS_GATEWAY_LIVE
 
     if token.nil? or params[:payer_id].nil?
 	  render json: {
@@ -63,7 +63,7 @@ class PaypalExpressController < ApplicationController
 
 
     #only store it in the database if it isn't a live purchase
-    if env_type != "LJ_ENV_BETA"
+    if env_type != "LJ_ENV_SANDBOX"
       transaction = Transaction.where(token: params[:token]).first
       transaction.lj_transaction_id = rand(36**8).to_s(36)
       transaction.pp_transaction_id = params[:transaction_id]
