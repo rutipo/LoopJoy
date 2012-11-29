@@ -8,8 +8,8 @@ module PaypalExpress
 
     return to_cents(total),{
       ip: request.remote_ip,
-      return_url: url_for("#{LJ::Application.config.env_vars.paypal_return_url}"),
-      cancel_return_url: url_for("#{LJ::Application.config.paypal_cancel_url}"),
+      return_url: url_for("#{::Lj::Application.config.env_vars.paypal_return_url}"),
+      cancel_return_url: url_for("#{::Lj::Application.config.env_vars.paypal_cancel_return_url}"),
       subtotal: to_cents(subtotal),
       shipping: to_cents(shipping),
       handling:  0,
