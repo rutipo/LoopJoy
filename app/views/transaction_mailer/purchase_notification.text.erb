@@ -1,0 +1,47 @@
+New Transaction Notification 
+
+Shipping Address: 
+<%= @paypal_transaction.first_name %> <%= @paypal_transaction.last_name %>
+<%= @paypal_transaction.address_street %>
+<%= @paypal_transaction.address_city %>, <%= @paypal_transaction.address_state %> <%= @paypal_transaction.address_zip %>
+<%= @paypal_transaction.address_country %>
+
+
+
+Contact Information
+Email: <%= @paypal_transaction.payer_email %> 
+Phone Number: <%= @paypal_transaction.contact_phone %>
+
+
+Purchase information 
+Item Name: <%= @paypal_transaction.item_name %> 
+Item Number: <%= @paypal_transaction.item_number %>
+Quantity: <%= @paypal_transaction.quantity %>
+OUR Custom Notes: <%= @paypal_transaction.custom %>
+BUYER Custom Note: <%= @paypal_transaction.memo %>
+
+Paypal Information
+Transaction ID: <%= @paypal_transaction.txn_id %>
+Transction Type: <%= @paypal_transaction.txn_type %>
+Payment Status: <%= @paypal_transaction.payment_status %>
+Payment Type: <%= @paypal_transaction.payment_type %>
+
+Accounting Information
+Payment Gross: <%= @paypal_transaction.payment_gross %>
+Payment Fee: <%= @paypal_transaction.payment_fee %>
+Payment Date: <%= @paypal_transaction.payment_date %>
+Payment Tax: <%= @paypal_transaction.tax %>
+Payment Shipping: <%= @paypal_transaction.shipping %>
+
+
+
+<% if @paypal_transaction.mc_currency != nil %>
+<%# Used here for the possibility of multi currency options  %>
+Foreign currency type: <%= @paypal_transaction.mc_currency %>
+Foreign currency fee: <%= @paypal_transaction.mc_fee %>
+Foregin currency gross: <%= @paypal_transaction.mc_gross %>
+<% end %>
+
+
+Timestamp
+<%= @paypal_transaction.created_at %>
