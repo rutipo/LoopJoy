@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121017202410) do
+ActiveRecord::Schema.define(:version => 20121129200605) do
 
   create_table "items", :force => true do |t|
     t.string   "name"
@@ -31,6 +31,20 @@ ActiveRecord::Schema.define(:version => 20121017202410) do
   end
 
   add_index "items", ["user_id"], :name => "index_items_on_user_id"
+
+  create_table "transactions", :force => true do |t|
+    t.string   "name"
+    t.string   "address"
+    t.string   "email"
+    t.string   "token"
+    t.decimal  "subtotal",          :precision => 8, :scale => 2
+    t.decimal  "shipping",          :precision => 8, :scale => 2
+    t.decimal  "total",             :precision => 8, :scale => 2
+    t.string   "pp_transaction_id"
+    t.string   "lj_transaction_id"
+    t.datetime "created_at",                                      :null => false
+    t.datetime "updated_at",                                      :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false

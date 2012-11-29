@@ -49,9 +49,9 @@ module PaypalExpress
           token: gateway_response.token,
           payer_id: gateway_response.payer_id
         },
-        subtotal: number_to_currency(subtotal),
-        shipping: number_to_currency(shipping),
-        total: number_to_currency(total)
+        subtotal: ActionController::Base.helpers.number_to_currency(subtotal),
+        shipping: ActionController::Base.helpers.number_to_currency(shipping),
+        total: ActionController::Base.helpers.number_to_currency(total)
       }
   end
 

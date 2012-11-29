@@ -26,7 +26,7 @@ class PaypalExpressController < ApplicationController
     gateway = $redis.hget(token,"env_type") == "LJ_ENV_SANDBOX" ? EXPRESS_GATEWAY_SANDBOX: EXPRESS_GATEWAY_LIVE
     response = gateway.details_for(token)
 
-	  order_info = get_order_info(gateway_response, item, request)
+	  order_info = get_order_info(response, item, request)
 
     transaction = Transaction.new(
   	  name: order_info[:name], 
