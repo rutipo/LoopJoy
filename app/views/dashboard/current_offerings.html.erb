@@ -1,37 +1,43 @@
 <h1>Your Current Offerings</h1><br/>
 
 <p>Put the marketing copy here about the merchandise you're currently carrying. What makes the current offerings rock the house? Are some better than others for different types of games?</p>
+
+<% item_count = @items.count %>
+<% begin %>
   <div class="row-fluid">
-    <ul class="thumbnails">
+  <ul class="thumbnails">
+  <%for i in 0..2 %>
+    <% if item_count > 0 %>
+      <% item = @items[item_count -1] %> 
       <li class="span4">
         <div class="thumbnail">
-          <img src="http://placehold.it/300x200" alt="">
+         <%= image_tag item.image.url %>
           <div class="caption">
-            <h3>Your first item</h3>
-            <p>Hey cool, it's a limited edition Angry Birds t-shirt.</p>
+            <h3><%= item.name %></h3>
+            <p><%= item.desc %></p>
+            <p><a href=<%= url_for(item) %> class="btn">Select</a> </p>
           </div>
         </div>
       </li>
+      <% item_count-= 1 %>
+    <% else %>
       <li class="span4">
         <div class="thumbnail">
           <img src="http://placehold.it/300x200" alt="">
-          <div class="caption">
-            <h3>Your second item</h3>
-             <p>Hey cool, it's a limited edition Angry Birds t-shirt.</p>
-          </div>
+            <div class="caption">
+              <h3>Our second item</h3>
+              <p>Hey cool, it's a limited edition Angry Birds t-shirt.</p>
+              <p><a href="upload.html" class="btn">Select</a> </p>
+            </div>
         </div>
       </li>
-      <li class="span4">
-        <div class="thumbnail">
-          <img src="http://placehold.it/300x200" alt="">
-          <div class="caption">
-            <h3>Your third item</h3>
-             <p>Hey cool, it's a limited edition Angry Birds t-shirt.</p>
-          </div>
-        </div>
-      </li>
-    </ul>
-  <p>
-     <a class="btn btn-large btn-primary" style="float:right" type="button" href="newproducts.html">Add New Products</a>
-  </p>
+    <% end %>
+  <% end %>
+  </ul>
   </div>
+<%end while item_count > 0 %>
+<p>
+<a class="btn btn-large btn-primary" style="float:right" type="button" href="newproducts.html">Add New Products</a>
+<br/>
+
+

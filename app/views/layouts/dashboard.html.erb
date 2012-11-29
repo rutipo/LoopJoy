@@ -3,17 +3,19 @@
           <div class="well sidebar-nav sidebar-nav-fixed">
             <ul class="nav nav-list">
               <li class="nav-header">Merchandise</li>
-              <li class="active"><a href="currentofferings.html">Current Offerings</a></li>
-              <li><a href="newproducts.html">Add New Products</a></li>
+              <%= nav_link 'Current Offerings', url_for(action: 'current_offerings') %>
+              <%= nav_link 'Add New Products', url_for(action: 'new_products') %>
+
               <li class="nav-header">Sales and Analytics</li>
-              <li><a href="summary.html">Summary</a></li>
-              <li><a href="payouts.html">Payouts</a></li>
-              <li><a href="transactions.html">Transactions</a></li>
-              <li><a href="conversions.html">Conversions</a></li>
+              <%= nav_link 'Summary', url_for(action: 'summary') %>
+              <%= nav_link 'Payouts', url_for(action: 'payouts') %>
+              <%= nav_link 'Transactions', url_for(action: 'transactions') %>
+              <%= nav_link 'Conversions', url_for(action: 'conversions') %>
+
               <li class="nav-header">Developers</li>
               <li><a href="https://github.com/StlTenny/LJSimpleExample" target="_blank">Documentation</a></li>
-              <li><a href="unlockables.html">Unlockables</a></li>
-              <li><a href="apikey.html">API Key</a></li>
+              <%= nav_link 'Unlockables', url_for(action: 'unlockables') %>
+              <%= nav_link 'API Key', url_for(action: 'api_key') %>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->

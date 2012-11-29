@@ -62,27 +62,28 @@ class PaypalExpressController < ApplicationController
     purchase = gateway.purchase(total_as_cents, purchase_params)
 
 
-    #only store it in the database if it isn't a live purchase
+    @transaction = Transaction.where(token: params[:token]).first
+    @transaction.lj_transaction_id = rand(36**8).to_s(36)
+    @transaction.pp_transaction_id = params[:transaction_id]
+
+    #only store it in the database if it isn't a live purchase                                                                                 
     if env_type != "LJ_ENV_SANDBOX"
-      transaction = Transaction.where(token: params[:token]).first
-      transaction.lj_transaction_id = rand(36**8).to_s(36)
-      transaction.pp_transaction_id = params[:transaction_id]
-      transaction.save
+      @transaction.save
     end
 
-    #send the email regardless
+    #send the email regardless                                                                                                                 
     TransactionMailer.purchase_confirmation(@transaction).deliver
-    
+
     if purchase.success?
       render :json => {
-      	success: "YES", 
-      	message: "Thank You. \n Your confirmation number is #{transaction.lj_transaction_id}. 
-      			 \n You will receive an email shortly."
-      	}
+        success: "YES",
+        message: "Thank You. \n Your confirmation number is #{@transaction.lj_transaction_id}.                                                 
+                         \n You will receive an email shortly."
+        }
     else
       render :json => {
-      	success: "NO",
-      	message: "There was a problem with your order. \n Please try again later."
+        success: "NO",
+        message: "There was a problem with your order. \n Please try again later."
       }
     end
   end

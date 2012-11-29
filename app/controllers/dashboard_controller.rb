@@ -1,9 +1,12 @@
 class DashboardController < ApplicationController
+	before_filter :authenticate_user!
 
 	def current_offerings
+		@items = Item.where(:user_id => current_user.id)
 	end
 
 	def new_products
+		@item = Item.new
 	end
 
 	def summary

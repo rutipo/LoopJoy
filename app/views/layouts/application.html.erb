@@ -19,7 +19,8 @@
           <div class="nav-collapse collapse">
             <p class="navbar-text pull-right">
              <% if user_signed_in? %>
-                Welcome Back, ! 
+
+                Welcome Back<%= current_user.name == nil ? '' : ", " + current_user.name.split(" ")[0] %>! 
                 <!--<%= link_to('logout', destroy_user_session_path, :method => :delete) %> -->
               <% else %>
                 <%= link_to('Login', new_user_session_path)  %>  
