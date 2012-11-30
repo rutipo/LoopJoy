@@ -7,6 +7,7 @@ Lj::Application.routes.draw do
   #static routing for the terms of service page
   match ':action' => 'static#:action'
   match 'dashboard/:action' => 'dashboard#:action'
+  match 'dashboard/' => 'dashboard#current_offerings'
 
   match 'developer/items' => 'initialization#ios_init', :as => :developer_init, :via => :post
   match 'paypal/checkout' => 'paypal_express#checkout'
