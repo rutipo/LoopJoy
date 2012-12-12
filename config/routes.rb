@@ -4,10 +4,10 @@ Lj::Application.routes.draw do
 
   devise_for :users, :controllers => { :registrations => "registrations" }
 
-  #static routing for the terms of service page
-  match ':action' => 'static#:action'
+  
+  
   match 'dashboard/:action' => 'dashboard#:action'
-  match 'dashboard/' => 'dashboard#current_offerings'
+  match 'dashboard' => 'dashboard#current_offerings'
 
   match 'developer/items' => 'initialization#ios_init', :as => :developer_init, :via => :post
   match 'paypal/checkout' => 'paypal_express#checkout'
@@ -18,5 +18,8 @@ Lj::Application.routes.draw do
 
   #Lets route home to the home controller
   root :to => "home#index"
+  
+  #static routing for the terms of service page
+  match ':action' => 'static#:action'
 
 end

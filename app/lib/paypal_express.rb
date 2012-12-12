@@ -64,7 +64,7 @@ module PaypalExpress
   end
 
   def get_shipping(location)
-	return location == "US" ? 2 : 7
+	 return location == "US" ? 2 : 7
   end
 
   def to_cents(money)

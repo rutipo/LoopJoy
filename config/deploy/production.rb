@@ -1,1 +1,1 @@
-server 'loopjoy.com', :app, :web, :db, :primary => true
+server 'ec2-23-20-157-25.compute-1.amazonaws.com', :app, :web, :db, :primary => true
