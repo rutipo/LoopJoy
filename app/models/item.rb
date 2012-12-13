@@ -13,4 +13,12 @@ class Item < ActiveRecord::Base
 	$redis.set(@developer.api_key.to_s, {merchantName: @developer.merchant_name, items: @items})
   end
 
+  def as_json(options={})
+  	h = super(options)
+  	#Change this to use config env host to return the correct url
+  	h[:image_url] = ::Lj::Application.config.env_vars.host + image.url
+    h[:price] = price.to_i
+  	h
+  end
+
 end

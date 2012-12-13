@@ -2,7 +2,7 @@ Lj::Application.configure do
 
   #Firstly, Lets set our host to be correct
   ####################################################################
-  config.env_vars.host = "loopjoy.com"
+  config.env_vars.host = "http://loopjoy.com"
   ####################################################################
 
 
