@@ -16,7 +16,7 @@ class Item < ActiveRecord::Base
   def as_json(options={})
   	h = super(options)
   	#Change this to use config env host to return the correct url
-  	h[:image_url] = ::Lj::Application.config.env_vars.host + image.url
+  	h[:image_url] = "http://" ::Lj::Application.config.env_vars.host + image.url
     h[:price] = price.to_i
   	h
   end
