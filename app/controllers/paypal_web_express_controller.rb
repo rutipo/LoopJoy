@@ -31,5 +31,40 @@ class PaypalWebExpressController < ApplicationController
     @transaction.save
   end
 
+  def confirm
+    @token = params[:token]
+
+    $redis.expire(@token, 300)
+    item = Item.find($redis.hget(@token,"item_id"))
+
+    gateway = EXPRESS_GATEWAY_LIVE
+
+    if @token.nil? or params[:payer_id].nil?
+	  	@message = "There was a problem with your order. \n Please try again later."
+    end
+
+    total_as_cents, purchase_params = get_purchase_params(item, request, params)
+    purchase = gateway.purchase(total_as_cents, purchase_params)
+
+
+    @transaction = Transaction.where(token: params[:token]).first
+    @transaction.lj_transaction_id = rand(36**8).to_s(36)
+    @transaction.pp_transaction_id = params[:transaction_id]
+
+    #only store it in the database if it isn't a live purchase                                                                                 
+    @transaction.save
+
+    #send the email regardless                                                                                                                 
+    TransactionMailer.purchase_confirmation(@transaction).deliver
+
+    if purchase.success?
+        @message = "Thank You. \n Your confirmation number is #{@transaction.lj_transaction_id}.                                                 
+                         \n You will receive an email shortly."
+    else
+    	@message = "There was a problem with your order. \n Please try again later."
+    end
+  end
+
+
 
 end

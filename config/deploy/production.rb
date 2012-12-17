@@ -1,1 +1,1 @@
-server '54.243.71.217', :app, :web, :db, :primary => true
+server 'loopjoy.com', :app, :web, :db, :primary => true
