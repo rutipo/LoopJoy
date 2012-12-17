@@ -3,14 +3,14 @@
 	<title><%=@item.name%></title>
 	</head>
 	<body><center>
-		Purchase a <%=@item.name%><p>
+		<h1>Purchase a <%=@item.name%></h1><p>
 	<br\>
 	<br\>
 	<p>
 	<%= image_tag(@item.image.url) %>
 	<br\>
 	<p>
-	Price: <%= @item.price %>
+	<h3>Price: $<%= @item.price %></h3>
 	<br\>
 	<p>
 	<br\>
