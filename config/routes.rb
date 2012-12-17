@@ -15,6 +15,8 @@ Lj::Application.routes.draw do
   match 'paypal/purchase' => 'paypal_express#purchase'
 
   match 'checkout/:id' => "paypal_web_express#checkout"
+  match 'paypal/success' => "paypal_web_express#review"
+  match 'paypal/confirm' => "paypal_web_express#confirm", :as => :paypal_web_express_confirm
 
   match 'Legal/EULA' => 'home#eula', :as => :legal_eula
 

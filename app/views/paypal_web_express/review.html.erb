@@ -1,0 +1,28 @@
+<html>
+<head>
+	<title><%=@item.name%></title>
+	</head>
+	<body><center>
+		<h1>Confirm Your Purchase.</h1><p>
+	<br\>
+	<br\>
+	<p>
+	<%= image_tag(@item.image.url) %>
+	<br\>
+	<p>
+	<br\>
+	<h2>Shipping Address</h2>
+	<%=@order_info[:shipping_address]["name"]%> <p>
+	<%=@order_info[:shipping_address]["address1"]%> <%=@order_info[:shipping_address]["city"]%>, <%=@order_info[:shipping_address]["state"]%>, <%=@order_info[:shipping_address]["zip"].split("-")[0]%><p>
+	<h2>Email</h2>
+	<%=@order_info[:email]%><p>
+	<h2>Invoice</h2>
+	<b>Subtotal:</b> <%=@order_info[:subtotal]%><p>
+	<b>Shipping:</b><%=@order_info[:shipping]%><p>
+	<b>Total:</b><%=@order_info[:total]%><p>
+	<p>
+	<br\>
+	<%= button_to "Confirm", paypal_web_express_confirm_path, params.merge({:token => params[:token]}, :method => "get"%>
+</center>
+</body>
+</html>
