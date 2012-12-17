@@ -22,7 +22,7 @@
 	<b>Total:</b><%=@order_info[:total]%><p>
 	<p>
 	<br\>
-	<%= button_to "Confirm", paypal_web_express_confirm_path(:token => params[:token]), :method => "get"%>
+	<%= button_to "Confirm", paypal_web_express_confirm_path(:token => params[:token], :payer_id => @order_info[:gateway_details]["payer_id"]), :method => "get"%>
 </center>
 </body>
 </html>
