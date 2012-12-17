@@ -2,7 +2,7 @@ Lj::Application.configure do
 
   #Firstly, Lets set our host to be correct
   ####################################################################
-  config.env_vars.host = "http://dev.loopjoy.com"
+  config.env_vars.host = "dev.loopjoy.com"
   ####################################################################
 
 
@@ -15,6 +15,8 @@ Lj::Application.configure do
 
   #Used for action mailer hosts
   config.action_mailer.default_url_options = {host: config.env_vars.host}
+
+
 
   #========================================================
   # Settings specified here will take precedence over those in config/application.rb
