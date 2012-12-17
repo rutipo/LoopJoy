@@ -23,7 +23,7 @@ class PaypalExpressController < ApplicationController
     $redis.expire(token, 300)
     item = Item.find($redis.hget(token,"item_id"))
     
-    gateway = $redis.hget(token,"env_type") == "LJ_ENV_SANDBOX" ? EXPRESS_GATEWAY_SANDBOX: EXPRESS_GATEWAY_LIVE
+    gateway = $redis.hget(token,"env_type") == "LJ_ENV_SANDBOX" ? EXPRESS_GATEWAY_SANDBOX : EXPRESS_GATEWAY_LIVE
     response = gateway.details_for(token)
 
 	  order_info = get_order_info(response, item, request)

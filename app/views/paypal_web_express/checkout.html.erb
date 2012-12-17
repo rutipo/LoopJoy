@@ -1,0 +1,20 @@
+<html>
+<head>
+	<title><%=@item.name%></title>
+	</head>
+	<body><center>
+		Purchase a <%=@item.name%><p>
+	<br\>
+	<br\>
+	<p>
+	<%= image_tag(@item.image.url) %>
+	<br\>
+	<p>
+	Price: <%= @item.price %>
+	<br\>
+	<p>
+	<br\>
+	<%= link_to image_tag("btn_xpressCheckout.gif"), @redirect_url %>
+</center>
+</body>
+</html>

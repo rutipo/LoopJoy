@@ -14,6 +14,8 @@ Lj::Application.routes.draw do
   match 'paypal/review' => 'paypal_express#review'
   match 'paypal/purchase' => 'paypal_express#purchase'
 
+  match 'checkout/:id' => "paypal_web_express#checkout"
+
   match 'Legal/EULA' => 'home#eula', :as => :legal_eula
 
   #Lets route home to the home controller
