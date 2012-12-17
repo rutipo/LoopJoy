@@ -63,7 +63,24 @@ module Lj
     config.env_vars = ActiveSupport::OrderedOptions.new
 
     #Here lets go ahead and set our environment variables for active merchant
+        
+  config.after_initialize do
+    ActiveMerchant::Billing::Base.mode = :production
+    paypal_options = {
+    login: "ruti_api1.loopjoy.com",
+    password: "79H2HV73GBATM825",
+    signature: "AcJ-x2rzE.wiDyTVecBkpKGcrZ2hAL73WtadveBxvFjZUSOzTvLUWs0B"
+    }
+    ::EXPRESS_GATEWAY_LIVE = ActiveMerchant::Billing::PaypalExpressGateway.new(paypal_options)
 
+    paypal_options = {
+    login: "tennys_1348429189_biz_api1.loopjoy.com",
+    password: "1348429211",
+    signature: "Afv-hdm-OvWEHpiQbbPBRPrylIfPAA5Mi2SORDMzpdD5NZPxZcIbBdL6",
+    test: true
+    }
+    ::EXPRESS_GATEWAY_SANDBOX = ActiveMerchant::Billing::PaypalExpressGateway.new(paypal_options)
+  end
 
     
   end
