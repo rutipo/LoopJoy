@@ -16,7 +16,8 @@ Lj::Application.configure do
   #Used for action mailer hosts
   config.action_mailer.default_url_options = {host: config.env_vars.host}
 
-
+  #For Not Precompiling our .gif
+  config.assets.precompile += %w[*.png *.jpg *.jpeg *.gif]
 #
 
   #=============================================================================
