@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
 	has_many :items
 	after_initialize :setDefaultUserRole
+	after_create :setApiKey
 
 
 	devise :database_authenticatable, :registerable,
@@ -19,6 +20,12 @@ class User < ActiveRecord::Base
 		self.role = "user"
 	end
 
+	def setApiKey
+		o =  [('a'..'z'),('A'..'Z')].map{|i| i.to_a}.flatten;  
+		string  =  (0..18).map{ o[rand(o.length)]  }.join;
+		self.api_key = string
+	end
+
 	def api_key=(api_key)
 		unless self.api_key?
 			o =  [('a'..'z'),('A'..'Z')].map{|i| i.to_a}.flatten;  
@@ -26,4 +33,5 @@ class User < ActiveRecord::Base
 			super string
 		end
 	end
+
 end
