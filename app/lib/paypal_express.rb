@@ -25,7 +25,11 @@ module PaypalExpress
   end
 
   def get_purchase_params(item, request, params)
-    location = request.location.country_code
+    if request.location == nil
+      location = "NA"
+    else
+      location = request.location.country_code
+    end
     subtotal, shipping, total = get_totals(item,location)
     return to_cents(total), {
       :ip => request.remote_ip,

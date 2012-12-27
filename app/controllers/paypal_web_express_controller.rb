@@ -14,7 +14,7 @@ class PaypalWebExpressController < ApplicationController
   def review
   	@token = params[:token]
   	response = EXPRESS_GATEWAY_LIVE.details_for(@token)
-  	@item = Item.find($redis.hget(token,"item_id"))
+  	@item = Item.find($redis.hget(@token,"item_id"))
 
 
   	@order_info = get_order_info(response, @item, request)
