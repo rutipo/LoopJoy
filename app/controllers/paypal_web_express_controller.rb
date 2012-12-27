@@ -29,10 +29,11 @@ class PaypalWebExpressController < ApplicationController
       token: @order_info[:gateway_details][:token]
       )
     @transaction.save
-
+    @payer_id = @order_info[:gateway_details][:payer_id]
   end
 
   def confirm
+    logger.debug(params.inspect)
     @token = params[:token]
 
     $redis.expire(@token, 300)
@@ -46,7 +47,7 @@ class PaypalWebExpressController < ApplicationController
 
     total_as_cents, purchase_params = get_purchase_params(item, request, params)
     purchase = gateway.purchase(total_as_cents, purchase_params)
-
+    logger.debug(purchase.inspect)
 
     @transaction = Transaction.where(token: params[:token]).first
     @transaction.lj_transaction_id = rand(36**8).to_s(36)
