@@ -12,8 +12,8 @@ class PaypalWebExpressController < ApplicationController
   end
 
   def review
-  	token = params[:token]
-  	response = EXPRESS_GATEWAY_LIVE.details_for(token)
+  	@token = params[:token]
+  	response = EXPRESS_GATEWAY_LIVE.details_for(@token)
   	@item = Item.find($redis.hget(token,"item_id"))
 
 
@@ -29,6 +29,7 @@ class PaypalWebExpressController < ApplicationController
       token: @order_info[:gateway_details][:token]
       )
     @transaction.save
+
   end
 
   def confirm
