@@ -1,7 +1,7 @@
 class Item < ActiveRecord::Base
   after_save :set_api_initialization
 
-  belongs_to :user
+  belongs_to :developer
   attr_accessible :desc, :display_text, :name, :options, :price, :sku, :item_type, :image
 
   has_attached_file :image, :styles => { :medium => "300x300>", :thumb => "100x100>" }

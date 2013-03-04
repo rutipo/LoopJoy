@@ -1,9 +1,9 @@
-class ItemsController < AuthorizedController
+class ItemsController < ApplicationController
 
   # GET /items
   # GET /items.json
   def index
-    @items = Item.where(:user_id => current_user.id)
+    @items = Item.all
 
     respond_to do |format|
       format.html # index.html.erb

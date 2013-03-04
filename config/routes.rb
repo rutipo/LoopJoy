@@ -1,7 +1,8 @@
 Lj::Application.routes.draw do
 
-  resources :items
+  resources :developers
 
+  resources :items
   devise_for :users, :controllers => { :registrations => "registrations" }
   
 

@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Api key:</b>
+  <%= @developer.api_key %>
+</p>
+
+<p>
+  <b>Merchant name:</b>
+  <%= @developer.merchant_name %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @developer.user %>
+</p>
+
+
+<%= link_to 'Edit', edit_developer_path(@developer) %> |
+<%= link_to 'Back', developers_path %>

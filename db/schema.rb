@@ -11,7 +11,17 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121129200605) do
+ActiveRecord::Schema.define(:version => 20130301200506) do
+
+  create_table "developers", :force => true do |t|
+    t.string   "merchant_name"
+    t.string   "api_key"
+    t.integer  "user_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  add_index "developers", ["user_id"], :name => "index_developers_on_user_id"
 
   create_table "items", :force => true do |t|
     t.string   "name"
@@ -20,7 +30,7 @@ ActiveRecord::Schema.define(:version => 20121129200605) do
     t.string   "display_text"
     t.decimal  "price"
     t.string   "sku"
-    t.integer  "user_id"
+    t.integer  "developer_id"
     t.string   "image_file_name"
     t.string   "image_content_type"
     t.integer  "image_file_size"
@@ -30,7 +40,7 @@ ActiveRecord::Schema.define(:version => 20121129200605) do
     t.integer  "item_type"
   end
 
-  add_index "items", ["user_id"], :name => "index_items_on_user_id"
+  add_index "items", ["developer_id"], :name => "index_items_on_user_id"
 
   create_table "transactions", :force => true do |t|
     t.string   "name"
@@ -61,8 +71,6 @@ ActiveRecord::Schema.define(:version => 20121129200605) do
     t.datetime "updated_at",                             :null => false
     t.string   "role"
     t.string   "name"
-    t.string   "merchant_name"
-    t.string   "api_key"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  api_key: MyString
+  merchant_name: MyString
+  user: 
+
+two:
+  api_key: MyString
+  merchant_name: MyString
+  user: 
