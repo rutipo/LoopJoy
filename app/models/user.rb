@@ -1,8 +1,7 @@
 class User < ActiveRecord::Base
-	has_many :items
-	after_create :set_api_key_and_role
+	has_one :developer
 
-
+	after_save :set_role
 	devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
@@ -14,15 +13,9 @@ class User < ActiveRecord::Base
 	attr_accessible :email, :password, :password_confirmation, :remember_me,
 		:name, :merchant_name, :role, :api_key
 
-	def set_api_key_and_role
+	def set_role
 		self.role = "user"
-
-		o =  [('a'..'z'),('A'..'Z')].map{|i| i.to_a}.flatten;  
-		string  =  (0..18).map{ o[rand(o.length)]  }.join;
-		self.api_key = string
-		self.save
 	end
-
 
 
 end

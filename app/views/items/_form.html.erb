@@ -1,48 +1,12 @@
-<%= form_for(@item) do |f| %>
-  <% if @item.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@item.errors.count, "error") %> prohibited this item from being saved:</h2>
-      <ul>
-      <% @item.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
+<%= simple_form_for @item do |f| %>
+  <%= f.input :name %>
+  <%= f.input :desc %>
+  <%= f.input :options %>
+  <%= f.input :display_text %>
+  <%= f.input :price %>
+  <%= f.input :sku %>
+  <%= f.association :developer, label_method: :merchant_name%>
+  <%= f.input :image, as: :file %>
 
-  <div class="field">
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :item_type %><br />
-    <%= f.number_field :item_type %>
-  </div>
-  <div class="field">
-    <%= f.label :desc %><br />
-    <%= f.text_field :desc %>
-  </div>
-  <div class="field">
-    <%= f.label :options %><br />
-    <%= f.text_field :options %>
-  </div>
-  <div class="field">
-    <%= f.label :display_text %><br />
-    <%= f.text_field :display_text %>
-  </div>
-  <div class="field">
-    <%= f.label :price %><br />
-    <%= f.text_field :price %>
-  </div>
-  <div class="field">
-    <%= f.label :sku %><br />
-    <%= f.text_field :sku %>
-  </div>
-
-    <div class="field">
-    <%= f.label :image %><br />
-    <%= f.file_field :image %>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+  <%= f.button :submit %>
 <% end %>
